@@ -1,19 +1,19 @@
-from data_loader import load_data_from_json, process_data
-from map_generator import generate_travel_map
-from map_updater import update_travel_data
+from scripts.data_loader import load_data
+from scripts.map_generator import generate_map
+from scripts.map_updater import update_map
 
 def main():
-    data_file = 'travel_data.json'
-    map_output = 'travel_map.html'
-    
-    # Load and process data
-    data = load_data_from_json(data_file)
-    processed_data = process_data(data)
-    
-    # Generate map
-    generate_travel_map(processed_data, map_output)
-    
-    print("Travel map successfully generated.")
+    # Load the data
+    travel_data = load_data()
+
+    # Generate the initial map
+    travel_map = generate_map(travel_data)
+
+    # Update the map based on new data
+    updated_map = update_map(travel_map)
+
+    # Save the updated map
+    updated_map.save("travel_map.html")
 
 if __name__ == "__main__":
     main()
