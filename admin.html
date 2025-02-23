@@ -9,7 +9,7 @@
         function checkPassword() {
             var password = prompt("Enter the admin password:");
 
-            // ✅ Set your password here (Change "mySecurePassword" to your own)
+            // ✅ Set your password here (Change "claire" to your own)
             if (password === "claire") {
                 document.getElementById("admin-content").style.display = "block";
                 document.getElementById("password-prompt").style.display = "none";
@@ -49,6 +49,24 @@
                 <input type="text" id="mapTitle" placeholder="Enter new title">
                 <button type="button" onclick="updateMap()">Update</button>
             </form>
+
+            <!-- ✅ NEW FORM: Update Travel Map Data -->
+            <h3>Add or Edit a Travel Location</h3>
+            <form id="updateMapForm">
+                <label for="name">Location Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country" required>
+
+                <label for="days">Days Stayed:</label>
+                <input type="number" id="days" name="days" required>
+
+                <label for="transport">Transport Method:</label>
+                <input type="text" id="transport" name="transport">
+
+                <button type="submit">Update Map</button>
+            </form>
         </div>
     </main>
 
@@ -69,8 +87,24 @@
                 alert("⚠️ Please enter a title.");
             }
         }
+
+        // ✅ Handle form submission to update travel data
+        document.getElementById("updateMapForm").addEventListener("submit", async function(event) {
+            event.preventDefault();
+
+            const formData = new FormData(this);
+            const response = await fetch("/update_map", {
+                method: "POST",
+                body: JSON.stringify(Object.fromEntries(formData)),
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            });
+
+            const result = await response.json();
+            alert(result.message);
+        });
     </script>
 
 </body>
 </html>
-
