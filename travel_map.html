@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_80e173b68c279689609412004a655eb5 {
+                #map_21d3a9fbf2d43ca910184a9d2a0759a7 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -37,29 +37,29 @@
         
     <script src="https://cdn.jsdelivr.net/npm/leaflet-ant-path@1.1.2/dist/leaflet-ant-path.min.js"></script>
 </head>
-
 <body>
     
     
-            <div class="folium-map" id="map_80e173b68c279689609412004a655eb5" ></div>
-    
-            <div style="position: fixed; top: 15px; left: 15px; z-index: 1000;">
-                <a href="index.html" style="
-                    background: #007bff;
-                    color: white;
-                    padding: 6px 10px;
-                    text-decoration: none;
-                    font-size: 12px;
-                    border-radius: 3px;
-                    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-                ">⬅ Back to Home</a>
-            </div>
+            <div class="folium-map" id="map_21d3a9fbf2d43ca910184a9d2a0759a7" ></div>
+        
+
+<div style="position: fixed; top: 15px; left: 15px; z-index: 1000;">
+    <a href="index.html" style="
+        background: #007bff;
+        color: white;
+        padding: 6px 10px;
+        text-decoration: none;
+        font-size: 12px;
+        border-radius: 3px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    ">⬅ Back to Home</a>
+</div>
 </body>
 <script>
     
     
-            var map_80e173b68c279689609412004a655eb5 = L.map(
-                "map_80e173b68c279689609412004a655eb5",
+            var map_21d3a9fbf2d43ca910184a9d2a0759a7 = L.map(
+                "map_21d3a9fbf2d43ca910184a9d2a0759a7",
                 {
                     center: [18.788343, 98.9853],
                     crs: L.CRS.EPSG3857,
@@ -76,7 +76,7 @@
 
         
     
-            var tile_layer_3e01da464573319c346ee3777fed181c = L.tileLayer(
+            var tile_layer_9e829de853b724438d78d71bef43ad30 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -93,41 +93,41 @@
             );
         
     
-            tile_layer_3e01da464573319c346ee3777fed181c.addTo(map_80e173b68c279689609412004a655eb5);
+            tile_layer_9e829de853b724438d78d71bef43ad30.addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var marker_9ea9149ba72d70d2339d3af47d6178db = L.marker(
+            var marker_4ed5a7d824d6614c5bf3f25c253f1237 = L.marker(
                 [51.1537, -0.1821],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_363a4206895d4f7ad080e74b10a657d8 = L.divIcon({
+            var div_icon_92b561678258376f59ed10c208bd750c = L.divIcon({
   "html": "\n            \u003cdiv style=\"font-family: Arial; color: white; font-size: 12px; font-weight: bold;\n            text-align: center; background-color: lightgreen; width: 18px; \n            height: 18px; border-radius: 50%;\n            line-height: 18px;\"\u003e1\u003c/div\u003e\n        ",
   "className": "empty",
 });
-            marker_9ea9149ba72d70d2339d3af47d6178db.setIcon(div_icon_363a4206895d4f7ad080e74b10a657d8);
+            marker_4ed5a7d824d6614c5bf3f25c253f1237.setIcon(div_icon_92b561678258376f59ed10c208bd750c);
         
     
-        var popup_ff74185c948378bfac9e41cc3846d7e8 = L.popup({
+        var popup_feff144a8f427c9d1a5ad534c0b56e98 = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_10e1cd7c8027ca5d0233c3d9543fdf3a = $(`<div id="html_10e1cd7c8027ca5d0233c3d9543fdf3a" style="width: 100.0%; height: 100.0%;">     <h1>London Gatwick: UK</h1>     <p><b>0 days: dates </b></p>     <p>details</p>     </div>`)[0];
-                popup_ff74185c948378bfac9e41cc3846d7e8.setContent(html_10e1cd7c8027ca5d0233c3d9543fdf3a);
+                var html_ad97e5312ca9e75b9998e12753469806 = $(`<div id="html_ad97e5312ca9e75b9998e12753469806" style="width: 100.0%; height: 100.0%;">     <h1>London Gatwick: UK</h1>     <p><b>0 days: dates </b></p>     <p>Details:         <ul>                  <li>leaving         </ul>     </p>     </div>`)[0];
+                popup_feff144a8f427c9d1a5ad534c0b56e98.setContent(html_ad97e5312ca9e75b9998e12753469806);
             
         
 
-        marker_9ea9149ba72d70d2339d3af47d6178db.bindPopup(popup_ff74185c948378bfac9e41cc3846d7e8)
+        marker_4ed5a7d824d6614c5bf3f25c253f1237.bindPopup(popup_feff144a8f427c9d1a5ad534c0b56e98)
         ;
 
         
     
     
-            marker_9ea9149ba72d70d2339d3af47d6178db.bindTooltip(
+            marker_4ed5a7d824d6614c5bf3f25c253f1237.bindTooltip(
                 `<div>
                      London Gatwick
                  </div>`,
@@ -137,38 +137,38 @@
             );
         
     
-            var marker_5e63290b9b19d69687d0577e1c7c39d7 = L.marker(
+            var marker_697e49aba173f4ebb5b8ec56aa163c1b = L.marker(
                 [59.9139, 10.7522],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_67ee0bdbdb5d8dfea1ee3b580ba1078e = L.divIcon({
+            var div_icon_301f5612f9b0c151e0b1c45558a5130f = L.divIcon({
   "html": "\n            \u003cdiv style=\"font-family: Arial; color: white; font-size: 12px; font-weight: bold;\n            text-align: center; background-color: darkgreen; width: 18px; \n            height: 18px; border-radius: 50%;\n            line-height: 18px;\"\u003e2\u003c/div\u003e\n        ",
   "className": "empty",
 });
-            marker_5e63290b9b19d69687d0577e1c7c39d7.setIcon(div_icon_67ee0bdbdb5d8dfea1ee3b580ba1078e);
+            marker_697e49aba173f4ebb5b8ec56aa163c1b.setIcon(div_icon_301f5612f9b0c151e0b1c45558a5130f);
         
     
-        var popup_074823ada0a751b6821c31e40a6fbf52 = L.popup({
+        var popup_680b6d587ee1b107b52a79a086645eeb = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_cf9fb6751d08489b1e233056d3fca93e = $(`<div id="html_cf9fb6751d08489b1e233056d3fca93e" style="width: 100.0%; height: 100.0%;">     <h1>Oslo: Norway</h1>     <p><b>4 days: dates </b></p>     <p>details</p>     </div>`)[0];
-                popup_074823ada0a751b6821c31e40a6fbf52.setContent(html_cf9fb6751d08489b1e233056d3fca93e);
+                var html_6d6fd89ac8b4c6c44e33ed04e7f9266d = $(`<div id="html_6d6fd89ac8b4c6c44e33ed04e7f9266d" style="width: 100.0%; height: 100.0%;">     <h1>Oslo: Norway</h1>     <p><b>4 days: dates </b></p>     <p>Details:         <ul>                  <li>wearing a coat         </ul>     </p>     </div>`)[0];
+                popup_680b6d587ee1b107b52a79a086645eeb.setContent(html_6d6fd89ac8b4c6c44e33ed04e7f9266d);
             
         
 
-        marker_5e63290b9b19d69687d0577e1c7c39d7.bindPopup(popup_074823ada0a751b6821c31e40a6fbf52)
+        marker_697e49aba173f4ebb5b8ec56aa163c1b.bindPopup(popup_680b6d587ee1b107b52a79a086645eeb)
         ;
 
         
     
     
-            marker_5e63290b9b19d69687d0577e1c7c39d7.bindTooltip(
+            marker_697e49aba173f4ebb5b8ec56aa163c1b.bindTooltip(
                 `<div>
                      Oslo
                  </div>`,
@@ -178,38 +178,38 @@
             );
         
     
-            var marker_4413a9c31f082401a1962a607f0403ff = L.marker(
+            var marker_83e8a1575e76ff41fe94545f2795d632 = L.marker(
                 [13.736717, 100.523186],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_79385bd300516ecd26598279c4837f70 = L.divIcon({
+            var div_icon_d89a75b4d12998cfa96fcca159dbe000 = L.divIcon({
   "html": "\n            \u003cdiv style=\"font-family: Arial; color: white; font-size: 12px; font-weight: bold;\n            text-align: center; background-color: cornflowerblue; width: 18px; \n            height: 18px; border-radius: 50%;\n            line-height: 18px;\"\u003e3\u003c/div\u003e\n        ",
   "className": "empty",
 });
-            marker_4413a9c31f082401a1962a607f0403ff.setIcon(div_icon_79385bd300516ecd26598279c4837f70);
+            marker_83e8a1575e76ff41fe94545f2795d632.setIcon(div_icon_d89a75b4d12998cfa96fcca159dbe000);
         
     
-        var popup_655b1dbeb2734eb2cbc556f4cba0a61a = L.popup({
+        var popup_03105e6a9c55bb684bd4f4e159001a6b = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_c8ff3121dcd5cd2ee26a504c287111f3 = $(`<div id="html_c8ff3121dcd5cd2ee26a504c287111f3" style="width: 100.0%; height: 100.0%;">     <h1>Bangkok: Thailand</h1>     <p><b>4 days: dates </b></p>     <p>details</p>     </div>`)[0];
-                popup_655b1dbeb2734eb2cbc556f4cba0a61a.setContent(html_c8ff3121dcd5cd2ee26a504c287111f3);
+                var html_d005907925e820e902177e18dfeccd2a = $(`<div id="html_d005907925e820e902177e18dfeccd2a" style="width: 100.0%; height: 100.0%;">     <h1>Bangkok: Thailand</h1>     <p><b>4 days: dates </b></p>     <p>Details:         <ul>                  <li>bars<li>markets         </ul>     </p>     </div>`)[0];
+                popup_03105e6a9c55bb684bd4f4e159001a6b.setContent(html_d005907925e820e902177e18dfeccd2a);
             
         
 
-        marker_4413a9c31f082401a1962a607f0403ff.bindPopup(popup_655b1dbeb2734eb2cbc556f4cba0a61a)
+        marker_83e8a1575e76ff41fe94545f2795d632.bindPopup(popup_03105e6a9c55bb684bd4f4e159001a6b)
         ;
 
         
     
     
-            marker_4413a9c31f082401a1962a607f0403ff.bindTooltip(
+            marker_83e8a1575e76ff41fe94545f2795d632.bindTooltip(
                 `<div>
                      Bangkok
                  </div>`,
@@ -219,38 +219,38 @@
             );
         
     
-            var marker_118bea4a6e65e7d3db35f529e06261ec = L.marker(
+            var marker_5b9d0b45ca5a113f616484e9352d8f92 = L.marker(
                 [9.7312, 100.0132],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_9ff9770ab1df48a071ef46373ddb4576 = L.divIcon({
+            var div_icon_03be0e648c199b8dfb826e0101f00df6 = L.divIcon({
   "html": "\n            \u003cdiv style=\"font-family: Arial; color: white; font-size: 12px; font-weight: bold;\n            text-align: center; background-color: cornflowerblue; width: 18px; \n            height: 18px; border-radius: 50%;\n            line-height: 18px;\"\u003e4\u003c/div\u003e\n        ",
   "className": "empty",
 });
-            marker_118bea4a6e65e7d3db35f529e06261ec.setIcon(div_icon_9ff9770ab1df48a071ef46373ddb4576);
+            marker_5b9d0b45ca5a113f616484e9352d8f92.setIcon(div_icon_03be0e648c199b8dfb826e0101f00df6);
         
     
-        var popup_ff08c72abf7e87d8b4451871b803f28c = L.popup({
+        var popup_53b0c657d47d93b3a34c0a661511b37b = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_32cd1289bf6c895900bc214383e3f2d8 = $(`<div id="html_32cd1289bf6c895900bc214383e3f2d8" style="width: 100.0%; height: 100.0%;">     <h1>Koh Phangan: Thailand</h1>     <p><b>3 days: dates </b></p>     <p>details</p>     </div>`)[0];
-                popup_ff08c72abf7e87d8b4451871b803f28c.setContent(html_32cd1289bf6c895900bc214383e3f2d8);
+                var html_667b5ee0ca1ce805c1240a0179d2fdf4 = $(`<div id="html_667b5ee0ca1ce805c1240a0179d2fdf4" style="width: 100.0%; height: 100.0%;">     <h1>Koh Phangan: Thailand</h1>     <p><b>3 days: dates </b></p>     <p>Details:         <ul>                           </ul>     </p>     </div>`)[0];
+                popup_53b0c657d47d93b3a34c0a661511b37b.setContent(html_667b5ee0ca1ce805c1240a0179d2fdf4);
             
         
 
-        marker_118bea4a6e65e7d3db35f529e06261ec.bindPopup(popup_ff08c72abf7e87d8b4451871b803f28c)
+        marker_5b9d0b45ca5a113f616484e9352d8f92.bindPopup(popup_53b0c657d47d93b3a34c0a661511b37b)
         ;
 
         
     
     
-            marker_118bea4a6e65e7d3db35f529e06261ec.bindTooltip(
+            marker_5b9d0b45ca5a113f616484e9352d8f92.bindTooltip(
                 `<div>
                      Koh Phangan
                  </div>`,
@@ -260,38 +260,38 @@
             );
         
     
-            var marker_c2da450724dd881a805a722984ca5c6c = L.marker(
+            var marker_1566fd0d0ebcb1c614de25b6b899a37d = L.marker(
                 [8.9202, 98.5249],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_beb46bd4ea081e60b6426f7548701d69 = L.divIcon({
+            var div_icon_8bf05ccd833c4d9156341032e80ae14c = L.divIcon({
   "html": "\n            \u003cdiv style=\"font-family: Arial; color: white; font-size: 12px; font-weight: bold;\n            text-align: center; background-color: cornflowerblue; width: 18px; \n            height: 18px; border-radius: 50%;\n            line-height: 18px;\"\u003e5\u003c/div\u003e\n        ",
   "className": "empty",
 });
-            marker_c2da450724dd881a805a722984ca5c6c.setIcon(div_icon_beb46bd4ea081e60b6426f7548701d69);
+            marker_1566fd0d0ebcb1c614de25b6b899a37d.setIcon(div_icon_8bf05ccd833c4d9156341032e80ae14c);
         
     
-        var popup_951d7e2defe5e4d6f29882416417aa18 = L.popup({
+        var popup_46e9209af0afaf718b1f7373d230c4b6 = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_69fe8b6f892d983c406bfb7781c53ab7 = $(`<div id="html_69fe8b6f892d983c406bfb7781c53ab7" style="width: 100.0%; height: 100.0%;">     <h1>Khao Sok National Park: Thailand</h1>     <p><b>4 days: dates </b></p>     <p>details</p>     </div>`)[0];
-                popup_951d7e2defe5e4d6f29882416417aa18.setContent(html_69fe8b6f892d983c406bfb7781c53ab7);
+                var html_66e1c008319abb4ac8551bbb2e510919 = $(`<div id="html_66e1c008319abb4ac8551bbb2e510919" style="width: 100.0%; height: 100.0%;">     <h1>Khao Sok National Park: Thailand</h1>     <p><b>4 days: dates </b></p>     <p>Details:         <ul>                           </ul>     </p>     </div>`)[0];
+                popup_46e9209af0afaf718b1f7373d230c4b6.setContent(html_66e1c008319abb4ac8551bbb2e510919);
             
         
 
-        marker_c2da450724dd881a805a722984ca5c6c.bindPopup(popup_951d7e2defe5e4d6f29882416417aa18)
+        marker_1566fd0d0ebcb1c614de25b6b899a37d.bindPopup(popup_46e9209af0afaf718b1f7373d230c4b6)
         ;
 
         
     
     
-            marker_c2da450724dd881a805a722984ca5c6c.bindTooltip(
+            marker_1566fd0d0ebcb1c614de25b6b899a37d.bindTooltip(
                 `<div>
                      Khao Sok National Park
                  </div>`,
@@ -301,38 +301,38 @@
             );
         
     
-            var marker_4e457ac35f19f4e4c178f2b310c2190b = L.marker(
+            var marker_8cb192a0580103c56129cdd0846e3273 = L.marker(
                 [8.0863, 98.9063],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_6a9f7c108f059d0ccbc176cded0bfdc0 = L.divIcon({
+            var div_icon_e7c47926f539755c738003d9dc8cfd7a = L.divIcon({
   "html": "\n            \u003cdiv style=\"font-family: Arial; color: white; font-size: 12px; font-weight: bold;\n            text-align: center; background-color: cornflowerblue; width: 18px; \n            height: 18px; border-radius: 50%;\n            line-height: 18px;\"\u003e6\u003c/div\u003e\n        ",
   "className": "empty",
 });
-            marker_4e457ac35f19f4e4c178f2b310c2190b.setIcon(div_icon_6a9f7c108f059d0ccbc176cded0bfdc0);
+            marker_8cb192a0580103c56129cdd0846e3273.setIcon(div_icon_e7c47926f539755c738003d9dc8cfd7a);
         
     
-        var popup_4a0ad307ba1c23859b9feb9cc463e014 = L.popup({
+        var popup_aa20b7e3f490e382104c09c2be46afb3 = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_563c4e9ab33cd748f943c834a8aa7a13 = $(`<div id="html_563c4e9ab33cd748f943c834a8aa7a13" style="width: 100.0%; height: 100.0%;">     <h1>Krabi: Thailand</h1>     <p><b>3 days: dates </b></p>     <p>details</p>     </div>`)[0];
-                popup_4a0ad307ba1c23859b9feb9cc463e014.setContent(html_563c4e9ab33cd748f943c834a8aa7a13);
+                var html_4a0db0372f36eb81963d7c1c2f06c444 = $(`<div id="html_4a0db0372f36eb81963d7c1c2f06c444" style="width: 100.0%; height: 100.0%;">     <h1>Krabi: Thailand</h1>     <p><b>3 days: dates </b></p>     <p>Details:         <ul>                           </ul>     </p>     </div>`)[0];
+                popup_aa20b7e3f490e382104c09c2be46afb3.setContent(html_4a0db0372f36eb81963d7c1c2f06c444);
             
         
 
-        marker_4e457ac35f19f4e4c178f2b310c2190b.bindPopup(popup_4a0ad307ba1c23859b9feb9cc463e014)
+        marker_8cb192a0580103c56129cdd0846e3273.bindPopup(popup_aa20b7e3f490e382104c09c2be46afb3)
         ;
 
         
     
     
-            marker_4e457ac35f19f4e4c178f2b310c2190b.bindTooltip(
+            marker_8cb192a0580103c56129cdd0846e3273.bindTooltip(
                 `<div>
                      Krabi
                  </div>`,
@@ -342,38 +342,38 @@
             );
         
     
-            var marker_191c9a2ea0c328b0f005465853c46d10 = L.marker(
+            var marker_eef0526bc5574f70547d9570740d2a68 = L.marker(
                 [7.880448, 98.392291],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_9c2e5ab91096e8b4b167b8d25ab0eec2 = L.divIcon({
+            var div_icon_f8794a697817b239156841455dfefa51 = L.divIcon({
   "html": "\n            \u003cdiv style=\"font-family: Arial; color: white; font-size: 12px; font-weight: bold;\n            text-align: center; background-color: cornflowerblue; width: 18px; \n            height: 18px; border-radius: 50%;\n            line-height: 18px;\"\u003e7\u003c/div\u003e\n        ",
   "className": "empty",
 });
-            marker_191c9a2ea0c328b0f005465853c46d10.setIcon(div_icon_9c2e5ab91096e8b4b167b8d25ab0eec2);
+            marker_eef0526bc5574f70547d9570740d2a68.setIcon(div_icon_f8794a697817b239156841455dfefa51);
         
     
-        var popup_34bedddf5eda043201852c87529ab3a5 = L.popup({
+        var popup_263bfc36abb041532d680a1ac9539fe9 = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_e9c43de10cf90858776d89ba6080bfe5 = $(`<div id="html_e9c43de10cf90858776d89ba6080bfe5" style="width: 100.0%; height: 100.0%;">     <h1>Phuket: Thailand</h1>     <p><b>5 days: dates </b></p>     <p>details</p>     </div>`)[0];
-                popup_34bedddf5eda043201852c87529ab3a5.setContent(html_e9c43de10cf90858776d89ba6080bfe5);
+                var html_3838be75eddb2005d80a303d3cf8a57e = $(`<div id="html_3838be75eddb2005d80a303d3cf8a57e" style="width: 100.0%; height: 100.0%;">     <h1>Phuket: Thailand</h1>     <p><b>5 days: dates </b></p>     <p>Details:         <ul>                           </ul>     </p>     </div>`)[0];
+                popup_263bfc36abb041532d680a1ac9539fe9.setContent(html_3838be75eddb2005d80a303d3cf8a57e);
             
         
 
-        marker_191c9a2ea0c328b0f005465853c46d10.bindPopup(popup_34bedddf5eda043201852c87529ab3a5)
+        marker_eef0526bc5574f70547d9570740d2a68.bindPopup(popup_263bfc36abb041532d680a1ac9539fe9)
         ;
 
         
     
     
-            marker_191c9a2ea0c328b0f005465853c46d10.bindTooltip(
+            marker_eef0526bc5574f70547d9570740d2a68.bindTooltip(
                 `<div>
                      Phuket
                  </div>`,
@@ -383,38 +383,38 @@
             );
         
     
-            var marker_ebb70bdd4828f7ea59be440a08b779d4 = L.marker(
+            var marker_06366980b9676d6ada4e5084035ff56d = L.marker(
                 [18.788343, 98.9853],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_11ee96c2993b13fb936c37a9a1181148 = L.divIcon({
+            var div_icon_97e380cd280f1c5e372265c631527e09 = L.divIcon({
   "html": "\n            \u003cdiv style=\"font-family: Arial; color: white; font-size: 12px; font-weight: bold;\n            text-align: center; background-color: cornflowerblue; width: 18px; \n            height: 18px; border-radius: 50%;\n            line-height: 18px;\"\u003e8\u003c/div\u003e\n        ",
   "className": "empty",
 });
-            marker_ebb70bdd4828f7ea59be440a08b779d4.setIcon(div_icon_11ee96c2993b13fb936c37a9a1181148);
+            marker_06366980b9676d6ada4e5084035ff56d.setIcon(div_icon_97e380cd280f1c5e372265c631527e09);
         
     
-        var popup_1c4628b187ab8dddc2a9741c4b11f0e3 = L.popup({
+        var popup_fe375427ea75a0985639053a9585c349 = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_11eae586c2cf5ae0c166e3e8d0de15cf = $(`<div id="html_11eae586c2cf5ae0c166e3e8d0de15cf" style="width: 100.0%; height: 100.0%;">     <h1>Chiang Mai: Thailand</h1>     <p><b>2 days: dates </b></p>     <p>details</p>     </div>`)[0];
-                popup_1c4628b187ab8dddc2a9741c4b11f0e3.setContent(html_11eae586c2cf5ae0c166e3e8d0de15cf);
+                var html_c438d6224188e41b09c3743cb66d9cd0 = $(`<div id="html_c438d6224188e41b09c3743cb66d9cd0" style="width: 100.0%; height: 100.0%;">     <h1>Chiang Mai: Thailand</h1>     <p><b>2 days: dates </b></p>     <p>Details:         <ul>                           </ul>     </p>     </div>`)[0];
+                popup_fe375427ea75a0985639053a9585c349.setContent(html_c438d6224188e41b09c3743cb66d9cd0);
             
         
 
-        marker_ebb70bdd4828f7ea59be440a08b779d4.bindPopup(popup_1c4628b187ab8dddc2a9741c4b11f0e3)
+        marker_06366980b9676d6ada4e5084035ff56d.bindPopup(popup_fe375427ea75a0985639053a9585c349)
         ;
 
         
     
     
-            marker_ebb70bdd4828f7ea59be440a08b779d4.bindTooltip(
+            marker_06366980b9676d6ada4e5084035ff56d.bindTooltip(
                 `<div>
                      Chiang Mai
                  </div>`,
@@ -424,38 +424,38 @@
             );
         
     
-            var marker_688c8c5efb97529e8fcb97f1d01a9615 = L.marker(
+            var marker_d92669974c8d35a9fd5bcc4cebdef596 = L.marker(
                 [20.353912, 100.083967],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_9809f910fb90d280561d78db1559f8cb = L.divIcon({
+            var div_icon_f3bee849e618abd233bba5eb81bbc464 = L.divIcon({
   "html": "\n            \u003cdiv style=\"font-family: Arial; color: white; font-size: 12px; font-weight: bold;\n            text-align: center; background-color: cornflowerblue; width: 18px; \n            height: 18px; border-radius: 50%;\n            line-height: 18px;\"\u003e9\u003c/div\u003e\n        ",
   "className": "empty",
 });
-            marker_688c8c5efb97529e8fcb97f1d01a9615.setIcon(div_icon_9809f910fb90d280561d78db1559f8cb);
+            marker_d92669974c8d35a9fd5bcc4cebdef596.setIcon(div_icon_f3bee849e618abd233bba5eb81bbc464);
         
     
-        var popup_ca6f800b32fce828e53e667ba41afd4f = L.popup({
+        var popup_8d57f88d0c8db816f5b0ad93b63d0eee = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_4d2cfafdf68a8597f9d7f1415b7a3c61 = $(`<div id="html_4d2cfafdf68a8597f9d7f1415b7a3c61" style="width: 100.0%; height: 100.0%;">     <h1>Golden Triangle: Thailand</h1>     <p><b>1 days: dates </b></p>     <p>details</p>     </div>`)[0];
-                popup_ca6f800b32fce828e53e667ba41afd4f.setContent(html_4d2cfafdf68a8597f9d7f1415b7a3c61);
+                var html_f7b3221f992989ecf30576ff616b7a60 = $(`<div id="html_f7b3221f992989ecf30576ff616b7a60" style="width: 100.0%; height: 100.0%;">     <h1>Golden Triangle: Thailand</h1>     <p><b>1 days: dates </b></p>     <p>Details:         <ul>                           </ul>     </p>     </div>`)[0];
+                popup_8d57f88d0c8db816f5b0ad93b63d0eee.setContent(html_f7b3221f992989ecf30576ff616b7a60);
             
         
 
-        marker_688c8c5efb97529e8fcb97f1d01a9615.bindPopup(popup_ca6f800b32fce828e53e667ba41afd4f)
+        marker_d92669974c8d35a9fd5bcc4cebdef596.bindPopup(popup_8d57f88d0c8db816f5b0ad93b63d0eee)
         ;
 
         
     
     
-            marker_688c8c5efb97529e8fcb97f1d01a9615.bindTooltip(
+            marker_d92669974c8d35a9fd5bcc4cebdef596.bindTooltip(
                 `<div>
                      Golden Triangle
                  </div>`,
@@ -465,38 +465,38 @@
             );
         
     
-            var marker_2166471441b1ef52821b4f26c0ad6967 = L.marker(
+            var marker_40e179994760c34fa6de2a954048adb6 = L.marker(
                 [20.2771, 100.4139],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_f71ea72b0244570ff222c81c5e51cd18 = L.divIcon({
+            var div_icon_006b1843a8c0bd9942854762c12c5ab4 = L.divIcon({
   "html": "\n            \u003cdiv style=\"font-family: Arial; color: white; font-size: 12px; font-weight: bold;\n            text-align: center; background-color: pink; width: 18px; \n            height: 18px; border-radius: 50%;\n            line-height: 18px;\"\u003e10\u003c/div\u003e\n        ",
   "className": "empty",
 });
-            marker_2166471441b1ef52821b4f26c0ad6967.setIcon(div_icon_f71ea72b0244570ff222c81c5e51cd18);
+            marker_40e179994760c34fa6de2a954048adb6.setIcon(div_icon_006b1843a8c0bd9942854762c12c5ab4);
         
     
-        var popup_81dd853d990d88900e38cfd894f7245b = L.popup({
+        var popup_5dad8720de591ba8ee493963dc368ba3 = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_b435c71da5019da2371ee7a8522ae813 = $(`<div id="html_b435c71da5019da2371ee7a8522ae813" style="width: 100.0%; height: 100.0%;">     <h1>Huay Xai: Laos</h1>     <p><b>2 days: dates </b></p>     <p>details</p>     </div>`)[0];
-                popup_81dd853d990d88900e38cfd894f7245b.setContent(html_b435c71da5019da2371ee7a8522ae813);
+                var html_5deae4ba84c6ce5fce46d311d986aa83 = $(`<div id="html_5deae4ba84c6ce5fce46d311d986aa83" style="width: 100.0%; height: 100.0%;">     <h1>Huay Xai: Laos</h1>     <p><b>2 days: dates </b></p>     <p>Details:         <ul>                           </ul>     </p>     </div>`)[0];
+                popup_5dad8720de591ba8ee493963dc368ba3.setContent(html_5deae4ba84c6ce5fce46d311d986aa83);
             
         
 
-        marker_2166471441b1ef52821b4f26c0ad6967.bindPopup(popup_81dd853d990d88900e38cfd894f7245b)
+        marker_40e179994760c34fa6de2a954048adb6.bindPopup(popup_5dad8720de591ba8ee493963dc368ba3)
         ;
 
         
     
     
-            marker_2166471441b1ef52821b4f26c0ad6967.bindTooltip(
+            marker_40e179994760c34fa6de2a954048adb6.bindTooltip(
                 `<div>
                      Huay Xai
                  </div>`,
@@ -506,38 +506,38 @@
             );
         
     
-            var marker_de5d97857e728cf490c8d86f53c79da3 = L.marker(
+            var marker_0b48b864769af645ccdfeb3572cd23be = L.marker(
                 [19.893, 102.135],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_63d3de45f9d44cd770260c4d774ffefa = L.divIcon({
+            var div_icon_ee8ac616e47c661280d618b7a7e5564a = L.divIcon({
   "html": "\n            \u003cdiv style=\"font-family: Arial; color: white; font-size: 12px; font-weight: bold;\n            text-align: center; background-color: pink; width: 18px; \n            height: 18px; border-radius: 50%;\n            line-height: 18px;\"\u003e11\u003c/div\u003e\n        ",
   "className": "empty",
 });
-            marker_de5d97857e728cf490c8d86f53c79da3.setIcon(div_icon_63d3de45f9d44cd770260c4d774ffefa);
+            marker_0b48b864769af645ccdfeb3572cd23be.setIcon(div_icon_ee8ac616e47c661280d618b7a7e5564a);
         
     
-        var popup_0d0afb6a6d6a50628295e128b88cf351 = L.popup({
+        var popup_6be9b55fee3302220958bbac25af86f6 = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_c412ac06043814e2c900ac050e57564f = $(`<div id="html_c412ac06043814e2c900ac050e57564f" style="width: 100.0%; height: 100.0%;">     <h1>Luang Prabang: Laos</h1>     <p><b>2 days: dates </b></p>     <p>details</p>     </div>`)[0];
-                popup_0d0afb6a6d6a50628295e128b88cf351.setContent(html_c412ac06043814e2c900ac050e57564f);
+                var html_fcaa4caa767c26f006c6cef7931d4ec2 = $(`<div id="html_fcaa4caa767c26f006c6cef7931d4ec2" style="width: 100.0%; height: 100.0%;">     <h1>Luang Prabang: Laos</h1>     <p><b>2 days: dates </b></p>     <p>Details:         <ul>                           </ul>     </p>     </div>`)[0];
+                popup_6be9b55fee3302220958bbac25af86f6.setContent(html_fcaa4caa767c26f006c6cef7931d4ec2);
             
         
 
-        marker_de5d97857e728cf490c8d86f53c79da3.bindPopup(popup_0d0afb6a6d6a50628295e128b88cf351)
+        marker_0b48b864769af645ccdfeb3572cd23be.bindPopup(popup_6be9b55fee3302220958bbac25af86f6)
         ;
 
         
     
     
-            marker_de5d97857e728cf490c8d86f53c79da3.bindTooltip(
+            marker_0b48b864769af645ccdfeb3572cd23be.bindTooltip(
                 `<div>
                      Luang Prabang
                  </div>`,
@@ -547,38 +547,38 @@
             );
         
     
-            var marker_46feacb16ca3e6f6e44c43e95a4c8356 = L.marker(
+            var marker_c9f0f9a3bc18d95013b0c9dea25292d4 = L.marker(
                 [18.9233, 102.4478],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_5437e4308763aa7041874bb16b93c9c1 = L.divIcon({
+            var div_icon_6557fd3ba1f58ef7b7995d069d688429 = L.divIcon({
   "html": "\n            \u003cdiv style=\"font-family: Arial; color: white; font-size: 12px; font-weight: bold;\n            text-align: center; background-color: pink; width: 18px; \n            height: 18px; border-radius: 50%;\n            line-height: 18px;\"\u003e12\u003c/div\u003e\n        ",
   "className": "empty",
 });
-            marker_46feacb16ca3e6f6e44c43e95a4c8356.setIcon(div_icon_5437e4308763aa7041874bb16b93c9c1);
+            marker_c9f0f9a3bc18d95013b0c9dea25292d4.setIcon(div_icon_6557fd3ba1f58ef7b7995d069d688429);
         
     
-        var popup_9a42877b67811d782b5950a7645d923e = L.popup({
+        var popup_9f87cc8d8190d67a3a1a24d612a85a52 = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_1aede2b2e35a9707c8769da495e669d3 = $(`<div id="html_1aede2b2e35a9707c8769da495e669d3" style="width: 100.0%; height: 100.0%;">     <h1>Vang Vieng: Laos</h1>     <p><b>2 days: dates </b></p>     <p>details</p>     </div>`)[0];
-                popup_9a42877b67811d782b5950a7645d923e.setContent(html_1aede2b2e35a9707c8769da495e669d3);
+                var html_0b5e74a1507bfe8a5035e80f00554eb1 = $(`<div id="html_0b5e74a1507bfe8a5035e80f00554eb1" style="width: 100.0%; height: 100.0%;">     <h1>Vang Vieng: Laos</h1>     <p><b>2 days: dates </b></p>     <p>Details:         <ul>                           </ul>     </p>     </div>`)[0];
+                popup_9f87cc8d8190d67a3a1a24d612a85a52.setContent(html_0b5e74a1507bfe8a5035e80f00554eb1);
             
         
 
-        marker_46feacb16ca3e6f6e44c43e95a4c8356.bindPopup(popup_9a42877b67811d782b5950a7645d923e)
+        marker_c9f0f9a3bc18d95013b0c9dea25292d4.bindPopup(popup_9f87cc8d8190d67a3a1a24d612a85a52)
         ;
 
         
     
     
-            marker_46feacb16ca3e6f6e44c43e95a4c8356.bindTooltip(
+            marker_c9f0f9a3bc18d95013b0c9dea25292d4.bindTooltip(
                 `<div>
                      Vang Vieng
                  </div>`,
@@ -588,38 +588,38 @@
             );
         
     
-            var marker_e03e0eda5c65acf0799ec2f3cee80b5e = L.marker(
+            var marker_b63a37cbe58929ea3ba6ae20920ff975 = L.marker(
                 [17.9757, 102.6331],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_71425fdf68437e34b34663561fe85404 = L.divIcon({
+            var div_icon_40ffe45486edb35c9bcbae449d34b494 = L.divIcon({
   "html": "\n            \u003cdiv style=\"font-family: Arial; color: white; font-size: 12px; font-weight: bold;\n            text-align: center; background-color: pink; width: 18px; \n            height: 18px; border-radius: 50%;\n            line-height: 18px;\"\u003e13\u003c/div\u003e\n        ",
   "className": "empty",
 });
-            marker_e03e0eda5c65acf0799ec2f3cee80b5e.setIcon(div_icon_71425fdf68437e34b34663561fe85404);
+            marker_b63a37cbe58929ea3ba6ae20920ff975.setIcon(div_icon_40ffe45486edb35c9bcbae449d34b494);
         
     
-        var popup_e2a82ce06091ef4d1dee4050c507f57d = L.popup({
+        var popup_42e0fa3f6c84d25132fe9fd5e4410e05 = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_15d75c1edf6f5e9e30e1d348803eb3b6 = $(`<div id="html_15d75c1edf6f5e9e30e1d348803eb3b6" style="width: 100.0%; height: 100.0%;">     <h1>Vientiane: Laos</h1>     <p><b>3 days: dates </b></p>     <p>details</p>     </div>`)[0];
-                popup_e2a82ce06091ef4d1dee4050c507f57d.setContent(html_15d75c1edf6f5e9e30e1d348803eb3b6);
+                var html_ce2ceb51dcde46618725dac7cf12ad05 = $(`<div id="html_ce2ceb51dcde46618725dac7cf12ad05" style="width: 100.0%; height: 100.0%;">     <h1>Vientiane: Laos</h1>     <p><b>3 days: dates </b></p>     <p>Details:         <ul>                           </ul>     </p>     </div>`)[0];
+                popup_42e0fa3f6c84d25132fe9fd5e4410e05.setContent(html_ce2ceb51dcde46618725dac7cf12ad05);
             
         
 
-        marker_e03e0eda5c65acf0799ec2f3cee80b5e.bindPopup(popup_e2a82ce06091ef4d1dee4050c507f57d)
+        marker_b63a37cbe58929ea3ba6ae20920ff975.bindPopup(popup_42e0fa3f6c84d25132fe9fd5e4410e05)
         ;
 
         
     
     
-            marker_e03e0eda5c65acf0799ec2f3cee80b5e.bindTooltip(
+            marker_b63a37cbe58929ea3ba6ae20920ff975.bindTooltip(
                 `<div>
                      Vientiane
                  </div>`,
@@ -629,38 +629,38 @@
             );
         
     
-            var marker_265df86f8eaf221b6f4466ae10beaa31 = L.marker(
+            var marker_451fef6b9c7e9f96dedddd961799519a = L.marker(
                 [21.0285, 105.8542],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_bccc75b74afeac3ca02587409f5c9b87 = L.divIcon({
+            var div_icon_b5dabb3ee72e8ca47e3527863b1fbc5b = L.divIcon({
   "html": "\n            \u003cdiv style=\"font-family: Arial; color: white; font-size: 12px; font-weight: bold;\n            text-align: center; background-color: red; width: 18px; \n            height: 18px; border-radius: 50%;\n            line-height: 18px;\"\u003e14\u003c/div\u003e\n        ",
   "className": "empty",
 });
-            marker_265df86f8eaf221b6f4466ae10beaa31.setIcon(div_icon_bccc75b74afeac3ca02587409f5c9b87);
+            marker_451fef6b9c7e9f96dedddd961799519a.setIcon(div_icon_b5dabb3ee72e8ca47e3527863b1fbc5b);
         
     
-        var popup_121000299717ea6401b7c8b085f63e07 = L.popup({
+        var popup_651e1a12dee69986c46f0dbf9b0bfa3f = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_8f61d7c18d3f715b648f844205febe20 = $(`<div id="html_8f61d7c18d3f715b648f844205febe20" style="width: 100.0%; height: 100.0%;">     <h1>Hanoi: Vietnam</h1>     <p><b>3 days: dates </b></p>     <p>details</p>     </div>`)[0];
-                popup_121000299717ea6401b7c8b085f63e07.setContent(html_8f61d7c18d3f715b648f844205febe20);
+                var html_06a68a56c523bf0997caff770bdd089a = $(`<div id="html_06a68a56c523bf0997caff770bdd089a" style="width: 100.0%; height: 100.0%;">     <h1>Hanoi: Vietnam</h1>     <p><b>3 days: dates </b></p>     <p>Details:         <ul>                           </ul>     </p>     </div>`)[0];
+                popup_651e1a12dee69986c46f0dbf9b0bfa3f.setContent(html_06a68a56c523bf0997caff770bdd089a);
             
         
 
-        marker_265df86f8eaf221b6f4466ae10beaa31.bindPopup(popup_121000299717ea6401b7c8b085f63e07)
+        marker_451fef6b9c7e9f96dedddd961799519a.bindPopup(popup_651e1a12dee69986c46f0dbf9b0bfa3f)
         ;
 
         
     
     
-            marker_265df86f8eaf221b6f4466ae10beaa31.bindTooltip(
+            marker_451fef6b9c7e9f96dedddd961799519a.bindTooltip(
                 `<div>
                      Hanoi
                  </div>`,
@@ -670,38 +670,38 @@
             );
         
     
-            var marker_300411fee831a4132e89d1ddee9f7bb1 = L.marker(
+            var marker_cf9ab7aedcb6f7ba771d8373c4f46bd0 = L.marker(
                 [20.9101, 107.1839],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_4df07e4b2ff0b60e3850d05d6256ee53 = L.divIcon({
+            var div_icon_330ed9c9b4434c9e6e7a2af180e92c4c = L.divIcon({
   "html": "\n            \u003cdiv style=\"font-family: Arial; color: white; font-size: 12px; font-weight: bold;\n            text-align: center; background-color: red; width: 18px; \n            height: 18px; border-radius: 50%;\n            line-height: 18px;\"\u003e15\u003c/div\u003e\n        ",
   "className": "empty",
 });
-            marker_300411fee831a4132e89d1ddee9f7bb1.setIcon(div_icon_4df07e4b2ff0b60e3850d05d6256ee53);
+            marker_cf9ab7aedcb6f7ba771d8373c4f46bd0.setIcon(div_icon_330ed9c9b4434c9e6e7a2af180e92c4c);
         
     
-        var popup_1901fda8627aa4bfcfcc394cd7dd45cf = L.popup({
+        var popup_3c2349058bfe8755984c07f33daf1e63 = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_7eb3428ca06535def434a724d2c77c9e = $(`<div id="html_7eb3428ca06535def434a724d2c77c9e" style="width: 100.0%; height: 100.0%;">     <h1>Ha Long Bay / Cat Ba: Vietnam</h1>     <p><b>2 days: dates </b></p>     <p>details</p>     </div>`)[0];
-                popup_1901fda8627aa4bfcfcc394cd7dd45cf.setContent(html_7eb3428ca06535def434a724d2c77c9e);
+                var html_e9eb83949301904585868a0afe24dabb = $(`<div id="html_e9eb83949301904585868a0afe24dabb" style="width: 100.0%; height: 100.0%;">     <h1>Ha Long Bay / Cat Ba: Vietnam</h1>     <p><b>2 days: dates </b></p>     <p>Details:         <ul>                           </ul>     </p>     </div>`)[0];
+                popup_3c2349058bfe8755984c07f33daf1e63.setContent(html_e9eb83949301904585868a0afe24dabb);
             
         
 
-        marker_300411fee831a4132e89d1ddee9f7bb1.bindPopup(popup_1901fda8627aa4bfcfcc394cd7dd45cf)
+        marker_cf9ab7aedcb6f7ba771d8373c4f46bd0.bindPopup(popup_3c2349058bfe8755984c07f33daf1e63)
         ;
 
         
     
     
-            marker_300411fee831a4132e89d1ddee9f7bb1.bindTooltip(
+            marker_cf9ab7aedcb6f7ba771d8373c4f46bd0.bindTooltip(
                 `<div>
                      Ha Long Bay / Cat Ba
                  </div>`,
@@ -711,38 +711,38 @@
             );
         
     
-            var marker_b51cecea594283a8e24bff2a4dd1f208 = L.marker(
+            var marker_be4d591ffa6ca1bf8118df396afe883e = L.marker(
                 [20.253, 105.974],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_0fd12aef865a106238bf7d3943d909fe = L.divIcon({
+            var div_icon_b9857839ab1a6c31bc21b2f7b8e928e5 = L.divIcon({
   "html": "\n            \u003cdiv style=\"font-family: Arial; color: white; font-size: 12px; font-weight: bold;\n            text-align: center; background-color: red; width: 18px; \n            height: 18px; border-radius: 50%;\n            line-height: 18px;\"\u003e16\u003c/div\u003e\n        ",
   "className": "empty",
 });
-            marker_b51cecea594283a8e24bff2a4dd1f208.setIcon(div_icon_0fd12aef865a106238bf7d3943d909fe);
+            marker_be4d591ffa6ca1bf8118df396afe883e.setIcon(div_icon_b9857839ab1a6c31bc21b2f7b8e928e5);
         
     
-        var popup_05c28410b4a60d9d48e58324d89d338c = L.popup({
+        var popup_0b3ae1a43c40c042710bb80377556267 = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_078fe8ab51b5dafd2a9e538e3e3d48fe = $(`<div id="html_078fe8ab51b5dafd2a9e538e3e3d48fe" style="width: 100.0%; height: 100.0%;">     <h1>Ninh Binh: Vietnam</h1>     <p><b>2 days: dates </b></p>     <p>details</p>     </div>`)[0];
-                popup_05c28410b4a60d9d48e58324d89d338c.setContent(html_078fe8ab51b5dafd2a9e538e3e3d48fe);
+                var html_270b67d6282f913620a2c4fcd364f050 = $(`<div id="html_270b67d6282f913620a2c4fcd364f050" style="width: 100.0%; height: 100.0%;">     <h1>Ninh Binh: Vietnam</h1>     <p><b>2 days: dates </b></p>     <p>Details:         <ul>                           </ul>     </p>     </div>`)[0];
+                popup_0b3ae1a43c40c042710bb80377556267.setContent(html_270b67d6282f913620a2c4fcd364f050);
             
         
 
-        marker_b51cecea594283a8e24bff2a4dd1f208.bindPopup(popup_05c28410b4a60d9d48e58324d89d338c)
+        marker_be4d591ffa6ca1bf8118df396afe883e.bindPopup(popup_0b3ae1a43c40c042710bb80377556267)
         ;
 
         
     
     
-            marker_b51cecea594283a8e24bff2a4dd1f208.bindTooltip(
+            marker_be4d591ffa6ca1bf8118df396afe883e.bindTooltip(
                 `<div>
                      Ninh Binh
                  </div>`,
@@ -752,38 +752,38 @@
             );
         
     
-            var marker_d136bf8be38d569e0d860b8d7145f9aa = L.marker(
+            var marker_e8bd7118a1632896830293c3dc21648e = L.marker(
                 [17.5956, 106.287],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_0b16fbad7cf0ad1cd8f7f472f5bb5f74 = L.divIcon({
+            var div_icon_8e5e2222c9250e7271d6a55088c79a36 = L.divIcon({
   "html": "\n            \u003cdiv style=\"font-family: Arial; color: white; font-size: 12px; font-weight: bold;\n            text-align: center; background-color: red; width: 18px; \n            height: 18px; border-radius: 50%;\n            line-height: 18px;\"\u003e17\u003c/div\u003e\n        ",
   "className": "empty",
 });
-            marker_d136bf8be38d569e0d860b8d7145f9aa.setIcon(div_icon_0b16fbad7cf0ad1cd8f7f472f5bb5f74);
+            marker_e8bd7118a1632896830293c3dc21648e.setIcon(div_icon_8e5e2222c9250e7271d6a55088c79a36);
         
     
-        var popup_7c2ca4da0ffd72e142343fa434287ab2 = L.popup({
+        var popup_0a7fe5294dda8698ce9e9cc103b64689 = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_755205be94c8c57612bc76e047fe0752 = $(`<div id="html_755205be94c8c57612bc76e047fe0752" style="width: 100.0%; height: 100.0%;">     <h1>Phong Nha: Vietnam</h1>     <p><b>3 days: dates </b></p>     <p>details</p>     </div>`)[0];
-                popup_7c2ca4da0ffd72e142343fa434287ab2.setContent(html_755205be94c8c57612bc76e047fe0752);
+                var html_7ce9480f0f5773350585d6fac0e5503e = $(`<div id="html_7ce9480f0f5773350585d6fac0e5503e" style="width: 100.0%; height: 100.0%;">     <h1>Phong Nha: Vietnam</h1>     <p><b>3 days: dates </b></p>     <p>Details:         <ul>                           </ul>     </p>     </div>`)[0];
+                popup_0a7fe5294dda8698ce9e9cc103b64689.setContent(html_7ce9480f0f5773350585d6fac0e5503e);
             
         
 
-        marker_d136bf8be38d569e0d860b8d7145f9aa.bindPopup(popup_7c2ca4da0ffd72e142343fa434287ab2)
+        marker_e8bd7118a1632896830293c3dc21648e.bindPopup(popup_0a7fe5294dda8698ce9e9cc103b64689)
         ;
 
         
     
     
-            marker_d136bf8be38d569e0d860b8d7145f9aa.bindTooltip(
+            marker_e8bd7118a1632896830293c3dc21648e.bindTooltip(
                 `<div>
                      Phong Nha
                  </div>`,
@@ -793,38 +793,38 @@
             );
         
     
-            var marker_d55c5746b77e4c2fba519d349e82125e = L.marker(
+            var marker_59f609d9e9d211f6daadcddb2d5ec0eb = L.marker(
                 [16.4637, 107.5909],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_dafa27a09be92a96cf0049101f567f55 = L.divIcon({
+            var div_icon_d6b79402e906549337ce3db13ffab528 = L.divIcon({
   "html": "\n            \u003cdiv style=\"font-family: Arial; color: white; font-size: 12px; font-weight: bold;\n            text-align: center; background-color: red; width: 18px; \n            height: 18px; border-radius: 50%;\n            line-height: 18px;\"\u003e18\u003c/div\u003e\n        ",
   "className": "empty",
 });
-            marker_d55c5746b77e4c2fba519d349e82125e.setIcon(div_icon_dafa27a09be92a96cf0049101f567f55);
+            marker_59f609d9e9d211f6daadcddb2d5ec0eb.setIcon(div_icon_d6b79402e906549337ce3db13ffab528);
         
     
-        var popup_a4d53ab1e8a88a0ceaf17b93bc184613 = L.popup({
+        var popup_fccae5aefd28ad4a915ca6cc1f358600 = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_876686190a357ca0808c22455072b14e = $(`<div id="html_876686190a357ca0808c22455072b14e" style="width: 100.0%; height: 100.0%;">     <h1>Hue: Vietnam</h1>     <p><b>2 days: dates </b></p>     <p>details</p>     </div>`)[0];
-                popup_a4d53ab1e8a88a0ceaf17b93bc184613.setContent(html_876686190a357ca0808c22455072b14e);
+                var html_bbbdf95cbde67c8d145105aa85dbd62b = $(`<div id="html_bbbdf95cbde67c8d145105aa85dbd62b" style="width: 100.0%; height: 100.0%;">     <h1>Hue: Vietnam</h1>     <p><b>2 days: dates </b></p>     <p>Details:         <ul>                           </ul>     </p>     </div>`)[0];
+                popup_fccae5aefd28ad4a915ca6cc1f358600.setContent(html_bbbdf95cbde67c8d145105aa85dbd62b);
             
         
 
-        marker_d55c5746b77e4c2fba519d349e82125e.bindPopup(popup_a4d53ab1e8a88a0ceaf17b93bc184613)
+        marker_59f609d9e9d211f6daadcddb2d5ec0eb.bindPopup(popup_fccae5aefd28ad4a915ca6cc1f358600)
         ;
 
         
     
     
-            marker_d55c5746b77e4c2fba519d349e82125e.bindTooltip(
+            marker_59f609d9e9d211f6daadcddb2d5ec0eb.bindTooltip(
                 `<div>
                      Hue
                  </div>`,
@@ -834,38 +834,38 @@
             );
         
     
-            var marker_695cbccf2b8d72542ebabdd25b96bd40 = L.marker(
+            var marker_c16b618e8ee069060ec28a3f8eec58ef = L.marker(
                 [15.8801, 108.338],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_1cd33dedc616968068fbd342632069fb = L.divIcon({
+            var div_icon_9d86258430f4343c2b8df6298a956c07 = L.divIcon({
   "html": "\n            \u003cdiv style=\"font-family: Arial; color: white; font-size: 12px; font-weight: bold;\n            text-align: center; background-color: red; width: 18px; \n            height: 18px; border-radius: 50%;\n            line-height: 18px;\"\u003e19\u003c/div\u003e\n        ",
   "className": "empty",
 });
-            marker_695cbccf2b8d72542ebabdd25b96bd40.setIcon(div_icon_1cd33dedc616968068fbd342632069fb);
+            marker_c16b618e8ee069060ec28a3f8eec58ef.setIcon(div_icon_9d86258430f4343c2b8df6298a956c07);
         
     
-        var popup_861330ce2e9af8de6b9ff7d282a2b13d = L.popup({
+        var popup_10d52ccb52e85444b3a5d300ca249071 = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_04bbaa25ad053b48256251227590ec20 = $(`<div id="html_04bbaa25ad053b48256251227590ec20" style="width: 100.0%; height: 100.0%;">     <h1>Hoi An: Vietnam</h1>     <p><b>3 days: dates </b></p>     <p>details</p>     </div>`)[0];
-                popup_861330ce2e9af8de6b9ff7d282a2b13d.setContent(html_04bbaa25ad053b48256251227590ec20);
+                var html_5c2dc32ad17357e93445105239d501d5 = $(`<div id="html_5c2dc32ad17357e93445105239d501d5" style="width: 100.0%; height: 100.0%;">     <h1>Hoi An: Vietnam</h1>     <p><b>3 days: dates </b></p>     <p>Details:         <ul>                           </ul>     </p>     </div>`)[0];
+                popup_10d52ccb52e85444b3a5d300ca249071.setContent(html_5c2dc32ad17357e93445105239d501d5);
             
         
 
-        marker_695cbccf2b8d72542ebabdd25b96bd40.bindPopup(popup_861330ce2e9af8de6b9ff7d282a2b13d)
+        marker_c16b618e8ee069060ec28a3f8eec58ef.bindPopup(popup_10d52ccb52e85444b3a5d300ca249071)
         ;
 
         
     
     
-            marker_695cbccf2b8d72542ebabdd25b96bd40.bindTooltip(
+            marker_c16b618e8ee069060ec28a3f8eec58ef.bindTooltip(
                 `<div>
                      Hoi An
                  </div>`,
@@ -875,38 +875,38 @@
             );
         
     
-            var marker_22b1a5bb19f8658a2870aa638c4d2366 = L.marker(
+            var marker_b89ffb028ea6c990ffb01b1295f0407b = L.marker(
                 [14.051, 105.832],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_53dabc9725cc49086728c2ed9b292e1b = L.divIcon({
+            var div_icon_50b1faa6365a8f5b11d330b51cab8fc2 = L.divIcon({
   "html": "\n            \u003cdiv style=\"font-family: Arial; color: white; font-size: 12px; font-weight: bold;\n            text-align: center; background-color: pink; width: 18px; \n            height: 18px; border-radius: 50%;\n            line-height: 18px;\"\u003e20\u003c/div\u003e\n        ",
   "className": "empty",
 });
-            marker_22b1a5bb19f8658a2870aa638c4d2366.setIcon(div_icon_53dabc9725cc49086728c2ed9b292e1b);
+            marker_b89ffb028ea6c990ffb01b1295f0407b.setIcon(div_icon_50b1faa6365a8f5b11d330b51cab8fc2);
         
     
-        var popup_8eb6a55dd3686834b8d8ff08c1d0af62 = L.popup({
+        var popup_aaf089b6e2c1bff9bb218f17f498493f = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_e3b90d47020b08627ec43a99ad3ffaa3 = $(`<div id="html_e3b90d47020b08627ec43a99ad3ffaa3" style="width: 100.0%; height: 100.0%;">     <h1>4000 Islands (Don Det): Laos</h1>     <p><b>4 days: dates </b></p>     <p>details</p>     </div>`)[0];
-                popup_8eb6a55dd3686834b8d8ff08c1d0af62.setContent(html_e3b90d47020b08627ec43a99ad3ffaa3);
+                var html_0ce0caadeb2e5a0134d6650d266dab11 = $(`<div id="html_0ce0caadeb2e5a0134d6650d266dab11" style="width: 100.0%; height: 100.0%;">     <h1>4000 Islands (Don Det): Laos</h1>     <p><b>4 days: dates </b></p>     <p>Details:         <ul>                           </ul>     </p>     </div>`)[0];
+                popup_aaf089b6e2c1bff9bb218f17f498493f.setContent(html_0ce0caadeb2e5a0134d6650d266dab11);
             
         
 
-        marker_22b1a5bb19f8658a2870aa638c4d2366.bindPopup(popup_8eb6a55dd3686834b8d8ff08c1d0af62)
+        marker_b89ffb028ea6c990ffb01b1295f0407b.bindPopup(popup_aaf089b6e2c1bff9bb218f17f498493f)
         ;
 
         
     
     
-            marker_22b1a5bb19f8658a2870aa638c4d2366.bindTooltip(
+            marker_b89ffb028ea6c990ffb01b1295f0407b.bindTooltip(
                 `<div>
                      4000 Islands (Don Det)
                  </div>`,
@@ -916,38 +916,38 @@
             );
         
     
-            var marker_f19572eb83a44bbf788a05a469813cf2 = L.marker(
+            var marker_a1c41e645a43c87fbfd09652eae3120b = L.marker(
                 [13.4125, 103.8668],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_e656dde788524df4f3d138173b8178ae = L.divIcon({
+            var div_icon_be200d57bbcd048222a2f190059d4dc6 = L.divIcon({
   "html": "\n            \u003cdiv style=\"font-family: Arial; color: white; font-size: 12px; font-weight: bold;\n            text-align: center; background-color: purple; width: 18px; \n            height: 18px; border-radius: 50%;\n            line-height: 18px;\"\u003e21\u003c/div\u003e\n        ",
   "className": "empty",
 });
-            marker_f19572eb83a44bbf788a05a469813cf2.setIcon(div_icon_e656dde788524df4f3d138173b8178ae);
+            marker_a1c41e645a43c87fbfd09652eae3120b.setIcon(div_icon_be200d57bbcd048222a2f190059d4dc6);
         
     
-        var popup_d7f610f9f76b29105b80816523159ddb = L.popup({
+        var popup_3efa3022f0f6fabad609d58c900060d7 = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_d8f75e9c3156605677114ffeffd7654f = $(`<div id="html_d8f75e9c3156605677114ffeffd7654f" style="width: 100.0%; height: 100.0%;">     <h1>Siem Reap (Angkor Wat): Cambodia</h1>     <p><b>3 days: dates </b></p>     <p>details</p>     </div>`)[0];
-                popup_d7f610f9f76b29105b80816523159ddb.setContent(html_d8f75e9c3156605677114ffeffd7654f);
+                var html_a664a44ed4348c025c4e7a8bc5a6086d = $(`<div id="html_a664a44ed4348c025c4e7a8bc5a6086d" style="width: 100.0%; height: 100.0%;">     <h1>Siem Reap (Angkor Wat): Cambodia</h1>     <p><b>3 days: dates </b></p>     <p>Details:         <ul>                           </ul>     </p>     </div>`)[0];
+                popup_3efa3022f0f6fabad609d58c900060d7.setContent(html_a664a44ed4348c025c4e7a8bc5a6086d);
             
         
 
-        marker_f19572eb83a44bbf788a05a469813cf2.bindPopup(popup_d7f610f9f76b29105b80816523159ddb)
+        marker_a1c41e645a43c87fbfd09652eae3120b.bindPopup(popup_3efa3022f0f6fabad609d58c900060d7)
         ;
 
         
     
     
-            marker_f19572eb83a44bbf788a05a469813cf2.bindTooltip(
+            marker_a1c41e645a43c87fbfd09652eae3120b.bindTooltip(
                 `<div>
                      Siem Reap (Angkor Wat)
                  </div>`,
@@ -957,38 +957,38 @@
             );
         
     
-            var marker_599c775fbd0e9df9d8aa021f75b41986 = L.marker(
+            var marker_3d1f781d2d499dd3e08a6eaa7ee39b5b = L.marker(
                 [11.5564, 104.9282],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_fc660aa7df7369f94674e5accaf428d0 = L.divIcon({
+            var div_icon_3cafce1f1cf4507869acee2c3dfa0afa = L.divIcon({
   "html": "\n            \u003cdiv style=\"font-family: Arial; color: white; font-size: 12px; font-weight: bold;\n            text-align: center; background-color: purple; width: 18px; \n            height: 18px; border-radius: 50%;\n            line-height: 18px;\"\u003e22\u003c/div\u003e\n        ",
   "className": "empty",
 });
-            marker_599c775fbd0e9df9d8aa021f75b41986.setIcon(div_icon_fc660aa7df7369f94674e5accaf428d0);
+            marker_3d1f781d2d499dd3e08a6eaa7ee39b5b.setIcon(div_icon_3cafce1f1cf4507869acee2c3dfa0afa);
         
     
-        var popup_aa67cc4ecc90e60a3521b4e5e680c638 = L.popup({
+        var popup_ee5b7900bda7585177e9c17e5b6fde62 = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_75bfd0457c3d1924b2c7244175038e78 = $(`<div id="html_75bfd0457c3d1924b2c7244175038e78" style="width: 100.0%; height: 100.0%;">     <h1>Phnom Penh: Cambodia</h1>     <p><b>2 days: dates </b></p>     <p>details</p>     </div>`)[0];
-                popup_aa67cc4ecc90e60a3521b4e5e680c638.setContent(html_75bfd0457c3d1924b2c7244175038e78);
+                var html_246ae9506f755bc80b1e568e017e5707 = $(`<div id="html_246ae9506f755bc80b1e568e017e5707" style="width: 100.0%; height: 100.0%;">     <h1>Phnom Penh: Cambodia</h1>     <p><b>2 days: dates </b></p>     <p>Details:         <ul>                           </ul>     </p>     </div>`)[0];
+                popup_ee5b7900bda7585177e9c17e5b6fde62.setContent(html_246ae9506f755bc80b1e568e017e5707);
             
         
 
-        marker_599c775fbd0e9df9d8aa021f75b41986.bindPopup(popup_aa67cc4ecc90e60a3521b4e5e680c638)
+        marker_3d1f781d2d499dd3e08a6eaa7ee39b5b.bindPopup(popup_ee5b7900bda7585177e9c17e5b6fde62)
         ;
 
         
     
     
-            marker_599c775fbd0e9df9d8aa021f75b41986.bindTooltip(
+            marker_3d1f781d2d499dd3e08a6eaa7ee39b5b.bindTooltip(
                 `<div>
                      Phnom Penh
                  </div>`,
@@ -998,38 +998,38 @@
             );
         
     
-            var marker_8bc108d5aa424662aaafb549da137bd3 = L.marker(
+            var marker_0ebde8dc3650ff9b9b267d79245893ed = L.marker(
                 [10.7136, 103.2342],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_5652a59f2014f1af07d6014b7e2271e0 = L.divIcon({
+            var div_icon_d66c49dec95f3bfdeea7fa1a1098b71d = L.divIcon({
   "html": "\n            \u003cdiv style=\"font-family: Arial; color: white; font-size: 12px; font-weight: bold;\n            text-align: center; background-color: purple; width: 18px; \n            height: 18px; border-radius: 50%;\n            line-height: 18px;\"\u003e23\u003c/div\u003e\n        ",
   "className": "empty",
 });
-            marker_8bc108d5aa424662aaafb549da137bd3.setIcon(div_icon_5652a59f2014f1af07d6014b7e2271e0);
+            marker_0ebde8dc3650ff9b9b267d79245893ed.setIcon(div_icon_d66c49dec95f3bfdeea7fa1a1098b71d);
         
     
-        var popup_b32f00173493593692f907c3bb92a6f5 = L.popup({
+        var popup_fd3dce20783583b2c736a6ec4b3c1c96 = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_e4d44c3d66f587c38ec617c726a1f867 = $(`<div id="html_e4d44c3d66f587c38ec617c726a1f867" style="width: 100.0%; height: 100.0%;">     <h1>Koh Rong / Koh Rong Samloem: Cambodia</h1>     <p><b>3 days: dates </b></p>     <p>details</p>     </div>`)[0];
-                popup_b32f00173493593692f907c3bb92a6f5.setContent(html_e4d44c3d66f587c38ec617c726a1f867);
+                var html_7b1a4db4014b7ae17accefcf49ddd91f = $(`<div id="html_7b1a4db4014b7ae17accefcf49ddd91f" style="width: 100.0%; height: 100.0%;">     <h1>Koh Rong / Koh Rong Samloem: Cambodia</h1>     <p><b>3 days: dates </b></p>     <p>Details:         <ul>                           </ul>     </p>     </div>`)[0];
+                popup_fd3dce20783583b2c736a6ec4b3c1c96.setContent(html_7b1a4db4014b7ae17accefcf49ddd91f);
             
         
 
-        marker_8bc108d5aa424662aaafb549da137bd3.bindPopup(popup_b32f00173493593692f907c3bb92a6f5)
+        marker_0ebde8dc3650ff9b9b267d79245893ed.bindPopup(popup_fd3dce20783583b2c736a6ec4b3c1c96)
         ;
 
         
     
     
-            marker_8bc108d5aa424662aaafb549da137bd3.bindTooltip(
+            marker_0ebde8dc3650ff9b9b267d79245893ed.bindTooltip(
                 `<div>
                      Koh Rong / Koh Rong Samloem
                  </div>`,
@@ -1039,38 +1039,38 @@
             );
         
     
-            var marker_bc39c8591d30fa4677338cb36b0b406d = L.marker(
+            var marker_3affc56b1404e56143f34b47c2e9565d = L.marker(
                 [10.7769, 106.7009],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_09f7d2d0d48edb8b30f394b4a8a0859e = L.divIcon({
+            var div_icon_daacb1251518fc58f0fa645dd3bd13af = L.divIcon({
   "html": "\n            \u003cdiv style=\"font-family: Arial; color: white; font-size: 12px; font-weight: bold;\n            text-align: center; background-color: red; width: 18px; \n            height: 18px; border-radius: 50%;\n            line-height: 18px;\"\u003e24\u003c/div\u003e\n        ",
   "className": "empty",
 });
-            marker_bc39c8591d30fa4677338cb36b0b406d.setIcon(div_icon_09f7d2d0d48edb8b30f394b4a8a0859e);
+            marker_3affc56b1404e56143f34b47c2e9565d.setIcon(div_icon_daacb1251518fc58f0fa645dd3bd13af);
         
     
-        var popup_6a86277a9591deb7773907ed78535788 = L.popup({
+        var popup_577186022ee36d62a691cb2480adbb14 = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_4a35011e68e836b37b6251b734698161 = $(`<div id="html_4a35011e68e836b37b6251b734698161" style="width: 100.0%; height: 100.0%;">     <h1>Ho Chi Minh City (Vietnam): Vietnam</h1>     <p><b>3 days: dates </b></p>     <p>details</p>     </div>`)[0];
-                popup_6a86277a9591deb7773907ed78535788.setContent(html_4a35011e68e836b37b6251b734698161);
+                var html_983ef21292de7715b4702d8dbb788842 = $(`<div id="html_983ef21292de7715b4702d8dbb788842" style="width: 100.0%; height: 100.0%;">     <h1>Ho Chi Minh City (Vietnam): Vietnam</h1>     <p><b>3 days: dates </b></p>     <p>Details:         <ul>                           </ul>     </p>     </div>`)[0];
+                popup_577186022ee36d62a691cb2480adbb14.setContent(html_983ef21292de7715b4702d8dbb788842);
             
         
 
-        marker_bc39c8591d30fa4677338cb36b0b406d.bindPopup(popup_6a86277a9591deb7773907ed78535788)
+        marker_3affc56b1404e56143f34b47c2e9565d.bindPopup(popup_577186022ee36d62a691cb2480adbb14)
         ;
 
         
     
     
-            marker_bc39c8591d30fa4677338cb36b0b406d.bindTooltip(
+            marker_3affc56b1404e56143f34b47c2e9565d.bindTooltip(
                 `<div>
                      Ho Chi Minh City (Vietnam)
                  </div>`,
@@ -1080,38 +1080,38 @@
             );
         
     
-            var marker_3c0ad3216f99f4d03910d993c48ecb98 = L.marker(
+            var marker_d86ecc82ecab535719054ec1b722b7bf = L.marker(
                 [-8.4095, 115.1889],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_6e82d278348985f8b6d5010f080ce03f = L.divIcon({
+            var div_icon_7250d05fe88f7d3eaac282f99c4ea84d = L.divIcon({
   "html": "\n            \u003cdiv style=\"font-family: Arial; color: white; font-size: 12px; font-weight: bold;\n            text-align: center; background-color: orange; width: 18px; \n            height: 18px; border-radius: 50%;\n            line-height: 18px;\"\u003e25\u003c/div\u003e\n        ",
   "className": "empty",
 });
-            marker_3c0ad3216f99f4d03910d993c48ecb98.setIcon(div_icon_6e82d278348985f8b6d5010f080ce03f);
+            marker_d86ecc82ecab535719054ec1b722b7bf.setIcon(div_icon_7250d05fe88f7d3eaac282f99c4ea84d);
         
     
-        var popup_75ec68f1f213296009be55b8f83d40a6 = L.popup({
+        var popup_3a377ae01dba2f0bce29038ca8e35535 = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_58cdb15a1d3a06ea1bae9a6cee9c7629 = $(`<div id="html_58cdb15a1d3a06ea1bae9a6cee9c7629" style="width: 100.0%; height: 100.0%;">     <h1>Bali: Bali</h1>     <p><b>18 days: dates </b></p>     <p>details</p>     </div>`)[0];
-                popup_75ec68f1f213296009be55b8f83d40a6.setContent(html_58cdb15a1d3a06ea1bae9a6cee9c7629);
+                var html_f6757cec11db885c456b3e0e542af3cb = $(`<div id="html_f6757cec11db885c456b3e0e542af3cb" style="width: 100.0%; height: 100.0%;">     <h1>Bali: Bali</h1>     <p><b>18 days: dates </b></p>     <p>Details:         <ul>                           </ul>     </p>     </div>`)[0];
+                popup_3a377ae01dba2f0bce29038ca8e35535.setContent(html_f6757cec11db885c456b3e0e542af3cb);
             
         
 
-        marker_3c0ad3216f99f4d03910d993c48ecb98.bindPopup(popup_75ec68f1f213296009be55b8f83d40a6)
+        marker_d86ecc82ecab535719054ec1b722b7bf.bindPopup(popup_3a377ae01dba2f0bce29038ca8e35535)
         ;
 
         
     
     
-            marker_3c0ad3216f99f4d03910d993c48ecb98.bindTooltip(
+            marker_d86ecc82ecab535719054ec1b722b7bf.bindTooltip(
                 `<div>
                      Bali
                  </div>`,
@@ -1121,38 +1121,38 @@
             );
         
     
-            var marker_6d1aec0f192c981972c328ec8d488691 = L.marker(
+            var marker_eba7dddb2519766a323fce3c59948b56 = L.marker(
                 [1.3521, 103.8198],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_4b87ae30f5ef5f380c5e0d06b9c69aee = L.divIcon({
+            var div_icon_356d656b40153aee8de9b16c19b2b416 = L.divIcon({
   "html": "\n            \u003cdiv style=\"font-family: Arial; color: white; font-size: 12px; font-weight: bold;\n            text-align: center; background-color: yellow; width: 18px; \n            height: 18px; border-radius: 50%;\n            line-height: 18px;\"\u003e26\u003c/div\u003e\n        ",
   "className": "empty",
 });
-            marker_6d1aec0f192c981972c328ec8d488691.setIcon(div_icon_4b87ae30f5ef5f380c5e0d06b9c69aee);
+            marker_eba7dddb2519766a323fce3c59948b56.setIcon(div_icon_356d656b40153aee8de9b16c19b2b416);
         
     
-        var popup_557dc90f74d7f0fbd4136063cef95f2f = L.popup({
+        var popup_cc4a5cfbd95fb550c3edc926ca3d1dc8 = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_d0465a3b4b5f707683d765679776d896 = $(`<div id="html_d0465a3b4b5f707683d765679776d896" style="width: 100.0%; height: 100.0%;">     <h1>Singapore: Singapore</h1>     <p><b>4 days: dates </b></p>     <p>details</p>     </div>`)[0];
-                popup_557dc90f74d7f0fbd4136063cef95f2f.setContent(html_d0465a3b4b5f707683d765679776d896);
+                var html_11529ffddf02c5b2873ad4af08b1f93c = $(`<div id="html_11529ffddf02c5b2873ad4af08b1f93c" style="width: 100.0%; height: 100.0%;">     <h1>Singapore: Singapore</h1>     <p><b>4 days: dates </b></p>     <p>Details:         <ul>                           </ul>     </p>     </div>`)[0];
+                popup_cc4a5cfbd95fb550c3edc926ca3d1dc8.setContent(html_11529ffddf02c5b2873ad4af08b1f93c);
             
         
 
-        marker_6d1aec0f192c981972c328ec8d488691.bindPopup(popup_557dc90f74d7f0fbd4136063cef95f2f)
+        marker_eba7dddb2519766a323fce3c59948b56.bindPopup(popup_cc4a5cfbd95fb550c3edc926ca3d1dc8)
         ;
 
         
     
     
-            marker_6d1aec0f192c981972c328ec8d488691.bindTooltip(
+            marker_eba7dddb2519766a323fce3c59948b56.bindTooltip(
                 `<div>
                      Singapore
                  </div>`,
@@ -1162,7 +1162,7 @@
             );
         
     
-            ant_path_e8fdc743508e8167fa76826846289000 = L.polyline.antPath(
+            ant_path_a99b29ce4e34686f2443bcc1426124e1 = L.polyline.antPath(
               [[51.1537, -0.1821], [59.9139, 10.7522], [13.736717, 100.523186], [9.7312, 100.0132], [8.9202, 98.5249], [8.0863, 98.9063], [7.880448, 98.392291], [18.788343, 98.9853], [20.353912, 100.083967], [20.2771, 100.4139], [19.893, 102.135], [18.9233, 102.4478], [17.9757, 102.6331], [21.0285, 105.8542], [20.9101, 107.1839], [20.253, 105.974], [17.5956, 106.287], [16.4637, 107.5909], [15.8801, 108.338], [14.051, 105.832], [13.4125, 103.8668], [11.5564, 104.9282], [10.7136, 103.2342], [10.7769, 106.7009], [-8.4095, 115.1889], [1.3521, 103.8198]],
               {
   "stroke": true,
@@ -1189,10 +1189,10 @@
   "delay": 1500,
   "pulseColor": "white",
 }
-        ).addTo(map_80e173b68c279689609412004a655eb5);
+        ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            ant_path_e8fdc743508e8167fa76826846289000.bindTooltip(
+            ant_path_a99b29ce4e34686f2443bcc1426124e1.bindTooltip(
                 `<div>
                      Travelling vis bus
                  </div>`,
@@ -1202,14 +1202,14 @@
             );
         
     
-            var marker_b3d340b49936fd6ee0ffe89de01de594 = L.marker(
+            var marker_d04d534492223d02bc9ac7612c038d47 = L.marker(
                 [18.788343, 98.9853],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var icon_699bc29c9ce6dc639899bd87d771c728 = L.AwesomeMarkers.icon(
+            var icon_4d2ec92e9bf3d64d3c226f7b7ef7c874 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "red",
   "iconColor": "white",
@@ -1218,27 +1218,27 @@
   "extraClasses": "fa-rotate-0",
 }
             );
-            marker_b3d340b49936fd6ee0ffe89de01de594.setIcon(icon_699bc29c9ce6dc639899bd87d771c728);
+            marker_d04d534492223d02bc9ac7612c038d47.setIcon(icon_4d2ec92e9bf3d64d3c226f7b7ef7c874);
         
     
-        var popup_8e0dec0c6168072da6ff232ad99133bc = L.popup({
+        var popup_dff58f622c74adce0acf7aba45c13793 = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_6b6083c3cc56802dc9ff02a9261e957c = $(`<div id="html_6b6083c3cc56802dc9ff02a9261e957c" style="width: 100.0%; height: 100.0%;"><h1>Current Location</h1>       <p>Last reload: 14:59 23/02/2025</p></div>`)[0];
-                popup_8e0dec0c6168072da6ff232ad99133bc.setContent(html_6b6083c3cc56802dc9ff02a9261e957c);
+                var html_7d6b38b5b07166172b96e8c59c4ed427 = $(`<div id="html_7d6b38b5b07166172b96e8c59c4ed427" style="width: 100.0%; height: 100.0%;"><h1>Current Location</h1>       <p>Last reload: 20:19 23/02/2025</p></div>`)[0];
+                popup_dff58f622c74adce0acf7aba45c13793.setContent(html_7d6b38b5b07166172b96e8c59c4ed427);
             
         
 
-        marker_b3d340b49936fd6ee0ffe89de01de594.bindPopup(popup_8e0dec0c6168072da6ff232ad99133bc)
+        marker_d04d534492223d02bc9ac7612c038d47.bindPopup(popup_dff58f622c74adce0acf7aba45c13793)
         ;
 
         
     
     
-            marker_b3d340b49936fd6ee0ffe89de01de594.bindTooltip(
+            marker_d04d534492223d02bc9ac7612c038d47.bindTooltip(
                 `<div>
                      Current Location
                  </div>`,
@@ -1248,38 +1248,38 @@
             );
         
     
-            var marker_3df6cd2eb917065104ea28cf12583e03 = L.marker(
+            var marker_4a3c43e2cf24e45c6251a203d6a84361 = L.marker(
                 [55.5338, 5.28505],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_8b8c44529c19a7bca916e764ef3c92e3 = L.divIcon({
+            var div_icon_752513daf9bf083d85ff33975af9f68d = L.divIcon({
   "html": "\u003cdiv style=\"font-size: 15px; color: black;\"\u003e\u003ci class=\"fa fa-plane\"\u003e\u003c/i\u003e\u003c/div\u003e",
   "className": "empty",
 });
-            marker_3df6cd2eb917065104ea28cf12583e03.setIcon(div_icon_8b8c44529c19a7bca916e764ef3c92e3);
+            marker_4a3c43e2cf24e45c6251a203d6a84361.setIcon(div_icon_752513daf9bf083d85ff33975af9f68d);
         
     
-        var popup_59d63302c5a8e59b2cf185c7518acb5b = L.popup({
+        var popup_11df028a926820a16a60094fd72e27df = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_e713536a2e05bb1b6db66df9f281ae25 = $(`<div id="html_e713536a2e05bb1b6db66df9f281ae25" style="width: 100.0%; height: 100.0%;">Travelling via Plane from London Gatwick to Oslo</div>`)[0];
-                popup_59d63302c5a8e59b2cf185c7518acb5b.setContent(html_e713536a2e05bb1b6db66df9f281ae25);
+                var html_320027c9fe1cf2696cd3fcef8969eea8 = $(`<div id="html_320027c9fe1cf2696cd3fcef8969eea8" style="width: 100.0%; height: 100.0%;">Travelling via Plane from London Gatwick to Oslo</div>`)[0];
+                popup_11df028a926820a16a60094fd72e27df.setContent(html_320027c9fe1cf2696cd3fcef8969eea8);
             
         
 
-        marker_3df6cd2eb917065104ea28cf12583e03.bindPopup(popup_59d63302c5a8e59b2cf185c7518acb5b)
+        marker_4a3c43e2cf24e45c6251a203d6a84361.bindPopup(popup_11df028a926820a16a60094fd72e27df)
         ;
 
         
     
     
-            marker_3df6cd2eb917065104ea28cf12583e03.bindTooltip(
+            marker_4a3c43e2cf24e45c6251a203d6a84361.bindTooltip(
                 `<div>
                      Plane
                  </div>`,
@@ -1289,38 +1289,38 @@
             );
         
     
-            var marker_3e4e52cc343fde2774acb165c1af0ba3 = L.marker(
+            var marker_ee0b32821f147a55a3924a0157bd4936 = L.marker(
                 [36.8253085, 55.637693],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_e449a3be15c78a9e173ccb3d79226cb5 = L.divIcon({
+            var div_icon_dc3216df89be8a604c61e8b9558ca210 = L.divIcon({
   "html": "\u003cdiv style=\"font-size: 15px; color: black;\"\u003e\u003ci class=\"fa fa-plane\"\u003e\u003c/i\u003e\u003c/div\u003e",
   "className": "empty",
 });
-            marker_3e4e52cc343fde2774acb165c1af0ba3.setIcon(div_icon_e449a3be15c78a9e173ccb3d79226cb5);
+            marker_ee0b32821f147a55a3924a0157bd4936.setIcon(div_icon_dc3216df89be8a604c61e8b9558ca210);
         
     
-        var popup_f6a7e2195fa201f828ac6ecf3eea0e71 = L.popup({
+        var popup_d30ea24375087cde2fe870f65469a329 = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_a781a82b4951ac324f73c2411832b4ca = $(`<div id="html_a781a82b4951ac324f73c2411832b4ca" style="width: 100.0%; height: 100.0%;">Travelling via Plane from Oslo to Bangkok</div>`)[0];
-                popup_f6a7e2195fa201f828ac6ecf3eea0e71.setContent(html_a781a82b4951ac324f73c2411832b4ca);
+                var html_8a58bbb656e8dcc1186fa9dce06c050a = $(`<div id="html_8a58bbb656e8dcc1186fa9dce06c050a" style="width: 100.0%; height: 100.0%;">Travelling via Plane from Oslo to Bangkok</div>`)[0];
+                popup_d30ea24375087cde2fe870f65469a329.setContent(html_8a58bbb656e8dcc1186fa9dce06c050a);
             
         
 
-        marker_3e4e52cc343fde2774acb165c1af0ba3.bindPopup(popup_f6a7e2195fa201f828ac6ecf3eea0e71)
+        marker_ee0b32821f147a55a3924a0157bd4936.bindPopup(popup_d30ea24375087cde2fe870f65469a329)
         ;
 
         
     
     
-            marker_3e4e52cc343fde2774acb165c1af0ba3.bindTooltip(
+            marker_ee0b32821f147a55a3924a0157bd4936.bindTooltip(
                 `<div>
                      Plane
                  </div>`,
@@ -1330,38 +1330,38 @@
             );
         
     
-            var marker_a700a0fde7b1d37a9d51a949051957e5 = L.marker(
+            var marker_674af02cbb40c30565e17c651913cf6e = L.marker(
                 [11.7339585, 100.268193],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_2a8018186cf2cffe0c78388bb93b6ffe = L.divIcon({
+            var div_icon_7f929e743c254c6281249261e4849270 = L.divIcon({
   "html": "\u003cdiv style=\"font-size: 15px; color: black;\"\u003e\u003ci class=\"fa fa-bus\"\u003e\u003c/i\u003e\u003c/div\u003e",
   "className": "empty",
 });
-            marker_a700a0fde7b1d37a9d51a949051957e5.setIcon(div_icon_2a8018186cf2cffe0c78388bb93b6ffe);
+            marker_674af02cbb40c30565e17c651913cf6e.setIcon(div_icon_7f929e743c254c6281249261e4849270);
         
     
-        var popup_00a98620291e10331ed9e403a3021bfd = L.popup({
+        var popup_ad0891332ecec179bcd27b4df76d3610 = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_b0b9ea1095ca2efe88a286f7d9664564 = $(`<div id="html_b0b9ea1095ca2efe88a286f7d9664564" style="width: 100.0%; height: 100.0%;">Travelling via Bus from Bangkok to Koh Phangan</div>`)[0];
-                popup_00a98620291e10331ed9e403a3021bfd.setContent(html_b0b9ea1095ca2efe88a286f7d9664564);
+                var html_308f0f424b9af814c914b97660284160 = $(`<div id="html_308f0f424b9af814c914b97660284160" style="width: 100.0%; height: 100.0%;">Travelling via Bus from Bangkok to Koh Phangan</div>`)[0];
+                popup_ad0891332ecec179bcd27b4df76d3610.setContent(html_308f0f424b9af814c914b97660284160);
             
         
 
-        marker_a700a0fde7b1d37a9d51a949051957e5.bindPopup(popup_00a98620291e10331ed9e403a3021bfd)
+        marker_674af02cbb40c30565e17c651913cf6e.bindPopup(popup_ad0891332ecec179bcd27b4df76d3610)
         ;
 
         
     
     
-            marker_a700a0fde7b1d37a9d51a949051957e5.bindTooltip(
+            marker_674af02cbb40c30565e17c651913cf6e.bindTooltip(
                 `<div>
                      Bus
                  </div>`,
@@ -1371,38 +1371,38 @@
             );
         
     
-            var marker_85811524ed5116ac8c724a45ed68e92e = L.marker(
+            var marker_1d172c69fcf820b3b4c02a5e88f91c48 = L.marker(
                 [9.3257, 99.26905],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_809d911f1b2fb2e8379f945877d0c5f1 = L.divIcon({
+            var div_icon_78dada2ec69c4f251f0be1fa8ab6115a = L.divIcon({
   "html": "\u003cdiv style=\"font-size: 15px; color: black;\"\u003e\u003ci class=\"fa fa-bus\"\u003e\u003c/i\u003e\u003c/div\u003e",
   "className": "empty",
 });
-            marker_85811524ed5116ac8c724a45ed68e92e.setIcon(div_icon_809d911f1b2fb2e8379f945877d0c5f1);
+            marker_1d172c69fcf820b3b4c02a5e88f91c48.setIcon(div_icon_78dada2ec69c4f251f0be1fa8ab6115a);
         
     
-        var popup_521dfef1adc4789fcdea9e659524ebd9 = L.popup({
+        var popup_b6e5c61ff4280b881916118d3ffd5560 = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_a6e4713070b732f3ecc51d605e0a1c73 = $(`<div id="html_a6e4713070b732f3ecc51d605e0a1c73" style="width: 100.0%; height: 100.0%;">Travelling via Bus from Koh Phangan to Khao Sok National Park</div>`)[0];
-                popup_521dfef1adc4789fcdea9e659524ebd9.setContent(html_a6e4713070b732f3ecc51d605e0a1c73);
+                var html_f6f68083fe214bd63d65b97904ad0342 = $(`<div id="html_f6f68083fe214bd63d65b97904ad0342" style="width: 100.0%; height: 100.0%;">Travelling via Bus from Koh Phangan to Khao Sok National Park</div>`)[0];
+                popup_b6e5c61ff4280b881916118d3ffd5560.setContent(html_f6f68083fe214bd63d65b97904ad0342);
             
         
 
-        marker_85811524ed5116ac8c724a45ed68e92e.bindPopup(popup_521dfef1adc4789fcdea9e659524ebd9)
+        marker_1d172c69fcf820b3b4c02a5e88f91c48.bindPopup(popup_b6e5c61ff4280b881916118d3ffd5560)
         ;
 
         
     
     
-            marker_85811524ed5116ac8c724a45ed68e92e.bindTooltip(
+            marker_1d172c69fcf820b3b4c02a5e88f91c48.bindTooltip(
                 `<div>
                      Bus
                  </div>`,
@@ -1412,38 +1412,38 @@
             );
         
     
-            var marker_bed98513725b9ac957f6a6e3674bd99e = L.marker(
+            var marker_1da7fb3e19ea2dcc6392e03e5025a48a = L.marker(
                 [8.50325, 98.7156],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_31e20d1144a957ed2957aeb2a55aa01c = L.divIcon({
+            var div_icon_031560399290e65327a2735a09b64e11 = L.divIcon({
   "html": "\u003cdiv style=\"font-size: 15px; color: black;\"\u003e\u003ci class=\"fa fa-train\"\u003e\u003c/i\u003e\u003c/div\u003e",
   "className": "empty",
 });
-            marker_bed98513725b9ac957f6a6e3674bd99e.setIcon(div_icon_31e20d1144a957ed2957aeb2a55aa01c);
+            marker_1da7fb3e19ea2dcc6392e03e5025a48a.setIcon(div_icon_031560399290e65327a2735a09b64e11);
         
     
-        var popup_b0096c14a262a398004d4d8d5f95dea2 = L.popup({
+        var popup_d7a06e04af24a704b9e690d08bba25a7 = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_bb41064caf0469c0a323a57c4ac8f3a6 = $(`<div id="html_bb41064caf0469c0a323a57c4ac8f3a6" style="width: 100.0%; height: 100.0%;">Travelling via Train from Khao Sok National Park to Krabi</div>`)[0];
-                popup_b0096c14a262a398004d4d8d5f95dea2.setContent(html_bb41064caf0469c0a323a57c4ac8f3a6);
+                var html_00a55299735d4fad79e4b4a9a21804d9 = $(`<div id="html_00a55299735d4fad79e4b4a9a21804d9" style="width: 100.0%; height: 100.0%;">Travelling via Train from Khao Sok National Park to Krabi</div>`)[0];
+                popup_d7a06e04af24a704b9e690d08bba25a7.setContent(html_00a55299735d4fad79e4b4a9a21804d9);
             
         
 
-        marker_bed98513725b9ac957f6a6e3674bd99e.bindPopup(popup_b0096c14a262a398004d4d8d5f95dea2)
+        marker_1da7fb3e19ea2dcc6392e03e5025a48a.bindPopup(popup_d7a06e04af24a704b9e690d08bba25a7)
         ;
 
         
     
     
-            marker_bed98513725b9ac957f6a6e3674bd99e.bindTooltip(
+            marker_1da7fb3e19ea2dcc6392e03e5025a48a.bindTooltip(
                 `<div>
                      Train
                  </div>`,
@@ -1453,38 +1453,38 @@
             );
         
     
-            var marker_f211d6384d318dede61af19b8057c644 = L.marker(
+            var marker_f6813543ca06bc8a4bcdd24f76a573df = L.marker(
                 [7.9833739999999995, 98.6492955],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_aa05c20f16f3020289cd570a1e9d707d = L.divIcon({
+            var div_icon_9e79987f463e73d39063dd946212be76 = L.divIcon({
   "html": "\u003cdiv style=\"font-size: 15px; color: black;\"\u003e\u003ci class=\"fa fa-train\"\u003e\u003c/i\u003e\u003c/div\u003e",
   "className": "empty",
 });
-            marker_f211d6384d318dede61af19b8057c644.setIcon(div_icon_aa05c20f16f3020289cd570a1e9d707d);
+            marker_f6813543ca06bc8a4bcdd24f76a573df.setIcon(div_icon_9e79987f463e73d39063dd946212be76);
         
     
-        var popup_d8843c1df942f31ad2e875346e939008 = L.popup({
+        var popup_ab59ef65a658cf5ee22611ea090221af = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_f273ed84f2aedcb2f116b383b03f9c67 = $(`<div id="html_f273ed84f2aedcb2f116b383b03f9c67" style="width: 100.0%; height: 100.0%;">Travelling via Train from Krabi to Phuket</div>`)[0];
-                popup_d8843c1df942f31ad2e875346e939008.setContent(html_f273ed84f2aedcb2f116b383b03f9c67);
+                var html_b1abffd768afdb01fbc5fe2ac4fccca9 = $(`<div id="html_b1abffd768afdb01fbc5fe2ac4fccca9" style="width: 100.0%; height: 100.0%;">Travelling via Train from Krabi to Phuket</div>`)[0];
+                popup_ab59ef65a658cf5ee22611ea090221af.setContent(html_b1abffd768afdb01fbc5fe2ac4fccca9);
             
         
 
-        marker_f211d6384d318dede61af19b8057c644.bindPopup(popup_d8843c1df942f31ad2e875346e939008)
+        marker_f6813543ca06bc8a4bcdd24f76a573df.bindPopup(popup_ab59ef65a658cf5ee22611ea090221af)
         ;
 
         
     
     
-            marker_f211d6384d318dede61af19b8057c644.bindTooltip(
+            marker_f6813543ca06bc8a4bcdd24f76a573df.bindTooltip(
                 `<div>
                      Train
                  </div>`,
@@ -1494,38 +1494,38 @@
             );
         
     
-            var marker_1c0b1360e4d05d3e0c303b5a2042a7f4 = L.marker(
+            var marker_21dddae2086b85c061331c70f4c29b63 = L.marker(
                 [13.334395500000001, 98.6887955],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_30b890a61559d1303a51134495531c30 = L.divIcon({
+            var div_icon_8fb693876592a9356150ec5e01e0b8af = L.divIcon({
   "html": "",
   "className": "empty",
 });
-            marker_1c0b1360e4d05d3e0c303b5a2042a7f4.setIcon(div_icon_30b890a61559d1303a51134495531c30);
+            marker_21dddae2086b85c061331c70f4c29b63.setIcon(div_icon_8fb693876592a9356150ec5e01e0b8af);
         
     
-        var popup_8b989ae25af614a6a4637c9d7b6ebf19 = L.popup({
+        var popup_cdcce482af3ae41d9ce5f1e47275b9bd = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_25f46b0cbb49c89a6c90d29c856abbb5 = $(`<div id="html_25f46b0cbb49c89a6c90d29c856abbb5" style="width: 100.0%; height: 100.0%;">Travelling via  from Phuket to Chiang Mai</div>`)[0];
-                popup_8b989ae25af614a6a4637c9d7b6ebf19.setContent(html_25f46b0cbb49c89a6c90d29c856abbb5);
+                var html_26b74ea0ada1f921d1b88434ff51dba2 = $(`<div id="html_26b74ea0ada1f921d1b88434ff51dba2" style="width: 100.0%; height: 100.0%;">Travelling via  from Phuket to Chiang Mai</div>`)[0];
+                popup_cdcce482af3ae41d9ce5f1e47275b9bd.setContent(html_26b74ea0ada1f921d1b88434ff51dba2);
             
         
 
-        marker_1c0b1360e4d05d3e0c303b5a2042a7f4.bindPopup(popup_8b989ae25af614a6a4637c9d7b6ebf19)
+        marker_21dddae2086b85c061331c70f4c29b63.bindPopup(popup_cdcce482af3ae41d9ce5f1e47275b9bd)
         ;
 
         
     
     
-            marker_1c0b1360e4d05d3e0c303b5a2042a7f4.bindTooltip(
+            marker_21dddae2086b85c061331c70f4c29b63.bindTooltip(
                 `<div>
                      
                  </div>`,
@@ -1535,38 +1535,38 @@
             );
         
     
-            var marker_b8d28b812f66bc97b1ff6d918cc7159d = L.marker(
+            var marker_29788b6fe5cbb0d3f63134b8b725e7f4 = L.marker(
                 [19.571127500000003, 99.5346335],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_eaed49b83fae32df3bebf5c1b69dbfe9 = L.divIcon({
+            var div_icon_159dd5631c7e70348920cf57cc9e465d = L.divIcon({
   "html": "",
   "className": "empty",
 });
-            marker_b8d28b812f66bc97b1ff6d918cc7159d.setIcon(div_icon_eaed49b83fae32df3bebf5c1b69dbfe9);
+            marker_29788b6fe5cbb0d3f63134b8b725e7f4.setIcon(div_icon_159dd5631c7e70348920cf57cc9e465d);
         
     
-        var popup_fa4ff9f729ef706766aeb5d5b6b55d54 = L.popup({
+        var popup_965bb62dd2502c4d434cc12191311e9b = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_8d7002b64eebd42ffb5cc2627ee11940 = $(`<div id="html_8d7002b64eebd42ffb5cc2627ee11940" style="width: 100.0%; height: 100.0%;">Travelling via  from Chiang Mai to Golden Triangle</div>`)[0];
-                popup_fa4ff9f729ef706766aeb5d5b6b55d54.setContent(html_8d7002b64eebd42ffb5cc2627ee11940);
+                var html_569d09b6afc9a19122315b28a3586911 = $(`<div id="html_569d09b6afc9a19122315b28a3586911" style="width: 100.0%; height: 100.0%;">Travelling via  from Chiang Mai to Golden Triangle</div>`)[0];
+                popup_965bb62dd2502c4d434cc12191311e9b.setContent(html_569d09b6afc9a19122315b28a3586911);
             
         
 
-        marker_b8d28b812f66bc97b1ff6d918cc7159d.bindPopup(popup_fa4ff9f729ef706766aeb5d5b6b55d54)
+        marker_29788b6fe5cbb0d3f63134b8b725e7f4.bindPopup(popup_965bb62dd2502c4d434cc12191311e9b)
         ;
 
         
     
     
-            marker_b8d28b812f66bc97b1ff6d918cc7159d.bindTooltip(
+            marker_29788b6fe5cbb0d3f63134b8b725e7f4.bindTooltip(
                 `<div>
                      
                  </div>`,
@@ -1576,38 +1576,38 @@
             );
         
     
-            var marker_0e4dd1d20e6050036c6652e09082cae6 = L.marker(
+            var marker_2e89ee3daeadc7096e97e9fa0251020d = L.marker(
                 [20.315506, 100.24893349999999],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_d53db4afb07e1c2bab2e06a9ab16b526 = L.divIcon({
+            var div_icon_2412909358e22bef725cce080e664489 = L.divIcon({
   "html": "",
   "className": "empty",
 });
-            marker_0e4dd1d20e6050036c6652e09082cae6.setIcon(div_icon_d53db4afb07e1c2bab2e06a9ab16b526);
+            marker_2e89ee3daeadc7096e97e9fa0251020d.setIcon(div_icon_2412909358e22bef725cce080e664489);
         
     
-        var popup_aa63c1cd09638fa3311259ad403b3007 = L.popup({
+        var popup_011383ec4f6aed02ceeb8b03aa407e6f = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_06bd69200c17d982cbfc5c5af6544d18 = $(`<div id="html_06bd69200c17d982cbfc5c5af6544d18" style="width: 100.0%; height: 100.0%;">Travelling via  from Golden Triangle to Huay Xai</div>`)[0];
-                popup_aa63c1cd09638fa3311259ad403b3007.setContent(html_06bd69200c17d982cbfc5c5af6544d18);
+                var html_c5ea4bf90b370716e4521933df2d627b = $(`<div id="html_c5ea4bf90b370716e4521933df2d627b" style="width: 100.0%; height: 100.0%;">Travelling via  from Golden Triangle to Huay Xai</div>`)[0];
+                popup_011383ec4f6aed02ceeb8b03aa407e6f.setContent(html_c5ea4bf90b370716e4521933df2d627b);
             
         
 
-        marker_0e4dd1d20e6050036c6652e09082cae6.bindPopup(popup_aa63c1cd09638fa3311259ad403b3007)
+        marker_2e89ee3daeadc7096e97e9fa0251020d.bindPopup(popup_011383ec4f6aed02ceeb8b03aa407e6f)
         ;
 
         
     
     
-            marker_0e4dd1d20e6050036c6652e09082cae6.bindTooltip(
+            marker_2e89ee3daeadc7096e97e9fa0251020d.bindTooltip(
                 `<div>
                      
                  </div>`,
@@ -1617,38 +1617,38 @@
             );
         
     
-            var marker_7ff11042cbc6ca353036cbaa991473c5 = L.marker(
+            var marker_31893251cfb891183361880f63a4fce2 = L.marker(
                 [20.085050000000003, 101.27445],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_7902560bff257f20a7a3057560024c17 = L.divIcon({
+            var div_icon_0adee1d55c94a2e67d88a013e3a87c82 = L.divIcon({
   "html": "",
   "className": "empty",
 });
-            marker_7ff11042cbc6ca353036cbaa991473c5.setIcon(div_icon_7902560bff257f20a7a3057560024c17);
+            marker_31893251cfb891183361880f63a4fce2.setIcon(div_icon_0adee1d55c94a2e67d88a013e3a87c82);
         
     
-        var popup_ddbbfae95eefb2b2253b01460802719a = L.popup({
+        var popup_a37c7d7779dbccd68f0c81873e4d8e87 = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_f9d6f4299c8676d5c6685624999b5e31 = $(`<div id="html_f9d6f4299c8676d5c6685624999b5e31" style="width: 100.0%; height: 100.0%;">Travelling via  from Huay Xai to Luang Prabang</div>`)[0];
-                popup_ddbbfae95eefb2b2253b01460802719a.setContent(html_f9d6f4299c8676d5c6685624999b5e31);
+                var html_0b2ea3254db9e08d63190d291d18125b = $(`<div id="html_0b2ea3254db9e08d63190d291d18125b" style="width: 100.0%; height: 100.0%;">Travelling via  from Huay Xai to Luang Prabang</div>`)[0];
+                popup_a37c7d7779dbccd68f0c81873e4d8e87.setContent(html_0b2ea3254db9e08d63190d291d18125b);
             
         
 
-        marker_7ff11042cbc6ca353036cbaa991473c5.bindPopup(popup_ddbbfae95eefb2b2253b01460802719a)
+        marker_31893251cfb891183361880f63a4fce2.bindPopup(popup_a37c7d7779dbccd68f0c81873e4d8e87)
         ;
 
         
     
     
-            marker_7ff11042cbc6ca353036cbaa991473c5.bindTooltip(
+            marker_31893251cfb891183361880f63a4fce2.bindTooltip(
                 `<div>
                      
                  </div>`,
@@ -1658,38 +1658,38 @@
             );
         
     
-            var marker_ef9d4b756dc1d89a47ea215d93419001 = L.marker(
+            var marker_a589366e87f02bc1d45753ea30d81d74 = L.marker(
                 [19.40815, 102.29140000000001],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_6508ae3cb996badf7b4af421fe10f538 = L.divIcon({
+            var div_icon_9bf3a20d9b87e612b2de5ef17f731998 = L.divIcon({
   "html": "",
   "className": "empty",
 });
-            marker_ef9d4b756dc1d89a47ea215d93419001.setIcon(div_icon_6508ae3cb996badf7b4af421fe10f538);
+            marker_a589366e87f02bc1d45753ea30d81d74.setIcon(div_icon_9bf3a20d9b87e612b2de5ef17f731998);
         
     
-        var popup_a917db8b2cb3382c375a302f6ff423c3 = L.popup({
+        var popup_32e249b39066ce7ac9cc31ba7c779924 = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_f1242fcfc7005f6e4dc51d960d9f8d51 = $(`<div id="html_f1242fcfc7005f6e4dc51d960d9f8d51" style="width: 100.0%; height: 100.0%;">Travelling via  from Luang Prabang to Vang Vieng</div>`)[0];
-                popup_a917db8b2cb3382c375a302f6ff423c3.setContent(html_f1242fcfc7005f6e4dc51d960d9f8d51);
+                var html_f7ad5790e525f35bcfc5464219bad428 = $(`<div id="html_f7ad5790e525f35bcfc5464219bad428" style="width: 100.0%; height: 100.0%;">Travelling via  from Luang Prabang to Vang Vieng</div>`)[0];
+                popup_32e249b39066ce7ac9cc31ba7c779924.setContent(html_f7ad5790e525f35bcfc5464219bad428);
             
         
 
-        marker_ef9d4b756dc1d89a47ea215d93419001.bindPopup(popup_a917db8b2cb3382c375a302f6ff423c3)
+        marker_a589366e87f02bc1d45753ea30d81d74.bindPopup(popup_32e249b39066ce7ac9cc31ba7c779924)
         ;
 
         
     
     
-            marker_ef9d4b756dc1d89a47ea215d93419001.bindTooltip(
+            marker_a589366e87f02bc1d45753ea30d81d74.bindTooltip(
                 `<div>
                      
                  </div>`,
@@ -1699,38 +1699,38 @@
             );
         
     
-            var marker_c4ff156269580d642db19bb6f534b964 = L.marker(
+            var marker_24244eddd46ca027e04b3f2daa6d2bbd = L.marker(
                 [18.4495, 102.54044999999999],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_a1b586a469b200eef31033a88677c217 = L.divIcon({
+            var div_icon_a5e37f13cec878930479f534c7e0ba22 = L.divIcon({
   "html": "",
   "className": "empty",
 });
-            marker_c4ff156269580d642db19bb6f534b964.setIcon(div_icon_a1b586a469b200eef31033a88677c217);
+            marker_24244eddd46ca027e04b3f2daa6d2bbd.setIcon(div_icon_a5e37f13cec878930479f534c7e0ba22);
         
     
-        var popup_8b25cb744b1ea6ee0631ef2d33a78d52 = L.popup({
+        var popup_17bef5c89425087381af9ef6bd947a45 = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_3d1bb0da245919be1880c720acfb5cdf = $(`<div id="html_3d1bb0da245919be1880c720acfb5cdf" style="width: 100.0%; height: 100.0%;">Travelling via  from Vang Vieng to Vientiane</div>`)[0];
-                popup_8b25cb744b1ea6ee0631ef2d33a78d52.setContent(html_3d1bb0da245919be1880c720acfb5cdf);
+                var html_3d16afe399061ccb878261efbbe56237 = $(`<div id="html_3d16afe399061ccb878261efbbe56237" style="width: 100.0%; height: 100.0%;">Travelling via  from Vang Vieng to Vientiane</div>`)[0];
+                popup_17bef5c89425087381af9ef6bd947a45.setContent(html_3d16afe399061ccb878261efbbe56237);
             
         
 
-        marker_c4ff156269580d642db19bb6f534b964.bindPopup(popup_8b25cb744b1ea6ee0631ef2d33a78d52)
+        marker_24244eddd46ca027e04b3f2daa6d2bbd.bindPopup(popup_17bef5c89425087381af9ef6bd947a45)
         ;
 
         
     
     
-            marker_c4ff156269580d642db19bb6f534b964.bindTooltip(
+            marker_24244eddd46ca027e04b3f2daa6d2bbd.bindTooltip(
                 `<div>
                      
                  </div>`,
@@ -1740,38 +1740,38 @@
             );
         
     
-            var marker_32dcad08efda30c4bb6ec9bac416ac1d = L.marker(
+            var marker_1f53f1f6acbd68ae505348e36cab999e = L.marker(
                 [19.5021, 104.24365],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_6881819d6c3083ebf67316a334488d21 = L.divIcon({
+            var div_icon_e1d03dcf309be810e8772031294fd9c2 = L.divIcon({
   "html": "",
   "className": "empty",
 });
-            marker_32dcad08efda30c4bb6ec9bac416ac1d.setIcon(div_icon_6881819d6c3083ebf67316a334488d21);
+            marker_1f53f1f6acbd68ae505348e36cab999e.setIcon(div_icon_e1d03dcf309be810e8772031294fd9c2);
         
     
-        var popup_60d8ae262d19bd3103b977bf221e7718 = L.popup({
+        var popup_4bf57e0a29053db9683503f40ab16c41 = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_ee35aaeae5314645b386991c5adb524c = $(`<div id="html_ee35aaeae5314645b386991c5adb524c" style="width: 100.0%; height: 100.0%;">Travelling via  from Vientiane to Hanoi</div>`)[0];
-                popup_60d8ae262d19bd3103b977bf221e7718.setContent(html_ee35aaeae5314645b386991c5adb524c);
+                var html_59837fd24399d0b5b7c3ca3b1a6b6ad6 = $(`<div id="html_59837fd24399d0b5b7c3ca3b1a6b6ad6" style="width: 100.0%; height: 100.0%;">Travelling via  from Vientiane to Hanoi</div>`)[0];
+                popup_4bf57e0a29053db9683503f40ab16c41.setContent(html_59837fd24399d0b5b7c3ca3b1a6b6ad6);
             
         
 
-        marker_32dcad08efda30c4bb6ec9bac416ac1d.bindPopup(popup_60d8ae262d19bd3103b977bf221e7718)
+        marker_1f53f1f6acbd68ae505348e36cab999e.bindPopup(popup_4bf57e0a29053db9683503f40ab16c41)
         ;
 
         
     
     
-            marker_32dcad08efda30c4bb6ec9bac416ac1d.bindTooltip(
+            marker_1f53f1f6acbd68ae505348e36cab999e.bindTooltip(
                 `<div>
                      
                  </div>`,
@@ -1781,38 +1781,38 @@
             );
         
     
-            var marker_c214492928283cfd17700e081a376cd2 = L.marker(
+            var marker_a9c6fb3ed9604daf8911c151aeedca7a = L.marker(
                 [20.9693, 106.51905],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_9a4f943c9492eb31e683953584c3a938 = L.divIcon({
+            var div_icon_52f7c05737b530fc0cca9b183276431e = L.divIcon({
   "html": "",
   "className": "empty",
 });
-            marker_c214492928283cfd17700e081a376cd2.setIcon(div_icon_9a4f943c9492eb31e683953584c3a938);
+            marker_a9c6fb3ed9604daf8911c151aeedca7a.setIcon(div_icon_52f7c05737b530fc0cca9b183276431e);
         
     
-        var popup_0d34b1b5e71b2f40e507869d2ad90396 = L.popup({
+        var popup_02010bab31b6e52568ec2aee98fcc68c = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_0a324044817426c417a725d04ecde0ff = $(`<div id="html_0a324044817426c417a725d04ecde0ff" style="width: 100.0%; height: 100.0%;">Travelling via  from Hanoi to Ha Long Bay / Cat Ba</div>`)[0];
-                popup_0d34b1b5e71b2f40e507869d2ad90396.setContent(html_0a324044817426c417a725d04ecde0ff);
+                var html_d2104ca81ba5d1ffa6caa82054063205 = $(`<div id="html_d2104ca81ba5d1ffa6caa82054063205" style="width: 100.0%; height: 100.0%;">Travelling via  from Hanoi to Ha Long Bay / Cat Ba</div>`)[0];
+                popup_02010bab31b6e52568ec2aee98fcc68c.setContent(html_d2104ca81ba5d1ffa6caa82054063205);
             
         
 
-        marker_c214492928283cfd17700e081a376cd2.bindPopup(popup_0d34b1b5e71b2f40e507869d2ad90396)
+        marker_a9c6fb3ed9604daf8911c151aeedca7a.bindPopup(popup_02010bab31b6e52568ec2aee98fcc68c)
         ;
 
         
     
     
-            marker_c214492928283cfd17700e081a376cd2.bindTooltip(
+            marker_a9c6fb3ed9604daf8911c151aeedca7a.bindTooltip(
                 `<div>
                      
                  </div>`,
@@ -1822,38 +1822,38 @@
             );
         
     
-            var marker_e3681892658a2ee1afa9ebe7a0a486a7 = L.marker(
+            var marker_b54f2caa9bda62cbde982b1ac40cef89 = L.marker(
                 [20.58155, 106.57894999999999],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_05f819abfa999cdbc9a8f6623c08c693 = L.divIcon({
+            var div_icon_8f1172b3a685dd4530a88b34911a0955 = L.divIcon({
   "html": "",
   "className": "empty",
 });
-            marker_e3681892658a2ee1afa9ebe7a0a486a7.setIcon(div_icon_05f819abfa999cdbc9a8f6623c08c693);
+            marker_b54f2caa9bda62cbde982b1ac40cef89.setIcon(div_icon_8f1172b3a685dd4530a88b34911a0955);
         
     
-        var popup_df2bf8599ca964d5e40cdf1e5d23732a = L.popup({
+        var popup_0eda75d4b89a1f96428a301aae47f51b = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_a0da23759bb514b50dd44f4531fb8f95 = $(`<div id="html_a0da23759bb514b50dd44f4531fb8f95" style="width: 100.0%; height: 100.0%;">Travelling via  from Ha Long Bay / Cat Ba to Ninh Binh</div>`)[0];
-                popup_df2bf8599ca964d5e40cdf1e5d23732a.setContent(html_a0da23759bb514b50dd44f4531fb8f95);
+                var html_62e1fce981879d5a087211539595fdb2 = $(`<div id="html_62e1fce981879d5a087211539595fdb2" style="width: 100.0%; height: 100.0%;">Travelling via  from Ha Long Bay / Cat Ba to Ninh Binh</div>`)[0];
+                popup_0eda75d4b89a1f96428a301aae47f51b.setContent(html_62e1fce981879d5a087211539595fdb2);
             
         
 
-        marker_e3681892658a2ee1afa9ebe7a0a486a7.bindPopup(popup_df2bf8599ca964d5e40cdf1e5d23732a)
+        marker_b54f2caa9bda62cbde982b1ac40cef89.bindPopup(popup_0eda75d4b89a1f96428a301aae47f51b)
         ;
 
         
     
     
-            marker_e3681892658a2ee1afa9ebe7a0a486a7.bindTooltip(
+            marker_b54f2caa9bda62cbde982b1ac40cef89.bindTooltip(
                 `<div>
                      
                  </div>`,
@@ -1863,38 +1863,38 @@
             );
         
     
-            var marker_06cb11467c357380953181289a543fe1 = L.marker(
+            var marker_97213014c8547611f0c689995701eed3 = L.marker(
                 [18.924300000000002, 106.13050000000001],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_96ef15d3c730f482ce7e122ef5aa8cc2 = L.divIcon({
+            var div_icon_97a407a0e3fee360accdac6c23117e27 = L.divIcon({
   "html": "",
   "className": "empty",
 });
-            marker_06cb11467c357380953181289a543fe1.setIcon(div_icon_96ef15d3c730f482ce7e122ef5aa8cc2);
+            marker_97213014c8547611f0c689995701eed3.setIcon(div_icon_97a407a0e3fee360accdac6c23117e27);
         
     
-        var popup_0130db2a5d904202615d8b30b3f60604 = L.popup({
+        var popup_006c314bf32519b536d139aeea281a8a = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_cb37d9af1de292755b1ade994c98a861 = $(`<div id="html_cb37d9af1de292755b1ade994c98a861" style="width: 100.0%; height: 100.0%;">Travelling via  from Ninh Binh to Phong Nha</div>`)[0];
-                popup_0130db2a5d904202615d8b30b3f60604.setContent(html_cb37d9af1de292755b1ade994c98a861);
+                var html_fed94c70bbf125cdce912bf2cbebbc12 = $(`<div id="html_fed94c70bbf125cdce912bf2cbebbc12" style="width: 100.0%; height: 100.0%;">Travelling via  from Ninh Binh to Phong Nha</div>`)[0];
+                popup_006c314bf32519b536d139aeea281a8a.setContent(html_fed94c70bbf125cdce912bf2cbebbc12);
             
         
 
-        marker_06cb11467c357380953181289a543fe1.bindPopup(popup_0130db2a5d904202615d8b30b3f60604)
+        marker_97213014c8547611f0c689995701eed3.bindPopup(popup_006c314bf32519b536d139aeea281a8a)
         ;
 
         
     
     
-            marker_06cb11467c357380953181289a543fe1.bindTooltip(
+            marker_97213014c8547611f0c689995701eed3.bindTooltip(
                 `<div>
                      
                  </div>`,
@@ -1904,38 +1904,38 @@
             );
         
     
-            var marker_aca1bb358d0c3fd70c926524e31c7f11 = L.marker(
+            var marker_97d99eb1301772addcf03053e8b055d6 = L.marker(
                 [17.02965, 106.93895],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_dab7b0ea71e0ebc489305a4110e219bb = L.divIcon({
+            var div_icon_a5f7720896596284c710bc2aaed76080 = L.divIcon({
   "html": "",
   "className": "empty",
 });
-            marker_aca1bb358d0c3fd70c926524e31c7f11.setIcon(div_icon_dab7b0ea71e0ebc489305a4110e219bb);
+            marker_97d99eb1301772addcf03053e8b055d6.setIcon(div_icon_a5f7720896596284c710bc2aaed76080);
         
     
-        var popup_3a4c0afc13a47e5e67e53dec510854c3 = L.popup({
+        var popup_99da65b3ff6abe28d6ac56440928ad06 = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_b97c15347a99e4d1b8e557377edb6454 = $(`<div id="html_b97c15347a99e4d1b8e557377edb6454" style="width: 100.0%; height: 100.0%;">Travelling via  from Phong Nha to Hue</div>`)[0];
-                popup_3a4c0afc13a47e5e67e53dec510854c3.setContent(html_b97c15347a99e4d1b8e557377edb6454);
+                var html_00e90a9681899bd12c7ce0dcf0b73ad6 = $(`<div id="html_00e90a9681899bd12c7ce0dcf0b73ad6" style="width: 100.0%; height: 100.0%;">Travelling via  from Phong Nha to Hue</div>`)[0];
+                popup_99da65b3ff6abe28d6ac56440928ad06.setContent(html_00e90a9681899bd12c7ce0dcf0b73ad6);
             
         
 
-        marker_aca1bb358d0c3fd70c926524e31c7f11.bindPopup(popup_3a4c0afc13a47e5e67e53dec510854c3)
+        marker_97d99eb1301772addcf03053e8b055d6.bindPopup(popup_99da65b3ff6abe28d6ac56440928ad06)
         ;
 
         
     
     
-            marker_aca1bb358d0c3fd70c926524e31c7f11.bindTooltip(
+            marker_97d99eb1301772addcf03053e8b055d6.bindTooltip(
                 `<div>
                      
                  </div>`,
@@ -1945,38 +1945,38 @@
             );
         
     
-            var marker_387cac02eb9a03d1386ac82f190fa93d = L.marker(
+            var marker_9c816bc1a322480a3c3aa4a4bb42fb43 = L.marker(
                 [16.1719, 107.96445],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_1043fc775fcc1369009dbd32a2c9c62e = L.divIcon({
+            var div_icon_71fe58414110f55746a0192da11445b5 = L.divIcon({
   "html": "",
   "className": "empty",
 });
-            marker_387cac02eb9a03d1386ac82f190fa93d.setIcon(div_icon_1043fc775fcc1369009dbd32a2c9c62e);
+            marker_9c816bc1a322480a3c3aa4a4bb42fb43.setIcon(div_icon_71fe58414110f55746a0192da11445b5);
         
     
-        var popup_33ac6e8961fb126b07d2e409a705cfb2 = L.popup({
+        var popup_546eb8bf0084cae2b810ede87f7fb4c5 = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_b91755417fdb32e386cfd82b1cab2d2a = $(`<div id="html_b91755417fdb32e386cfd82b1cab2d2a" style="width: 100.0%; height: 100.0%;">Travelling via  from Hue to Hoi An</div>`)[0];
-                popup_33ac6e8961fb126b07d2e409a705cfb2.setContent(html_b91755417fdb32e386cfd82b1cab2d2a);
+                var html_92e202d2bade8c34bd446e54ddb7577a = $(`<div id="html_92e202d2bade8c34bd446e54ddb7577a" style="width: 100.0%; height: 100.0%;">Travelling via  from Hue to Hoi An</div>`)[0];
+                popup_546eb8bf0084cae2b810ede87f7fb4c5.setContent(html_92e202d2bade8c34bd446e54ddb7577a);
             
         
 
-        marker_387cac02eb9a03d1386ac82f190fa93d.bindPopup(popup_33ac6e8961fb126b07d2e409a705cfb2)
+        marker_9c816bc1a322480a3c3aa4a4bb42fb43.bindPopup(popup_546eb8bf0084cae2b810ede87f7fb4c5)
         ;
 
         
     
     
-            marker_387cac02eb9a03d1386ac82f190fa93d.bindTooltip(
+            marker_9c816bc1a322480a3c3aa4a4bb42fb43.bindTooltip(
                 `<div>
                      
                  </div>`,
@@ -1986,38 +1986,38 @@
             );
         
     
-            var marker_c3023cf9457258338be68a8b39840604 = L.marker(
+            var marker_dec4d48446e918db8ced9d8bf108535c = L.marker(
                 [14.96555, 107.085],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_cc8ef598f86a9564a84bf8f3a826803a = L.divIcon({
+            var div_icon_3e126bf2ccdb65bf3f2bcaa97d6b8baa = L.divIcon({
   "html": "",
   "className": "empty",
 });
-            marker_c3023cf9457258338be68a8b39840604.setIcon(div_icon_cc8ef598f86a9564a84bf8f3a826803a);
+            marker_dec4d48446e918db8ced9d8bf108535c.setIcon(div_icon_3e126bf2ccdb65bf3f2bcaa97d6b8baa);
         
     
-        var popup_3204cdd4c8afdc4bff7dfac57ad224f7 = L.popup({
+        var popup_0097264ca4abc185e2cc74ed98c200d9 = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_f5a18ce574a4a385ed5799b61df05dbb = $(`<div id="html_f5a18ce574a4a385ed5799b61df05dbb" style="width: 100.0%; height: 100.0%;">Travelling via  from Hoi An to 4000 Islands (Don Det)</div>`)[0];
-                popup_3204cdd4c8afdc4bff7dfac57ad224f7.setContent(html_f5a18ce574a4a385ed5799b61df05dbb);
+                var html_d8213a9067f0f8411779effb9d1ae917 = $(`<div id="html_d8213a9067f0f8411779effb9d1ae917" style="width: 100.0%; height: 100.0%;">Travelling via  from Hoi An to 4000 Islands (Don Det)</div>`)[0];
+                popup_0097264ca4abc185e2cc74ed98c200d9.setContent(html_d8213a9067f0f8411779effb9d1ae917);
             
         
 
-        marker_c3023cf9457258338be68a8b39840604.bindPopup(popup_3204cdd4c8afdc4bff7dfac57ad224f7)
+        marker_dec4d48446e918db8ced9d8bf108535c.bindPopup(popup_0097264ca4abc185e2cc74ed98c200d9)
         ;
 
         
     
     
-            marker_c3023cf9457258338be68a8b39840604.bindTooltip(
+            marker_dec4d48446e918db8ced9d8bf108535c.bindTooltip(
                 `<div>
                      
                  </div>`,
@@ -2027,38 +2027,38 @@
             );
         
     
-            var marker_e36daf718e922c6835a3c56114f798d1 = L.marker(
+            var marker_393b62a283770ca1504c455b2124322b = L.marker(
                 [13.73175, 104.8494],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_5870a6a23ff73eaf00beb98769d65886 = L.divIcon({
+            var div_icon_e63fb3e2f3b82f9fedd0f31c5b5cff63 = L.divIcon({
   "html": "",
   "className": "empty",
 });
-            marker_e36daf718e922c6835a3c56114f798d1.setIcon(div_icon_5870a6a23ff73eaf00beb98769d65886);
+            marker_393b62a283770ca1504c455b2124322b.setIcon(div_icon_e63fb3e2f3b82f9fedd0f31c5b5cff63);
         
     
-        var popup_6740e6f7734214cc50b269c9434755aa = L.popup({
+        var popup_870097e9d5f3df1b024d0c260557a67f = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_81da1a9278a8e80dd44b8911f0dfddb2 = $(`<div id="html_81da1a9278a8e80dd44b8911f0dfddb2" style="width: 100.0%; height: 100.0%;">Travelling via  from 4000 Islands (Don Det) to Siem Reap (Angkor Wat)</div>`)[0];
-                popup_6740e6f7734214cc50b269c9434755aa.setContent(html_81da1a9278a8e80dd44b8911f0dfddb2);
+                var html_02547ca68a44fb9d1a5283ac78602403 = $(`<div id="html_02547ca68a44fb9d1a5283ac78602403" style="width: 100.0%; height: 100.0%;">Travelling via  from 4000 Islands (Don Det) to Siem Reap (Angkor Wat)</div>`)[0];
+                popup_870097e9d5f3df1b024d0c260557a67f.setContent(html_02547ca68a44fb9d1a5283ac78602403);
             
         
 
-        marker_e36daf718e922c6835a3c56114f798d1.bindPopup(popup_6740e6f7734214cc50b269c9434755aa)
+        marker_393b62a283770ca1504c455b2124322b.bindPopup(popup_870097e9d5f3df1b024d0c260557a67f)
         ;
 
         
     
     
-            marker_e36daf718e922c6835a3c56114f798d1.bindTooltip(
+            marker_393b62a283770ca1504c455b2124322b.bindTooltip(
                 `<div>
                      
                  </div>`,
@@ -2068,38 +2068,38 @@
             );
         
     
-            var marker_7e017aa8d4186a8698745e0445654f26 = L.marker(
+            var marker_2d6ce7d7c0edccad879efe2f43df1fc0 = L.marker(
                 [12.484449999999999, 104.39750000000001],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_f40abc095f84a76ba4f6cc4a5a194fb1 = L.divIcon({
+            var div_icon_2e1304e42c5369618dcc12b072206083 = L.divIcon({
   "html": "",
   "className": "empty",
 });
-            marker_7e017aa8d4186a8698745e0445654f26.setIcon(div_icon_f40abc095f84a76ba4f6cc4a5a194fb1);
+            marker_2d6ce7d7c0edccad879efe2f43df1fc0.setIcon(div_icon_2e1304e42c5369618dcc12b072206083);
         
     
-        var popup_bbc2dcda7d619f34214179ab97f24c4a = L.popup({
+        var popup_fdfda70366f885ecb41083dc657b0a09 = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_38165d9ebab778da6efec4612af58f2e = $(`<div id="html_38165d9ebab778da6efec4612af58f2e" style="width: 100.0%; height: 100.0%;">Travelling via  from Siem Reap (Angkor Wat) to Phnom Penh</div>`)[0];
-                popup_bbc2dcda7d619f34214179ab97f24c4a.setContent(html_38165d9ebab778da6efec4612af58f2e);
+                var html_ff7867b57873af8ba7485aeaf801ea9d = $(`<div id="html_ff7867b57873af8ba7485aeaf801ea9d" style="width: 100.0%; height: 100.0%;">Travelling via  from Siem Reap (Angkor Wat) to Phnom Penh</div>`)[0];
+                popup_fdfda70366f885ecb41083dc657b0a09.setContent(html_ff7867b57873af8ba7485aeaf801ea9d);
             
         
 
-        marker_7e017aa8d4186a8698745e0445654f26.bindPopup(popup_bbc2dcda7d619f34214179ab97f24c4a)
+        marker_2d6ce7d7c0edccad879efe2f43df1fc0.bindPopup(popup_fdfda70366f885ecb41083dc657b0a09)
         ;
 
         
     
     
-            marker_7e017aa8d4186a8698745e0445654f26.bindTooltip(
+            marker_2d6ce7d7c0edccad879efe2f43df1fc0.bindTooltip(
                 `<div>
                      
                  </div>`,
@@ -2109,38 +2109,38 @@
             );
         
     
-            var marker_438721b43ad8dc013d55186c40bcbf7d = L.marker(
+            var marker_e4bdff37b396dc3615c4981af127c022 = L.marker(
                 [11.135, 104.0812],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_943313f79cb4c9992747d3717e6b4e91 = L.divIcon({
+            var div_icon_a497b7524643b5e670fd750560c91e81 = L.divIcon({
   "html": "",
   "className": "empty",
 });
-            marker_438721b43ad8dc013d55186c40bcbf7d.setIcon(div_icon_943313f79cb4c9992747d3717e6b4e91);
+            marker_e4bdff37b396dc3615c4981af127c022.setIcon(div_icon_a497b7524643b5e670fd750560c91e81);
         
     
-        var popup_1575139b5963323a35e424b3b9ba0ab9 = L.popup({
+        var popup_1ff37ac972b9d3fd08a12f3df1cabc29 = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_cca4a5de38ee53c66ab7f3331c349e1e = $(`<div id="html_cca4a5de38ee53c66ab7f3331c349e1e" style="width: 100.0%; height: 100.0%;">Travelling via  from Phnom Penh to Koh Rong / Koh Rong Samloem</div>`)[0];
-                popup_1575139b5963323a35e424b3b9ba0ab9.setContent(html_cca4a5de38ee53c66ab7f3331c349e1e);
+                var html_c25d25d402d0753e904fcc3193582ec9 = $(`<div id="html_c25d25d402d0753e904fcc3193582ec9" style="width: 100.0%; height: 100.0%;">Travelling via  from Phnom Penh to Koh Rong / Koh Rong Samloem</div>`)[0];
+                popup_1ff37ac972b9d3fd08a12f3df1cabc29.setContent(html_c25d25d402d0753e904fcc3193582ec9);
             
         
 
-        marker_438721b43ad8dc013d55186c40bcbf7d.bindPopup(popup_1575139b5963323a35e424b3b9ba0ab9)
+        marker_e4bdff37b396dc3615c4981af127c022.bindPopup(popup_1ff37ac972b9d3fd08a12f3df1cabc29)
         ;
 
         
     
     
-            marker_438721b43ad8dc013d55186c40bcbf7d.bindTooltip(
+            marker_e4bdff37b396dc3615c4981af127c022.bindTooltip(
                 `<div>
                      
                  </div>`,
@@ -2150,38 +2150,38 @@
             );
         
     
-            var marker_63478283e6d22f2c84511155f8cbc235 = L.marker(
+            var marker_bf2ca6b7cfadbb2ba7d1418e7491b725 = L.marker(
                 [10.745249999999999, 104.96755],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_14d00e9b95cc0c7ec10d3c6a896cd45d = L.divIcon({
+            var div_icon_d8e400b1ce1ceabe6b530deaa9a4e586 = L.divIcon({
   "html": "",
   "className": "empty",
 });
-            marker_63478283e6d22f2c84511155f8cbc235.setIcon(div_icon_14d00e9b95cc0c7ec10d3c6a896cd45d);
+            marker_bf2ca6b7cfadbb2ba7d1418e7491b725.setIcon(div_icon_d8e400b1ce1ceabe6b530deaa9a4e586);
         
     
-        var popup_ce47a60ff908e82544a338ea2b6de1ab = L.popup({
+        var popup_430f63a80c784d12a35d6c8424565c4e = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_29b04d5668a25ec370f57526e17226e6 = $(`<div id="html_29b04d5668a25ec370f57526e17226e6" style="width: 100.0%; height: 100.0%;">Travelling via  from Koh Rong / Koh Rong Samloem to Ho Chi Minh City (Vietnam)</div>`)[0];
-                popup_ce47a60ff908e82544a338ea2b6de1ab.setContent(html_29b04d5668a25ec370f57526e17226e6);
+                var html_a86c7ae7824b19d56aadcd84edd11d22 = $(`<div id="html_a86c7ae7824b19d56aadcd84edd11d22" style="width: 100.0%; height: 100.0%;">Travelling via  from Koh Rong / Koh Rong Samloem to Ho Chi Minh City (Vietnam)</div>`)[0];
+                popup_430f63a80c784d12a35d6c8424565c4e.setContent(html_a86c7ae7824b19d56aadcd84edd11d22);
             
         
 
-        marker_63478283e6d22f2c84511155f8cbc235.bindPopup(popup_ce47a60ff908e82544a338ea2b6de1ab)
+        marker_bf2ca6b7cfadbb2ba7d1418e7491b725.bindPopup(popup_430f63a80c784d12a35d6c8424565c4e)
         ;
 
         
     
     
-            marker_63478283e6d22f2c84511155f8cbc235.bindTooltip(
+            marker_bf2ca6b7cfadbb2ba7d1418e7491b725.bindTooltip(
                 `<div>
                      
                  </div>`,
@@ -2191,38 +2191,38 @@
             );
         
     
-            var marker_1837518ad7dcf0b542558d88fe93d2e5 = L.marker(
+            var marker_b3733898e246101a0e2ac4e83f58ebe3 = L.marker(
                 [1.1837, 110.9449],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_cb3c59d9140f7700956853336a6b0873 = L.divIcon({
+            var div_icon_0367279131402f6afdeda03b962c8e24 = L.divIcon({
   "html": "",
   "className": "empty",
 });
-            marker_1837518ad7dcf0b542558d88fe93d2e5.setIcon(div_icon_cb3c59d9140f7700956853336a6b0873);
+            marker_b3733898e246101a0e2ac4e83f58ebe3.setIcon(div_icon_0367279131402f6afdeda03b962c8e24);
         
     
-        var popup_5431eb75706df8686b4b5dc453835383 = L.popup({
+        var popup_095b91c7950045d5ede311354e2f9f4b = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_1271e9f5e82fab397bbb0bd913863cb5 = $(`<div id="html_1271e9f5e82fab397bbb0bd913863cb5" style="width: 100.0%; height: 100.0%;">Travelling via  from Ho Chi Minh City (Vietnam) to Bali</div>`)[0];
-                popup_5431eb75706df8686b4b5dc453835383.setContent(html_1271e9f5e82fab397bbb0bd913863cb5);
+                var html_aa88ffa8041526e9f2896472a7a0ae5e = $(`<div id="html_aa88ffa8041526e9f2896472a7a0ae5e" style="width: 100.0%; height: 100.0%;">Travelling via  from Ho Chi Minh City (Vietnam) to Bali</div>`)[0];
+                popup_095b91c7950045d5ede311354e2f9f4b.setContent(html_aa88ffa8041526e9f2896472a7a0ae5e);
             
         
 
-        marker_1837518ad7dcf0b542558d88fe93d2e5.bindPopup(popup_5431eb75706df8686b4b5dc453835383)
+        marker_b3733898e246101a0e2ac4e83f58ebe3.bindPopup(popup_095b91c7950045d5ede311354e2f9f4b)
         ;
 
         
     
     
-            marker_1837518ad7dcf0b542558d88fe93d2e5.bindTooltip(
+            marker_b3733898e246101a0e2ac4e83f58ebe3.bindTooltip(
                 `<div>
                      
                  </div>`,
@@ -2232,38 +2232,38 @@
             );
         
     
-            var marker_59018eb21a26c764ca410f61a4c1c5b5 = L.marker(
+            var marker_51161853247b28fafe9a8c270f2a510a = L.marker(
                 [-3.5286999999999997, 109.50435],
                 {
 }
-            ).addTo(map_80e173b68c279689609412004a655eb5);
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            var div_icon_3cee68926cfc1983df8cba875b6f7174 = L.divIcon({
+            var div_icon_4e81680a16d9881b0ca6474245569414 = L.divIcon({
   "html": "",
   "className": "empty",
 });
-            marker_59018eb21a26c764ca410f61a4c1c5b5.setIcon(div_icon_3cee68926cfc1983df8cba875b6f7174);
+            marker_51161853247b28fafe9a8c270f2a510a.setIcon(div_icon_4e81680a16d9881b0ca6474245569414);
         
     
-        var popup_bbf5b939fd56420cbb4eb7eafcde91fe = L.popup({
+        var popup_bfff19dd20674e1321cbf8f40f6f6e17 = L.popup({
   "maxWidth": 500,
 });
 
         
             
-                var html_7d8b604779bf5a084b9c797019e0521d = $(`<div id="html_7d8b604779bf5a084b9c797019e0521d" style="width: 100.0%; height: 100.0%;">Travelling via  from Bali to Singapore</div>`)[0];
-                popup_bbf5b939fd56420cbb4eb7eafcde91fe.setContent(html_7d8b604779bf5a084b9c797019e0521d);
+                var html_98760610f1b62a298bf65b52e53a1654 = $(`<div id="html_98760610f1b62a298bf65b52e53a1654" style="width: 100.0%; height: 100.0%;">Travelling via  from Bali to Singapore</div>`)[0];
+                popup_bfff19dd20674e1321cbf8f40f6f6e17.setContent(html_98760610f1b62a298bf65b52e53a1654);
             
         
 
-        marker_59018eb21a26c764ca410f61a4c1c5b5.bindPopup(popup_bbf5b939fd56420cbb4eb7eafcde91fe)
+        marker_51161853247b28fafe9a8c270f2a510a.bindPopup(popup_bfff19dd20674e1321cbf8f40f6f6e17)
         ;
 
         
     
     
-            marker_59018eb21a26c764ca410f61a4c1c5b5.bindTooltip(
+            marker_51161853247b28fafe9a8c270f2a510a.bindTooltip(
                 `<div>
                      
                  </div>`,
@@ -2273,10 +2273,1035 @@
             );
         
     
-            tile_layer_3e01da464573319c346ee3777fed181c.addTo(map_80e173b68c279689609412004a655eb5);
+            tile_layer_9e829de853b724438d78d71bef43ad30.addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
     
-            tile_layer_3e01da464573319c346ee3777fed181c.addTo(map_80e173b68c279689609412004a655eb5);
+            var marker_c115ecbdf4bf222be9ff1f3f399a0edb = L.marker(
+                [55.5338, 5.28505],
+                {
+}
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
+        
+    
+            var div_icon_919f0a92cd0866134f59f13d85c2762a = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 15px; color: black;\"\u003e\u003ci class=\"fa fa-plane\"\u003e\u003c/i\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_c115ecbdf4bf222be9ff1f3f399a0edb.setIcon(div_icon_919f0a92cd0866134f59f13d85c2762a);
+        
+    
+        var popup_ef9b0b18d492ded2b76c53770603435c = L.popup({
+  "maxWidth": 500,
+});
+
+        
+            
+                var html_44a0381e46561f0851664bea7201dc46 = $(`<div id="html_44a0381e46561f0851664bea7201dc46" style="width: 100.0%; height: 100.0%;">Travelling via Plane from London Gatwick to Oslo</div>`)[0];
+                popup_ef9b0b18d492ded2b76c53770603435c.setContent(html_44a0381e46561f0851664bea7201dc46);
+            
+        
+
+        marker_c115ecbdf4bf222be9ff1f3f399a0edb.bindPopup(popup_ef9b0b18d492ded2b76c53770603435c)
+        ;
+
+        
+    
+    
+            marker_c115ecbdf4bf222be9ff1f3f399a0edb.bindTooltip(
+                `<div>
+                     Plane
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c54839cf1d95d8df3b6bfe3e55d6380f = L.marker(
+                [36.8253085, 55.637693],
+                {
+}
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
+        
+    
+            var div_icon_660d2c4b0e68fbcff6a33dc8bbe355d9 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 15px; color: black;\"\u003e\u003ci class=\"fa fa-plane\"\u003e\u003c/i\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_c54839cf1d95d8df3b6bfe3e55d6380f.setIcon(div_icon_660d2c4b0e68fbcff6a33dc8bbe355d9);
+        
+    
+        var popup_5a5d9cff82276a83c887f4f7cd424194 = L.popup({
+  "maxWidth": 500,
+});
+
+        
+            
+                var html_17dce59314125ca8872c3343084d97f5 = $(`<div id="html_17dce59314125ca8872c3343084d97f5" style="width: 100.0%; height: 100.0%;">Travelling via Plane from Oslo to Bangkok</div>`)[0];
+                popup_5a5d9cff82276a83c887f4f7cd424194.setContent(html_17dce59314125ca8872c3343084d97f5);
+            
+        
+
+        marker_c54839cf1d95d8df3b6bfe3e55d6380f.bindPopup(popup_5a5d9cff82276a83c887f4f7cd424194)
+        ;
+
+        
+    
+    
+            marker_c54839cf1d95d8df3b6bfe3e55d6380f.bindTooltip(
+                `<div>
+                     Plane
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_825a098305e6e44950f15c82db05573f = L.marker(
+                [11.7339585, 100.268193],
+                {
+}
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
+        
+    
+            var div_icon_0437122a18e3908a30e82178c55a3586 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 15px; color: black;\"\u003e\u003ci class=\"fa fa-bus\"\u003e\u003c/i\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_825a098305e6e44950f15c82db05573f.setIcon(div_icon_0437122a18e3908a30e82178c55a3586);
+        
+    
+        var popup_3adee7497660d6104be28b8a09da0328 = L.popup({
+  "maxWidth": 500,
+});
+
+        
+            
+                var html_5a48eec18e7f27f2740d5f84519aa7c1 = $(`<div id="html_5a48eec18e7f27f2740d5f84519aa7c1" style="width: 100.0%; height: 100.0%;">Travelling via Bus from Bangkok to Koh Phangan</div>`)[0];
+                popup_3adee7497660d6104be28b8a09da0328.setContent(html_5a48eec18e7f27f2740d5f84519aa7c1);
+            
+        
+
+        marker_825a098305e6e44950f15c82db05573f.bindPopup(popup_3adee7497660d6104be28b8a09da0328)
+        ;
+
+        
+    
+    
+            marker_825a098305e6e44950f15c82db05573f.bindTooltip(
+                `<div>
+                     Bus
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2cc9e6bd9aab95acce3ab72949d7869d = L.marker(
+                [9.3257, 99.26905],
+                {
+}
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
+        
+    
+            var div_icon_3079c0d96fca694e2ba0369a375de630 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 15px; color: black;\"\u003e\u003ci class=\"fa fa-bus\"\u003e\u003c/i\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_2cc9e6bd9aab95acce3ab72949d7869d.setIcon(div_icon_3079c0d96fca694e2ba0369a375de630);
+        
+    
+        var popup_6acdb3267f8b1733f52a8e805921b102 = L.popup({
+  "maxWidth": 500,
+});
+
+        
+            
+                var html_75b5d69d1d3fba7185d092705ec3e628 = $(`<div id="html_75b5d69d1d3fba7185d092705ec3e628" style="width: 100.0%; height: 100.0%;">Travelling via Bus from Koh Phangan to Khao Sok National Park</div>`)[0];
+                popup_6acdb3267f8b1733f52a8e805921b102.setContent(html_75b5d69d1d3fba7185d092705ec3e628);
+            
+        
+
+        marker_2cc9e6bd9aab95acce3ab72949d7869d.bindPopup(popup_6acdb3267f8b1733f52a8e805921b102)
+        ;
+
+        
+    
+    
+            marker_2cc9e6bd9aab95acce3ab72949d7869d.bindTooltip(
+                `<div>
+                     Bus
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6dbfa1aea6bc7d210ebc56faaffebc25 = L.marker(
+                [8.50325, 98.7156],
+                {
+}
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
+        
+    
+            var div_icon_20976278af6dab3647c0bf099865256a = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 15px; color: black;\"\u003e\u003ci class=\"fa fa-train\"\u003e\u003c/i\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_6dbfa1aea6bc7d210ebc56faaffebc25.setIcon(div_icon_20976278af6dab3647c0bf099865256a);
+        
+    
+        var popup_3354c96d8126347a18c23ef3c8957762 = L.popup({
+  "maxWidth": 500,
+});
+
+        
+            
+                var html_8bce9daa53e5b99ed63520268a09d5e7 = $(`<div id="html_8bce9daa53e5b99ed63520268a09d5e7" style="width: 100.0%; height: 100.0%;">Travelling via Train from Khao Sok National Park to Krabi</div>`)[0];
+                popup_3354c96d8126347a18c23ef3c8957762.setContent(html_8bce9daa53e5b99ed63520268a09d5e7);
+            
+        
+
+        marker_6dbfa1aea6bc7d210ebc56faaffebc25.bindPopup(popup_3354c96d8126347a18c23ef3c8957762)
+        ;
+
+        
+    
+    
+            marker_6dbfa1aea6bc7d210ebc56faaffebc25.bindTooltip(
+                `<div>
+                     Train
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_310b0401eaedb1eee2d4c00180b16a57 = L.marker(
+                [7.9833739999999995, 98.6492955],
+                {
+}
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
+        
+    
+            var div_icon_d1748135643d9e9e61d073a77890b35a = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 15px; color: black;\"\u003e\u003ci class=\"fa fa-train\"\u003e\u003c/i\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_310b0401eaedb1eee2d4c00180b16a57.setIcon(div_icon_d1748135643d9e9e61d073a77890b35a);
+        
+    
+        var popup_1dad1969f8ce0523d2301fd86a93f6eb = L.popup({
+  "maxWidth": 500,
+});
+
+        
+            
+                var html_ce972ff805eeb677313f7dc40c9988be = $(`<div id="html_ce972ff805eeb677313f7dc40c9988be" style="width: 100.0%; height: 100.0%;">Travelling via Train from Krabi to Phuket</div>`)[0];
+                popup_1dad1969f8ce0523d2301fd86a93f6eb.setContent(html_ce972ff805eeb677313f7dc40c9988be);
+            
+        
+
+        marker_310b0401eaedb1eee2d4c00180b16a57.bindPopup(popup_1dad1969f8ce0523d2301fd86a93f6eb)
+        ;
+
+        
+    
+    
+            marker_310b0401eaedb1eee2d4c00180b16a57.bindTooltip(
+                `<div>
+                     Train
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_233d5ddbfd39d6a454b9026b5819508b = L.marker(
+                [13.334395500000001, 98.6887955],
+                {
+}
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
+        
+    
+            var div_icon_0c249cbd74059083d371766b2630fdfb = L.divIcon({
+  "html": "",
+  "className": "empty",
+});
+            marker_233d5ddbfd39d6a454b9026b5819508b.setIcon(div_icon_0c249cbd74059083d371766b2630fdfb);
+        
+    
+        var popup_392ff690cfd14b65550816c9a1f096c5 = L.popup({
+  "maxWidth": 500,
+});
+
+        
+            
+                var html_abbea25ebe81eabb5e3bec709e237678 = $(`<div id="html_abbea25ebe81eabb5e3bec709e237678" style="width: 100.0%; height: 100.0%;">Travelling via  from Phuket to Chiang Mai</div>`)[0];
+                popup_392ff690cfd14b65550816c9a1f096c5.setContent(html_abbea25ebe81eabb5e3bec709e237678);
+            
+        
+
+        marker_233d5ddbfd39d6a454b9026b5819508b.bindPopup(popup_392ff690cfd14b65550816c9a1f096c5)
+        ;
+
+        
+    
+    
+            marker_233d5ddbfd39d6a454b9026b5819508b.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1de8fbfd6ae7aa01cadf5fee8e7eede5 = L.marker(
+                [19.571127500000003, 99.5346335],
+                {
+}
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
+        
+    
+            var div_icon_f244ce087d1e83df2b8a59a45ff1d1be = L.divIcon({
+  "html": "",
+  "className": "empty",
+});
+            marker_1de8fbfd6ae7aa01cadf5fee8e7eede5.setIcon(div_icon_f244ce087d1e83df2b8a59a45ff1d1be);
+        
+    
+        var popup_9d99ac2a00294026deaed76d497c03a5 = L.popup({
+  "maxWidth": 500,
+});
+
+        
+            
+                var html_359204222991b9fe3bca7db787fda29a = $(`<div id="html_359204222991b9fe3bca7db787fda29a" style="width: 100.0%; height: 100.0%;">Travelling via  from Chiang Mai to Golden Triangle</div>`)[0];
+                popup_9d99ac2a00294026deaed76d497c03a5.setContent(html_359204222991b9fe3bca7db787fda29a);
+            
+        
+
+        marker_1de8fbfd6ae7aa01cadf5fee8e7eede5.bindPopup(popup_9d99ac2a00294026deaed76d497c03a5)
+        ;
+
+        
+    
+    
+            marker_1de8fbfd6ae7aa01cadf5fee8e7eede5.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6a8b5a54598a8d58986a3ee8bcb5cb07 = L.marker(
+                [20.315506, 100.24893349999999],
+                {
+}
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
+        
+    
+            var div_icon_1f5e7e9d311654f2814f3d374abf35e1 = L.divIcon({
+  "html": "",
+  "className": "empty",
+});
+            marker_6a8b5a54598a8d58986a3ee8bcb5cb07.setIcon(div_icon_1f5e7e9d311654f2814f3d374abf35e1);
+        
+    
+        var popup_0f6f2b3f767904fd58427007470bb562 = L.popup({
+  "maxWidth": 500,
+});
+
+        
+            
+                var html_2b782275f1ca9011ae0a9311c35c53e4 = $(`<div id="html_2b782275f1ca9011ae0a9311c35c53e4" style="width: 100.0%; height: 100.0%;">Travelling via  from Golden Triangle to Huay Xai</div>`)[0];
+                popup_0f6f2b3f767904fd58427007470bb562.setContent(html_2b782275f1ca9011ae0a9311c35c53e4);
+            
+        
+
+        marker_6a8b5a54598a8d58986a3ee8bcb5cb07.bindPopup(popup_0f6f2b3f767904fd58427007470bb562)
+        ;
+
+        
+    
+    
+            marker_6a8b5a54598a8d58986a3ee8bcb5cb07.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a8e4fefb620ebb1adb19ba848b6e87e2 = L.marker(
+                [20.085050000000003, 101.27445],
+                {
+}
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
+        
+    
+            var div_icon_e3faa10966163a20f4f1183dc1be851f = L.divIcon({
+  "html": "",
+  "className": "empty",
+});
+            marker_a8e4fefb620ebb1adb19ba848b6e87e2.setIcon(div_icon_e3faa10966163a20f4f1183dc1be851f);
+        
+    
+        var popup_4dba6e5142ff330196634900f30a25f6 = L.popup({
+  "maxWidth": 500,
+});
+
+        
+            
+                var html_1578f7bd87a7e464cca3a9d93f1dcf91 = $(`<div id="html_1578f7bd87a7e464cca3a9d93f1dcf91" style="width: 100.0%; height: 100.0%;">Travelling via  from Huay Xai to Luang Prabang</div>`)[0];
+                popup_4dba6e5142ff330196634900f30a25f6.setContent(html_1578f7bd87a7e464cca3a9d93f1dcf91);
+            
+        
+
+        marker_a8e4fefb620ebb1adb19ba848b6e87e2.bindPopup(popup_4dba6e5142ff330196634900f30a25f6)
+        ;
+
+        
+    
+    
+            marker_a8e4fefb620ebb1adb19ba848b6e87e2.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_60ec34ac20c6241b6d130c110cbf296b = L.marker(
+                [19.40815, 102.29140000000001],
+                {
+}
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
+        
+    
+            var div_icon_b113853294164a52b790fbab9fd899ea = L.divIcon({
+  "html": "",
+  "className": "empty",
+});
+            marker_60ec34ac20c6241b6d130c110cbf296b.setIcon(div_icon_b113853294164a52b790fbab9fd899ea);
+        
+    
+        var popup_b243b61d2b178be7f1112d8b24fd9e71 = L.popup({
+  "maxWidth": 500,
+});
+
+        
+            
+                var html_54f0455ee453e0a7c6c2dc50ff3d692c = $(`<div id="html_54f0455ee453e0a7c6c2dc50ff3d692c" style="width: 100.0%; height: 100.0%;">Travelling via  from Luang Prabang to Vang Vieng</div>`)[0];
+                popup_b243b61d2b178be7f1112d8b24fd9e71.setContent(html_54f0455ee453e0a7c6c2dc50ff3d692c);
+            
+        
+
+        marker_60ec34ac20c6241b6d130c110cbf296b.bindPopup(popup_b243b61d2b178be7f1112d8b24fd9e71)
+        ;
+
+        
+    
+    
+            marker_60ec34ac20c6241b6d130c110cbf296b.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8180f9cb4166f2c1630a2d999fb90be9 = L.marker(
+                [18.4495, 102.54044999999999],
+                {
+}
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
+        
+    
+            var div_icon_772d54ebebfc37cc16526fd325f2ac25 = L.divIcon({
+  "html": "",
+  "className": "empty",
+});
+            marker_8180f9cb4166f2c1630a2d999fb90be9.setIcon(div_icon_772d54ebebfc37cc16526fd325f2ac25);
+        
+    
+        var popup_f739d2496adb0d185d4f90ad49895400 = L.popup({
+  "maxWidth": 500,
+});
+
+        
+            
+                var html_e1dee76d5b19368720bca05893b82e5a = $(`<div id="html_e1dee76d5b19368720bca05893b82e5a" style="width: 100.0%; height: 100.0%;">Travelling via  from Vang Vieng to Vientiane</div>`)[0];
+                popup_f739d2496adb0d185d4f90ad49895400.setContent(html_e1dee76d5b19368720bca05893b82e5a);
+            
+        
+
+        marker_8180f9cb4166f2c1630a2d999fb90be9.bindPopup(popup_f739d2496adb0d185d4f90ad49895400)
+        ;
+
+        
+    
+    
+            marker_8180f9cb4166f2c1630a2d999fb90be9.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7a6356d50914fa9dafca9e353b33e3c2 = L.marker(
+                [19.5021, 104.24365],
+                {
+}
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
+        
+    
+            var div_icon_e98e2d166c54588cda5c91bb52dcb212 = L.divIcon({
+  "html": "",
+  "className": "empty",
+});
+            marker_7a6356d50914fa9dafca9e353b33e3c2.setIcon(div_icon_e98e2d166c54588cda5c91bb52dcb212);
+        
+    
+        var popup_f6b017a31d7015f92927b2838245a4f7 = L.popup({
+  "maxWidth": 500,
+});
+
+        
+            
+                var html_9bac77d6911640267637f95a74452868 = $(`<div id="html_9bac77d6911640267637f95a74452868" style="width: 100.0%; height: 100.0%;">Travelling via  from Vientiane to Hanoi</div>`)[0];
+                popup_f6b017a31d7015f92927b2838245a4f7.setContent(html_9bac77d6911640267637f95a74452868);
+            
+        
+
+        marker_7a6356d50914fa9dafca9e353b33e3c2.bindPopup(popup_f6b017a31d7015f92927b2838245a4f7)
+        ;
+
+        
+    
+    
+            marker_7a6356d50914fa9dafca9e353b33e3c2.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5a9a33b6b21fe56be8928e54a2cd9922 = L.marker(
+                [20.9693, 106.51905],
+                {
+}
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
+        
+    
+            var div_icon_5046984faaa7662568c50d122079593d = L.divIcon({
+  "html": "",
+  "className": "empty",
+});
+            marker_5a9a33b6b21fe56be8928e54a2cd9922.setIcon(div_icon_5046984faaa7662568c50d122079593d);
+        
+    
+        var popup_6f65b7b7b983f60381b550d5e59481da = L.popup({
+  "maxWidth": 500,
+});
+
+        
+            
+                var html_35ed8444ff46811005536833af00e14d = $(`<div id="html_35ed8444ff46811005536833af00e14d" style="width: 100.0%; height: 100.0%;">Travelling via  from Hanoi to Ha Long Bay / Cat Ba</div>`)[0];
+                popup_6f65b7b7b983f60381b550d5e59481da.setContent(html_35ed8444ff46811005536833af00e14d);
+            
+        
+
+        marker_5a9a33b6b21fe56be8928e54a2cd9922.bindPopup(popup_6f65b7b7b983f60381b550d5e59481da)
+        ;
+
+        
+    
+    
+            marker_5a9a33b6b21fe56be8928e54a2cd9922.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a5a2cefc72715cbdfdd1956a92a0bae3 = L.marker(
+                [20.58155, 106.57894999999999],
+                {
+}
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
+        
+    
+            var div_icon_33d91ccd8eebbb89f6a1b08fdf350ab0 = L.divIcon({
+  "html": "",
+  "className": "empty",
+});
+            marker_a5a2cefc72715cbdfdd1956a92a0bae3.setIcon(div_icon_33d91ccd8eebbb89f6a1b08fdf350ab0);
+        
+    
+        var popup_5dbeabde891cdcccf9286e9daff90784 = L.popup({
+  "maxWidth": 500,
+});
+
+        
+            
+                var html_0f77081d4f2aee6d8b793ee440513e0d = $(`<div id="html_0f77081d4f2aee6d8b793ee440513e0d" style="width: 100.0%; height: 100.0%;">Travelling via  from Ha Long Bay / Cat Ba to Ninh Binh</div>`)[0];
+                popup_5dbeabde891cdcccf9286e9daff90784.setContent(html_0f77081d4f2aee6d8b793ee440513e0d);
+            
+        
+
+        marker_a5a2cefc72715cbdfdd1956a92a0bae3.bindPopup(popup_5dbeabde891cdcccf9286e9daff90784)
+        ;
+
+        
+    
+    
+            marker_a5a2cefc72715cbdfdd1956a92a0bae3.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e765e5ae7a9a204a2fb5d012c10bec74 = L.marker(
+                [18.924300000000002, 106.13050000000001],
+                {
+}
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
+        
+    
+            var div_icon_db3ec5853c6ce367b2fcc0ae7b6f19f7 = L.divIcon({
+  "html": "",
+  "className": "empty",
+});
+            marker_e765e5ae7a9a204a2fb5d012c10bec74.setIcon(div_icon_db3ec5853c6ce367b2fcc0ae7b6f19f7);
+        
+    
+        var popup_23116d9ebc13fb359c67e78325ec2801 = L.popup({
+  "maxWidth": 500,
+});
+
+        
+            
+                var html_058fdf7429cd787c902dd4f005469063 = $(`<div id="html_058fdf7429cd787c902dd4f005469063" style="width: 100.0%; height: 100.0%;">Travelling via  from Ninh Binh to Phong Nha</div>`)[0];
+                popup_23116d9ebc13fb359c67e78325ec2801.setContent(html_058fdf7429cd787c902dd4f005469063);
+            
+        
+
+        marker_e765e5ae7a9a204a2fb5d012c10bec74.bindPopup(popup_23116d9ebc13fb359c67e78325ec2801)
+        ;
+
+        
+    
+    
+            marker_e765e5ae7a9a204a2fb5d012c10bec74.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0964b5a148b041c88a0f5f40652edefb = L.marker(
+                [17.02965, 106.93895],
+                {
+}
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
+        
+    
+            var div_icon_04464ff0503a3d0f4a1f56c41f6d4161 = L.divIcon({
+  "html": "",
+  "className": "empty",
+});
+            marker_0964b5a148b041c88a0f5f40652edefb.setIcon(div_icon_04464ff0503a3d0f4a1f56c41f6d4161);
+        
+    
+        var popup_3caedb822befd25c60cbcf2eb0866da4 = L.popup({
+  "maxWidth": 500,
+});
+
+        
+            
+                var html_20669db5827da1e7cf400aa61aa6bb61 = $(`<div id="html_20669db5827da1e7cf400aa61aa6bb61" style="width: 100.0%; height: 100.0%;">Travelling via  from Phong Nha to Hue</div>`)[0];
+                popup_3caedb822befd25c60cbcf2eb0866da4.setContent(html_20669db5827da1e7cf400aa61aa6bb61);
+            
+        
+
+        marker_0964b5a148b041c88a0f5f40652edefb.bindPopup(popup_3caedb822befd25c60cbcf2eb0866da4)
+        ;
+
+        
+    
+    
+            marker_0964b5a148b041c88a0f5f40652edefb.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0a49b82ddf69375d6cd6190845980678 = L.marker(
+                [16.1719, 107.96445],
+                {
+}
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
+        
+    
+            var div_icon_38b192115f5803ee2cdaf4143462165a = L.divIcon({
+  "html": "",
+  "className": "empty",
+});
+            marker_0a49b82ddf69375d6cd6190845980678.setIcon(div_icon_38b192115f5803ee2cdaf4143462165a);
+        
+    
+        var popup_b9dfffb8779c1afc42f4e57290c113a2 = L.popup({
+  "maxWidth": 500,
+});
+
+        
+            
+                var html_f6eb9161af4fe4c2099ce2403fb88d82 = $(`<div id="html_f6eb9161af4fe4c2099ce2403fb88d82" style="width: 100.0%; height: 100.0%;">Travelling via  from Hue to Hoi An</div>`)[0];
+                popup_b9dfffb8779c1afc42f4e57290c113a2.setContent(html_f6eb9161af4fe4c2099ce2403fb88d82);
+            
+        
+
+        marker_0a49b82ddf69375d6cd6190845980678.bindPopup(popup_b9dfffb8779c1afc42f4e57290c113a2)
+        ;
+
+        
+    
+    
+            marker_0a49b82ddf69375d6cd6190845980678.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f4ee815d73ac83bf719ac4dffd2804f2 = L.marker(
+                [14.96555, 107.085],
+                {
+}
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
+        
+    
+            var div_icon_684ad67eab420cca3b43302df6fa7c93 = L.divIcon({
+  "html": "",
+  "className": "empty",
+});
+            marker_f4ee815d73ac83bf719ac4dffd2804f2.setIcon(div_icon_684ad67eab420cca3b43302df6fa7c93);
+        
+    
+        var popup_7f96be52dcea24c1d460f093a2eec91b = L.popup({
+  "maxWidth": 500,
+});
+
+        
+            
+                var html_f871f70cb214424120fffd5404d095fd = $(`<div id="html_f871f70cb214424120fffd5404d095fd" style="width: 100.0%; height: 100.0%;">Travelling via  from Hoi An to 4000 Islands (Don Det)</div>`)[0];
+                popup_7f96be52dcea24c1d460f093a2eec91b.setContent(html_f871f70cb214424120fffd5404d095fd);
+            
+        
+
+        marker_f4ee815d73ac83bf719ac4dffd2804f2.bindPopup(popup_7f96be52dcea24c1d460f093a2eec91b)
+        ;
+
+        
+    
+    
+            marker_f4ee815d73ac83bf719ac4dffd2804f2.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2e0850d96b86652a5bbc8fc058ea2e87 = L.marker(
+                [13.73175, 104.8494],
+                {
+}
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
+        
+    
+            var div_icon_e20ad59944e55dff52bae34558b84ca8 = L.divIcon({
+  "html": "",
+  "className": "empty",
+});
+            marker_2e0850d96b86652a5bbc8fc058ea2e87.setIcon(div_icon_e20ad59944e55dff52bae34558b84ca8);
+        
+    
+        var popup_40da3a492397bb700e8fb828811a95c5 = L.popup({
+  "maxWidth": 500,
+});
+
+        
+            
+                var html_8476586db6656b3207fc0ba0a90b1b87 = $(`<div id="html_8476586db6656b3207fc0ba0a90b1b87" style="width: 100.0%; height: 100.0%;">Travelling via  from 4000 Islands (Don Det) to Siem Reap (Angkor Wat)</div>`)[0];
+                popup_40da3a492397bb700e8fb828811a95c5.setContent(html_8476586db6656b3207fc0ba0a90b1b87);
+            
+        
+
+        marker_2e0850d96b86652a5bbc8fc058ea2e87.bindPopup(popup_40da3a492397bb700e8fb828811a95c5)
+        ;
+
+        
+    
+    
+            marker_2e0850d96b86652a5bbc8fc058ea2e87.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bab8e92391ab06cd4c0568138faa765f = L.marker(
+                [12.484449999999999, 104.39750000000001],
+                {
+}
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
+        
+    
+            var div_icon_2129fab42386fbb36f142e8380cb7ea5 = L.divIcon({
+  "html": "",
+  "className": "empty",
+});
+            marker_bab8e92391ab06cd4c0568138faa765f.setIcon(div_icon_2129fab42386fbb36f142e8380cb7ea5);
+        
+    
+        var popup_4e738c2928a7686b3052d3efb99e4c7c = L.popup({
+  "maxWidth": 500,
+});
+
+        
+            
+                var html_4dfb4bdb1ece04dbbcded3cad1d22112 = $(`<div id="html_4dfb4bdb1ece04dbbcded3cad1d22112" style="width: 100.0%; height: 100.0%;">Travelling via  from Siem Reap (Angkor Wat) to Phnom Penh</div>`)[0];
+                popup_4e738c2928a7686b3052d3efb99e4c7c.setContent(html_4dfb4bdb1ece04dbbcded3cad1d22112);
+            
+        
+
+        marker_bab8e92391ab06cd4c0568138faa765f.bindPopup(popup_4e738c2928a7686b3052d3efb99e4c7c)
+        ;
+
+        
+    
+    
+            marker_bab8e92391ab06cd4c0568138faa765f.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8a0c1a0c2969b051c213f8b50c9cb3ab = L.marker(
+                [11.135, 104.0812],
+                {
+}
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
+        
+    
+            var div_icon_a6a36c3825e9e699ceb6f8134d33afaa = L.divIcon({
+  "html": "",
+  "className": "empty",
+});
+            marker_8a0c1a0c2969b051c213f8b50c9cb3ab.setIcon(div_icon_a6a36c3825e9e699ceb6f8134d33afaa);
+        
+    
+        var popup_34f31c497341c8c208ad86da6e72c023 = L.popup({
+  "maxWidth": 500,
+});
+
+        
+            
+                var html_cb03542f762969dd6ea7785af681a25f = $(`<div id="html_cb03542f762969dd6ea7785af681a25f" style="width: 100.0%; height: 100.0%;">Travelling via  from Phnom Penh to Koh Rong / Koh Rong Samloem</div>`)[0];
+                popup_34f31c497341c8c208ad86da6e72c023.setContent(html_cb03542f762969dd6ea7785af681a25f);
+            
+        
+
+        marker_8a0c1a0c2969b051c213f8b50c9cb3ab.bindPopup(popup_34f31c497341c8c208ad86da6e72c023)
+        ;
+
+        
+    
+    
+            marker_8a0c1a0c2969b051c213f8b50c9cb3ab.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1e93d45d29211ebddc526b233f989bd5 = L.marker(
+                [10.745249999999999, 104.96755],
+                {
+}
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
+        
+    
+            var div_icon_be9c40e22a6216526f4cb34bee739cc3 = L.divIcon({
+  "html": "",
+  "className": "empty",
+});
+            marker_1e93d45d29211ebddc526b233f989bd5.setIcon(div_icon_be9c40e22a6216526f4cb34bee739cc3);
+        
+    
+        var popup_8b9e2b9834869ea847b8d8b55c42b7bf = L.popup({
+  "maxWidth": 500,
+});
+
+        
+            
+                var html_834dc9ab748ea445515ba4cf9ff4f456 = $(`<div id="html_834dc9ab748ea445515ba4cf9ff4f456" style="width: 100.0%; height: 100.0%;">Travelling via  from Koh Rong / Koh Rong Samloem to Ho Chi Minh City (Vietnam)</div>`)[0];
+                popup_8b9e2b9834869ea847b8d8b55c42b7bf.setContent(html_834dc9ab748ea445515ba4cf9ff4f456);
+            
+        
+
+        marker_1e93d45d29211ebddc526b233f989bd5.bindPopup(popup_8b9e2b9834869ea847b8d8b55c42b7bf)
+        ;
+
+        
+    
+    
+            marker_1e93d45d29211ebddc526b233f989bd5.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_482cc49844b78d190d0188899b8b6b6a = L.marker(
+                [1.1837, 110.9449],
+                {
+}
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
+        
+    
+            var div_icon_a7cb6189ad07bcf94698fe97c1806484 = L.divIcon({
+  "html": "",
+  "className": "empty",
+});
+            marker_482cc49844b78d190d0188899b8b6b6a.setIcon(div_icon_a7cb6189ad07bcf94698fe97c1806484);
+        
+    
+        var popup_549e3bb3e2bc63a40d432b0cc29012a6 = L.popup({
+  "maxWidth": 500,
+});
+
+        
+            
+                var html_8c8683d5f8844a44cfbab17ddbb5741f = $(`<div id="html_8c8683d5f8844a44cfbab17ddbb5741f" style="width: 100.0%; height: 100.0%;">Travelling via  from Ho Chi Minh City (Vietnam) to Bali</div>`)[0];
+                popup_549e3bb3e2bc63a40d432b0cc29012a6.setContent(html_8c8683d5f8844a44cfbab17ddbb5741f);
+            
+        
+
+        marker_482cc49844b78d190d0188899b8b6b6a.bindPopup(popup_549e3bb3e2bc63a40d432b0cc29012a6)
+        ;
+
+        
+    
+    
+            marker_482cc49844b78d190d0188899b8b6b6a.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ee21d546854c0ce8c3a51b0dc018c4a7 = L.marker(
+                [-3.5286999999999997, 109.50435],
+                {
+}
+            ).addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
+        
+    
+            var div_icon_6c0ebedc0e5741b663d7cbe63a3db0e0 = L.divIcon({
+  "html": "",
+  "className": "empty",
+});
+            marker_ee21d546854c0ce8c3a51b0dc018c4a7.setIcon(div_icon_6c0ebedc0e5741b663d7cbe63a3db0e0);
+        
+    
+        var popup_ed66cc1395eeac0be877e495883d08a4 = L.popup({
+  "maxWidth": 500,
+});
+
+        
+            
+                var html_f85349618609ec0444209c34d42ad5f6 = $(`<div id="html_f85349618609ec0444209c34d42ad5f6" style="width: 100.0%; height: 100.0%;">Travelling via  from Bali to Singapore</div>`)[0];
+                popup_ed66cc1395eeac0be877e495883d08a4.setContent(html_f85349618609ec0444209c34d42ad5f6);
+            
+        
+
+        marker_ee21d546854c0ce8c3a51b0dc018c4a7.bindPopup(popup_ed66cc1395eeac0be877e495883d08a4)
+        ;
+
+        
+    
+    
+            marker_ee21d546854c0ce8c3a51b0dc018c4a7.bindTooltip(
+                `<div>
+                     
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            tile_layer_9e829de853b724438d78d71bef43ad30.addTo(map_21d3a9fbf2d43ca910184a9d2a0759a7);
         
 </script>
 </html>
