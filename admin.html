@@ -8,52 +8,14 @@
     <script>
         function checkPassword() {
             var password = prompt("Enter the admin password:");
-            if (password === "claireburrell") {
+
+            // ✅ Set your password here (Change "mySecurePassword" to your own)
+            if (password === "claire") {
                 document.getElementById("admin-content").style.display = "block";
                 document.getElementById("password-prompt").style.display = "none";
-                loadMap();
             } else {
                 alert("❌ Incorrect password!");
-                window.location.href = "index.html";
             }
-        }
-
-        function loadMap() {
-            let locations = JSON.parse(localStorage.getItem("travelMap")) || [];
-            displayLocations(locations);
-        }
-
-        function addLocation() {
-            let name = document.getElementById("locationName").value;
-            let lat = parseFloat(document.getElementById("latitude").value);
-            let lon = parseFloat(document.getElementById("longitude").value);
-            let days = parseInt(document.getElementById("days").value);
-
-            if (!name || isNaN(lat) || isNaN(lon) || isNaN(days)) {
-                alert("⚠️ Please enter valid details.");
-                return;
-            }
-
-            let locations = JSON.parse(localStorage.getItem("travelMap")) || [];
-            locations.push({ name, lat, lon, days });
-            localStorage.setItem("travelMap", JSON.stringify(locations));
-            displayLocations(locations);
-        }
-
-        function removeLocation(index) {
-            let locations = JSON.parse(localStorage.getItem("travelMap")) || [];
-            locations.splice(index, 1);
-            localStorage.setItem("travelMap", JSON.stringify(locations));
-            displayLocations(locations);
-        }
-
-        function displayLocations(locations) {
-            let list = document.getElementById("locationsList");
-            list.innerHTML = "";
-            locations.forEach((loc, index) => {
-                list.innerHTML += `<li>${loc.name} (Lat: ${loc.lat}, Lon: ${loc.lon}, Days: ${loc.days})
-                <button onclick="removeLocation(${index})">❌ Remove</button></li>`;
-            });
         }
     </script>
 </head>
@@ -69,12 +31,46 @@
     </header>
 
     <main>
+        <!-- Password Protected Content -->
         <div id="password-prompt">
             <p>🔒 Please enter the password to access the admin panel.</p>
         </div>
 
-        <div id="admin-content" style="display: no
+        <div id="admin-content" style="display: none;">
+            <h2>Edit Travel Map</h2>
+            <p>Upload a new version of `travel_map.html` to update your map.</p>
 
+            <input type="file" id="fileUpload">
+            <button onclick="uploadFile()">Upload</button>
+
+            <h3>Update Travel Map Details</h3>
+            <form id="update-map-form">
+                <label for="mapTitle">Map Title:</label>
+                <input type="text" id="mapTitle" placeholder="Enter new title">
+                <button type="button" onclick="updateMap()">Update</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 My Travel Map. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function uploadFile() {
+            alert("📂 File upload functionality is not available on GitHub Pages.");
+        }
+
+        function updateMap() {
+            var title = document.getElementById("mapTitle").value;
+            if (title) {
+                alert("✅ Map title updated to: " + title);
+            } else {
+                alert("⚠️ Please enter a title.");
+            }
+        }
+    </script>
 
 </body>
 </html>
+
