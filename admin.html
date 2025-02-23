@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Edit Travel Map</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function checkPassword() {
+            var password = prompt("Enter the admin password:");
+
+            // ✅ Set your password here (Change "mySecurePassword" to your own)
+            if (password === "claireburrell") {
+                document.getElementById("admin-content").style.display = "block";
+                document.getElementById("password-prompt").style.display = "none";
+            } else {
+                alert("❌ Incorrect password!");
+            }
+        }
+    </script>
+</head>
+<body onload="checkPassword()">
+
+    <header>
+        <h1>Admin Panel - Edit Travel Map</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="travel_map.html">View Map</a>
+            <a href="admin.html" class="active">Admin</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Password Protected Content -->
+        <div id="password-prompt">
+            <p>🔒 Please enter the password to access the admin panel.</p>
+        </div>
+
+        <div id="admin-content" style="display: none;">
+            <h2>Edit Travel Map</h2>
+            <p>Upload a new version of `travel_map.html` to update your map.</p>
+
+            <input type="file" id="fileUpload">
+            <button onclick="uploadFile()">Upload</button>
+
+            <h3>Update Travel Map Details</h3>
+            <form id="update-map-form">
+                <label for="mapTitle">Map Title:</label>
+                <input type="text" id="mapTitle" placeholder="Enter new title">
+                <button type="button" onclick="updateMap()">Update</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 My Travel Map. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function uploadFile() {
+            alert("📂 File upload functionality is not available on GitHub Pages.");
+        }
+
+        function updateMap() {
+            var title = document.getElementById("mapTitle").value;
+            if (title) {
+                alert("✅ Map title updated to: " + title);
+            } else {
+                alert("⚠️ Please enter a title.");
+            }
+        }
+    </script>
+
+</body>
+</html>
