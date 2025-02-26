@@ -1,5 +1,5 @@
 from scripts.data_loader import load_locations
-from scripts.map_generator import MapGenerator
+from scripts.map_generator import generate_map
 from scripts.map_updater import update_travel_data
 
 def main():
@@ -12,7 +12,7 @@ def main():
     update_travel_data()
 
     # Save the updated map
-    MapGenerator.generate_map(data_file, "travel_map.html")
+    generate_map(data_file, "travel_map.html")
 
 if __name__ == "__main__":
     main()
