@@ -1,10 +1,10 @@
 {
-    "map_title": "South East Asia Travel Map",  // Title displayed on the map
-    "default_zoom": 4,             // Default zoom level
-    "center_coordinates": [13.7563, 100.5018], // Default map center (Bangkok, Thailand)
-    "line_color": "black",           // Color of travel route lines
-    "update_frequency": "daily",   // How often the map updates (options: "daily", "weekly", "manual")
-    "backup_enabled": true,        // Whether to keep backups of old maps
-    "last_updated": "2024-02-23",  // Timestamp of last update (Auto-updated by script)
-    "admin_password": "claire"     // Password for admin panel (consider encrypting this!)
+    "map_title": "South East Asia Travel Map",
+    "default_zoom": 4,
+    "center_coordinates": [13.7563, 100.5018],
+    "line_color": "black",
+    "update_frequency": "daily",
+    "backup_enabled": true,
+    "last_updated": "2024-02-23",
+    "admin_password": "claire"
 }
