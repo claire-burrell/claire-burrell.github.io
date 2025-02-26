@@ -8,6 +8,7 @@ app = Flask(__name__)
 DATA_FILE = "data/locations.json"
 MAP_FILE = "travel_map.html"
 
+
 @app.route("/add_location", methods=["POST"])
 def add_location():
     """Adds a new location and updates the map."""
@@ -22,11 +23,22 @@ def add_location():
             "coordinates": [new_location["latitude"], new_location["longitude"]]
         }
 
-        # Update locations.json
-        update_travel_data(DATA_FILE, [new_entry])
+        # ✅ Load existing locations to prevent overwriting
+        try:
+            with open(DATA_FILE, "r", encoding="utf-8") as file:
+                locations = json.load(file)
+                if not isinstance(locations, list):
+                    locations = []  # Ensure it's a list
+        except (FileNotFoundError, json.JSONDecodeError):
+            locations = []
 
-        # Regenerate the map
-        generate_map(MAP_FILE)  # ✅ Only pass the output file path
+        # ✅ Append the new entry & save
+        locations.append(new_entry)
+        with open(DATA_FILE, "w", encoding="utf-8") as file:
+            json.dump(locations, file, indent=4)
+
+        # ✅ Regenerate the map
+        generate_map(DATA_FILE, MAP_FILE)  # 🔥 Fixed the function call
 
         return jsonify({"message": "✅ Location added successfully!"}), 200
 
@@ -44,19 +56,31 @@ def update_map():
         if not all(k in updated_entry for k in ["name", "latitude", "longitude", "days", "transport"]):
             return jsonify({"message": "❌ Missing required fields!"}), 400
 
-        # Format update entry
-        new_entry = {
-            "name": updated_entry["name"],
-            "coordinates": [updated_entry["latitude"], updated_entry["longitude"]],
-            "days": updated_entry["days"],
-            "transport": updated_entry["transport"]
-        }
+        # ✅ Load existing locations
+        try:
+            with open(DATA_FILE, "r", encoding="utf-8") as file:
+                locations = json.load(file)
+                if not isinstance(locations, list):
+                    locations = []
+        except (FileNotFoundError, json.JSONDecodeError):
+            locations = []
 
-        # Update the data file
-        update_travel_data(DATA_FILE, [new_entry])
+        # ✅ Update the existing entry
+        for loc in locations:
+            if loc["name"] == updated_entry["name"]:
+                loc["coordinates"] = [updated_entry["latitude"], updated_entry["longitude"]]
+                loc["days"] = updated_entry["days"]
+                loc["transport"] = updated_entry["transport"]
+                break
+        else:
+            return jsonify({"message": "❌ Location not found!"}), 404
 
-        # Regenerate the map
-        generate_map(MAP_FILE)  # ✅ Only pass the output file path
+        # ✅ Save updated locations
+        with open(DATA_FILE, "w", encoding="utf-8") as file:
+            json.dump(locations, file, indent=4)
+
+        # ✅ Regenerate the map
+        generate_map(DATA_FILE, MAP_FILE)  # 🔥 Fixed the function call
 
         print("✅ Map updated successfully!")
         return jsonify({"message": "✅ Location updated & map refreshed!"}), 200
