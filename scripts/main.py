@@ -4,7 +4,7 @@ from scripts.map_updater import update_map
 
 def main():
     # Load the data
-    travel_data = load_data()
+    travel_data = load_locations()
 
     # Generate the initial map
     travel_map = generate_map(travel_data)
