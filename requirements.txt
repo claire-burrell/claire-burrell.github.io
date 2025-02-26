@@ -6,3 +6,4 @@ geopandas
 shapely
 flask
 geocoder
+flask-cors
