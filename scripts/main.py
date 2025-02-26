@@ -6,7 +6,7 @@ def main():
 
     # Load existing locations
     data_file = "data/locations.json"
-    locations = load_locations(data_file)    
+    locations = load_locations()    
 
     # Update the map based on new data
     update_travel_data(data_file, new_entries)
