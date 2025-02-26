@@ -4,6 +4,7 @@ from scripts.data_loader import load_config, load_locations
 def generate_map(output_path="travel_map.html"):
     """Generates an interactive travel map using folium."""
 
+    print("✅ Regenerating travel_map.html...")
     # Load settings from config.json
     config = load_config()
     locations = load_locations()
