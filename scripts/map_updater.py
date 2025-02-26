@@ -1,6 +1,6 @@
 import json
 
-def update_map(data_file, new_entries):
+def update_travel_data(data_file, new_entries):
     """
     Update the travel data JSON file with new entries.
 
@@ -16,7 +16,7 @@ def update_map(data_file, new_entries):
         # Load existing data
         with open(data_file, 'r', encoding='utf-8') as file:
             data = json.load(file)
-        
+
         # Append new entries
         if isinstance(data, list):
             data.extend(new_entries)
@@ -34,3 +34,7 @@ def update_map(data_file, new_entries):
         print(f"Error: {data_file} not found.")
     except json.JSONDecodeError:
         print(f"Error: Could not decode JSON in {data_file}. Please check the file format.")
+
+# Wrapper function to maintain compatibility
+def update_map(data_file, new_entries):
+    update_travel_data(data_file, new_entries)
