@@ -5,12 +5,35 @@ from scripts.map_updater import update_travel_data
 from scripts.map_generator import generate_map
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "https://claire-burrell.github.io"}})
 
+# ✅ STRONGER CORS CONFIGURATION
+CORS(app, resources={r"/*": {"origins": "https://claire-burrell.github.io"}}, supports_credentials=True)
 
 DATA_FILE = "data/locations.json"
 MAP_FILE = "travel_map.html"
 
+def load_locations():
+    """Loads existing locations from JSON file, or returns an empty list if missing/corrupt."""
+    try:
+        with open(DATA_FILE, "r", encoding="utf-8") as file:
+            locations = json.load(file)
+            if isinstance(locations, list):
+                return locations
+            else:
+                print("⚠️ JSON data is not a list. Resetting to empty list.")
+                return []
+    except (FileNotFoundError, json.JSONDecodeError):
+        print("⚠️ locations.json not found or unreadable. Resetting to empty list.")
+        return []
+
+def save_locations(locations):
+    """Saves locations back to JSON file."""
+    try:
+        with open(DATA_FILE, "w", encoding="utf-8") as file:
+            json.dump(locations, file, indent=4)
+        print("✅ Locations saved successfully.")
+    except Exception as e:
+        print(f"❌ Error saving locations: {str(e)}")
 
 @app.route("/add_location", methods=["POST"])
 def add_location():
@@ -20,25 +43,21 @@ def add_location():
         if not all(k in new_location for k in ["name", "latitude", "longitude"]):
             return jsonify({"message": "❌ Missing fields: 'name', 'latitude', or 'longitude'"}), 400
 
-        # Format new entry
+        # ✅ Load existing locations to prevent overwriting
+        locations = load_locations()
+
+        # ✅ Format new entry
         new_entry = {
             "name": new_location["name"],
-            "coordinates": [new_location["latitude"], new_location["longitude"]]
+            "coordinates": [float(new_location["latitude"]), float(new_location["longitude"])]
         }
 
-        # ✅ Load existing locations to prevent overwriting
-        try:
-            with open(DATA_FILE, "r", encoding="utf-8") as file:
-                locations = json.load(file)
-                if not isinstance(locations, list):
-                    locations = []  # Ensure it's a list
-        except (FileNotFoundError, json.JSONDecodeError):
-            locations = []
+        # ✅ Add new location & save
+        locations.append(new_entry)
+        save_locations(locations)
 
-        update_travel_data(DATA_FILE, [new_entry])
-
-        # ✅ Regenerate the map with the correct function call
-        generate_map(MAP_FILE)  # 🔥 FIXED
+        # ✅ Regenerate the map
+        generate_map(MAP_FILE)
 
         return jsonify({"message": "✅ Location added successfully!"}), 200
 
@@ -57,18 +76,12 @@ def update_map():
             return jsonify({"message": "❌ Missing required fields!"}), 400
 
         # ✅ Load existing locations
-        try:
-            with open(DATA_FILE, "r", encoding="utf-8") as file:
-                locations = json.load(file)
-                if not isinstance(locations, list):
-                    locations = []
-        except (FileNotFoundError, json.JSONDecodeError):
-            locations = []
+        locations = load_locations()
 
         # ✅ Update the existing entry
         for loc in locations:
             if loc["name"] == updated_entry["name"]:
-                loc["coordinates"] = [updated_entry["latitude"], updated_entry["longitude"]]
+                loc["coordinates"] = [float(updated_entry["latitude"]), float(updated_entry["longitude"])]
                 loc["days"] = updated_entry["days"]
                 loc["transport"] = updated_entry["transport"]
                 break
@@ -76,11 +89,10 @@ def update_map():
             return jsonify({"message": "❌ Location not found!"}), 404
 
         # ✅ Save updated locations
-        with open(DATA_FILE, "w", encoding="utf-8") as file:
-            json.dump(locations, file, indent=4)
+        save_locations(locations)
 
-        # ✅ Regenerate the map with the correct function call
-        generate_map(MAP_FILE)  # 🔥 FIXED
+        # ✅ Regenerate the map
+        generate_map(MAP_FILE)
 
         print("✅ Map updated successfully!")
         return jsonify({"message": "✅ Location updated & map refreshed!"}), 200
@@ -89,9 +101,7 @@ def update_map():
         print("❌ Server Error:", e)
         return jsonify({"message": f"❌ Error updating the map: {str(e)}"}), 500
 
-
 if __name__ == "__main__":
     app.run(debug=True)
-
 
 
