@@ -1,6 +1,6 @@
 import json
 
-def update_travel_data(data_file, new_entries):
+def update_travel_data(data_file=, new_entries=""):
     """
     Update the travel data JSON file with new entries.
 
