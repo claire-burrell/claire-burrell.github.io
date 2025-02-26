@@ -10,4 +10,25 @@ I am using html, css and javascript to create the webpages and python to create 
 - then add functionality to change details - change name of a place, change the location, change transport method
 - add details to each stop to display an itinerary when clicking on a place
 - update the design, making it look more well rounded fro a user to view
+- add functionality to the emergency info page, updating with the current countries in the map
+  
+### Files:
+**Front End:**
+- index.html: Home page
+- travel_map.html: interactive travel map page
+- admin.html: page to edit the map
+- emergency_info.html: emergency information page
+
+**Back End:**
+- main.py:
+- admin.api.py:
+- data_loader.py:
+- map_generator.py:
+- map_updater.py:
+- data_class.py:
+
+**Data and Configurations:**
+- config.json:
+- requirements.txt:
+- locations.json:
   
