@@ -5,8 +5,7 @@ from scripts.map_updater import update_travel_data
 from scripts.map_generator import generate_map
 
 app = Flask(__name__)
-CORS(app)  # ✅ Allow all origins (TEMP FIX)
-# CORS(app, origins=["https://claire-burrell.github.io"])  # 🔒 Safer option: Allow only GitHub Pages
+CORS(app, resources={r"/*": {"origins": "https://claire-burrell.github.io"}})
 
 
 DATA_FILE = "data/locations.json"
@@ -36,10 +35,7 @@ def add_location():
         except (FileNotFoundError, json.JSONDecodeError):
             locations = []
 
-        # ✅ Append the new entry & save
-        locations.append(new_entry)
-        with open(DATA_FILE, "w", encoding="utf-8") as file:
-            json.dump(locations, file, indent=4)
+        update_travel_data(DATA_FILE, [new_entry])
 
         # ✅ Regenerate the map with the correct function call
         generate_map(MAP_FILE)  # 🔥 FIXED
