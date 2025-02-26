@@ -26,7 +26,7 @@ def add_location():
         update_travel_data(DATA_FILE, [new_entry])
 
         # Regenerate the map
-        generate_map(DATA_FILE, MAP_FILE)
+        generate_map(MAP_FILE)  # ✅ Only pass the output file path
 
         return jsonify({"message": "✅ Location added successfully!"}), 200
 
@@ -56,7 +56,7 @@ def update_map():
         update_travel_data(DATA_FILE, [new_entry])
 
         # Regenerate the map
-        generate_map(DATA_FILE, MAP_FILE)
+        generate_map(MAP_FILE)  # ✅ Only pass the output file path
 
         print("✅ Map updated successfully!")
         return jsonify({"message": "✅ Location updated & map refreshed!"}), 200
