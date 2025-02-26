@@ -3,16 +3,16 @@ from scripts.map_generator import generate_map
 from scripts.map_updater import update_travel_data
 
 def main():
+    """Main function to update travel data and generate the map."""
 
     # Load existing locations
-    data_file = "data/locations.json"
     locations = load_locations()    
 
-    # Update the map based on new data
+    # Update the travel data file (if needed)
     update_travel_data()
 
-    # Save the updated map
-    generate_map(data_file, "travel_map.html")
+    # Generate and save the updated travel map
+    generate_map("travel_map.html")
 
 if __name__ == "__main__":
     main()
