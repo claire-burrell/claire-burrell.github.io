@@ -5,6 +5,9 @@ from scripts.map_updater import update_travel_data
 from scripts.map_generator import generate_map
 
 app = Flask(__name__)
+CORS(app)  # ✅ Allow all origins (TEMP FIX)
+# CORS(app, origins=["https://claire-burrell.github.io"])  # 🔒 Safer option: Allow only GitHub Pages
+
 
 DATA_FILE = "data/locations.json"
 MAP_FILE = "travel_map.html"
