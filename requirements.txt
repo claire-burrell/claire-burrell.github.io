@@ -4,7 +4,6 @@ numpy
 requests
 geopandas
 shapely
-json
 flask
 datetime
 geocoder
