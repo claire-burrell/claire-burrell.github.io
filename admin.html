@@ -41,17 +41,6 @@
         -->
         <div id="admin-content" style="display: block;">
             <h2>Edit Travel Map</h2>
-            <p>Upload a new version of `travel_map.html` to update your map.</p>
-
-            <input type="file" id="fileUpload">
-            <button onclick="uploadFile()">Upload</button>
-
-            <h3>Update Travel Map Details</h3>
-            <form id="update-map-form">
-                <label for="mapTitle">Map Title:</label>
-                <input type="text" id="mapTitle" placeholder="Enter new title">
-                <button type="button" onclick="updateMap()">Update</button>
-            </form>
 
             <!-- ✅ NEW FORM: Update Travel Map Data -->
             <h3>Add a New Travel Location</h3>
@@ -74,40 +63,29 @@
         <p>© 2024 My Travel Map. All rights reserved.</p>
     </footer>
 
-    <script>
-        function uploadFile() {
-            alert("📂 File upload functionality is not available on GitHub Pages.");
-        }
-
-        function updateMap() {
-            var title = document.getElementById("mapTitle").value;
-            if (title) {
-                alert("✅ Map title updated to: " + title);
-            } else {
-                alert("⚠️ Please enter a title.");
-            }
-        }
-
-            // ✅ Handle form submission to update travel data
-            document.getElementById("addLocationForm").addEventListener("submit", async function(event) {
+        <script>
+            document.getElementById("updateMapForm").addEventListener("submit", async function(event) {
                 event.preventDefault();
         
-                const formData = {
-                    name: document.getElementById("name").value,
-                    latitude: parseFloat(document.getElementById("latitude").value),
-                    longitude: parseFloat(document.getElementById("longitude").value)
-                };
+                const formData = new FormData(this);
+                const data = Object.fromEntries(formData);
         
-                const response = await fetch("/add_location", {
-                    method: "POST",
-                    body: JSON.stringify(formData),
-                    headers: {
-                        "Content-Type": "application/json"
-                    }
-                });
+                console.log("📤 Sending data:", data); // Debugging
         
-                const result = await response.json();
-                alert(result.message);
+                try {
+                    const response = await fetch("/update_map", {
+                        method: "POST",
+                        body: JSON.stringify(data),
+                        headers: { "Content-Type": "application/json" }
+                    });
+        
+                    const result = await response.json();
+                    console.log("✅ Server Response:", result); // Debugging
+                    alert(result.message);
+                } catch (error) {
+                    console.error("❌ Fetch Error:", error);
+                    alert("Failed to update map.");
+                }
             });
         </script>
 
