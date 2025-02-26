@@ -1,4 +1,4 @@
-from data_loader import DataLoader
+from scripts.data_loader import DataLoader
 from scripts.map_generator import generate_map
 from scripts.map_updater import update_map
 
