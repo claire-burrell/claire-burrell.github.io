@@ -1,22 +1,37 @@
 from flask import Flask, request, jsonify
-from data_class import TravelData
+import json
+from scripts.map_updater import update_travel_data
+from scripts.map_generator import generate_map
 
 app = Flask(__name__)
-travel_data = TravelData("travel_data.pkl")  # Load travel data
 
-@app.route("/update_map", methods=["POST"])
-def update_map():
-    data = request.json
-    name = data.get("name")
-    country = data.get("country")
-    days = int(data.get("days", 0))
-    transport = data.get("transport", "Unknown")
+DATA_FILE = "data/locations.json"
+MAP_FILE = "travel_map.html"
 
-    if name and country and days:
-        travel_data.add_location(name, country, days, transport)
-        return jsonify({"message": "Travel data updated successfully."})
-    else:
-        return jsonify({"error": "Invalid input"}), 400
+@app.route("/add_location", methods=["POST"])
+def add_location():
+    try:
+        new_location = request.json
+        if not all(k in new_location for k in ["name", "latitude", "longitude"]):
+            return jsonify({"message": "❌ Missing fields"}), 400
+
+        # Format new entry
+        new_entry = {
+            "name": new_location["name"],
+            "coordinates": [new_location["latitude"], new_location["longitude"]]
+        }
+
+        # Update locations.json
+        update_travel_data(DATA_FILE, [new_entry])
+
+        # Regenerate the map
+        generate_map(DATA_FILE, MAP_FILE)
+
+        return jsonify({"message": "✅ Location added successfully!"}), 200
+
+    except Exception as e:
+        return jsonify({"message": f"❌ Error: {str(e)}"}), 500
 
 if __name__ == "__main__":
     app.run(debug=True)
+
