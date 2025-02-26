@@ -1,5 +1,5 @@
 import folium
-from data_loader import DataLoader
+from scripts.data_loader import DataLoader
 
 class MapGenerator:
     def __init__(self):
