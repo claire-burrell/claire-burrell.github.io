@@ -6,8 +6,8 @@ from scripts.map_generator import generate_map
 
 app = Flask(__name__)
 
-# ✅ STRONGER CORS CONFIGURATION
-CORS(app, resources={r"/*": {"origins": "https://claire-burrell.github.io"}}, supports_credentials=True)
+# ✅ STRONGEST CORS FIX: Allow GitHub Pages to communicate with Render
+CORS(app, resources={r"/*": {"origins": "https://claire-burrell.github.io"}})
 
 DATA_FILE = "data/locations.json"
 MAP_FILE = "travel_map.html"
@@ -34,6 +34,15 @@ def save_locations(locations):
         print("✅ Locations saved successfully.")
     except Exception as e:
         print(f"❌ Error saving locations: {str(e)}")
+
+@app.after_request
+def add_cors_headers(response):
+    """✅ Manually add CORS headers to every response."""
+    response.headers["Access-Control-Allow-Origin"] = "https://claire-burrell.github.io"
+    response.headers["Access-Control-Allow-Methods"] = "GET, POST, OPTIONS"
+    response.headers["Access-Control-Allow-Headers"] = "Content-Type"
+    response.headers["Access-Control-Allow-Credentials"] = "true"
+    return response
 
 @app.route("/add_location", methods=["POST"])
 def add_location():
@@ -101,7 +110,6 @@ def update_map():
         print("❌ Server Error:", e)
         return jsonify({"message": f"❌ Error updating the map: {str(e)}"}), 500
 
+
 if __name__ == "__main__":
     app.run(debug=True)
-
-
