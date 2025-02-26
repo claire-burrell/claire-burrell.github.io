@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS  # ✅ Import CORS
 import json
 from scripts.map_updater import update_travel_data
 from scripts.map_generator import generate_map
