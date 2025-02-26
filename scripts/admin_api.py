@@ -37,8 +37,8 @@ def add_location():
         with open(DATA_FILE, "w", encoding="utf-8") as file:
             json.dump(locations, file, indent=4)
 
-        # ✅ Regenerate the map
-        generate_map(DATA_FILE, MAP_FILE)  # 🔥 Fixed the function call
+        # ✅ Regenerate the map with the correct function call
+        generate_map(MAP_FILE)  # 🔥 FIXED
 
         return jsonify({"message": "✅ Location added successfully!"}), 200
 
@@ -79,8 +79,8 @@ def update_map():
         with open(DATA_FILE, "w", encoding="utf-8") as file:
             json.dump(locations, file, indent=4)
 
-        # ✅ Regenerate the map
-        generate_map(DATA_FILE, MAP_FILE)  # 🔥 Fixed the function call
+        # ✅ Regenerate the map with the correct function call
+        generate_map(MAP_FILE)  # 🔥 FIXED
 
         print("✅ Map updated successfully!")
         return jsonify({"message": "✅ Location updated & map refreshed!"}), 200
@@ -92,5 +92,6 @@ def update_map():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
 
 
