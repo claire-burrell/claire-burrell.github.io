@@ -1,5 +1,5 @@
 from scripts.data_loader import DataLoader
-from scripts.map_generator import generate_map
+from scripts.map_generator import MapGenerator
 from scripts.map_updater import update_map
 
 def main():
@@ -7,7 +7,7 @@ def main():
     travel_data = DataLoader.load_locations()
 
     # Generate the initial map
-    travel_map = generate_map(travel_data)
+    travel_map = MapGenerator.generate_map(travel_data)
 
     # Update the map based on new data
     updated_map = update_map(travel_map)
