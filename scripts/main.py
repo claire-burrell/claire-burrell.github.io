@@ -9,7 +9,7 @@ def main():
     locations = load_locations()    
 
     # Update the map based on new data
-    update_travel_data(data_file, new_entries)
+    update_travel_data()
 
     # Save the updated map
     MapGenerator.generate_map(data_file, "travel_map.html")
