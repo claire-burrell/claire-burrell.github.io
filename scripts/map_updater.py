@@ -15,6 +15,7 @@ def update_travel_data(data_file=LOCATIONS_PATH, new_entries={}):
     Returns:
     - None (updates the file in place)
     """
+    print("✅ Updating locations.json...")
     try:
         # Load existing data
         with open(data_file, 'r', encoding='utf-8') as file:
