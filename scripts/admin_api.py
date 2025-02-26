@@ -6,8 +6,8 @@ from scripts.map_generator import generate_map
 
 app = Flask(__name__)
 
-# ✅ STRONGEST CORS FIX: Allow GitHub Pages to communicate with Render
-CORS(app, resources={r"/*": {"origins": "https://claire-burrell.github.io"}})
+# ✅ Allow GitHub Pages (Frontend) to Access Render API
+CORS(app, resources={r"/*": {"origins": ["https://claire-burrell.github.io"]}}, supports_credentials=True)
 
 DATA_FILE = "data/locations.json"
 MAP_FILE = "travel_map.html"
@@ -44,9 +44,12 @@ def add_cors_headers(response):
     response.headers["Access-Control-Allow-Credentials"] = "true"
     return response
 
-@app.route("/add_location", methods=["POST"])
+@app.route("/add_location", methods=["POST", "OPTIONS"])
 def add_location():
-    """Adds a new location and updates the map."""
+    """Handles preflight OPTIONS request and adds a new location."""
+    if request.method == "OPTIONS":
+        return _handle_options_request()
+    
     try:
         new_location = request.json
         if not all(k in new_location for k in ["name", "latitude", "longitude"]):
@@ -74,9 +77,12 @@ def add_location():
         return jsonify({"message": f"❌ Error: {str(e)}"}), 500
 
 
-@app.route("/update_map", methods=["POST"])
+@app.route("/update_map", methods=["POST", "OPTIONS"])
 def update_map():
-    """Updates an existing location with new details and regenerates the map."""
+    """Handles preflight OPTIONS request and updates an existing location."""
+    if request.method == "OPTIONS":
+        return _handle_options_request()
+
     try:
         updated_entry = request.get_json()
         print("📥 Received data:", updated_entry)  # Debugging
@@ -111,5 +117,16 @@ def update_map():
         return jsonify({"message": f"❌ Error updating the map: {str(e)}"}), 500
 
 
+def _handle_options_request():
+    """✅ Ensures CORS preflight (`OPTIONS`) requests are properly handled."""
+    response = jsonify({"message": "CORS preflight success"})
+    response.headers["Access-Control-Allow-Origin"] = "https://claire-burrell.github.io"
+    response.headers["Access-Control-Allow-Methods"] = "GET, POST, OPTIONS"
+    response.headers["Access-Control-Allow-Headers"] = "Content-Type"
+    response.headers["Access-Control-Allow-Credentials"] = "true"
+    return response, 200
+
+
 if __name__ == "__main__":
     app.run(debug=True)
+
