@@ -54,22 +54,19 @@
             </form>
 
             <!-- ✅ NEW FORM: Update Travel Map Data -->
-            <h3>Add or Edit a Travel Location</h3>
-            <form id="updateMapForm">
-                <label for="name">Location Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="country">Country:</label>
-                <input type="text" id="country" name="country" required>
-
-                <label for="days">Days Stayed:</label>
-                <input type="number" id="days" name="days" required>
-
-                <label for="transport">Transport Method:</label>
-                <input type="text" id="transport" name="transport">
-
-                <button type="submit">Update Map</button>
-            </form>
+            <h3>Add a New Travel Location</h3>
+                <form id="addLocationForm">
+                    <label for="name">Location Name:</label>
+                    <input type="text" id="name" name="name" required>
+                
+                    <label for="latitude">Latitude:</label>
+                    <input type="text" id="latitude" name="latitude" required>
+                
+                    <label for="longitude">Longitude:</label>
+                    <input type="text" id="longitude" name="longitude" required>
+                
+                    <button type="submit">Add Location</button>
+                </form>
         </div>
     </main>
 
@@ -91,23 +88,28 @@
             }
         }
 
-        // ✅ Handle form submission to update travel data
-        document.getElementById("updateMapForm").addEventListener("submit", async function(event) {
-            event.preventDefault();
-
-            const formData = new FormData(this);
-            const response = await fetch("/update_map", {
-                method: "POST",
-                body: JSON.stringify(Object.fromEntries(formData)),
-                headers: {
-                    "Content-Type": "application/json"
-                }
+            // ✅ Handle form submission to update travel data
+            document.getElementById("addLocationForm").addEventListener("submit", async function(event) {
+                event.preventDefault();
+        
+                const formData = {
+                    name: document.getElementById("name").value,
+                    latitude: parseFloat(document.getElementById("latitude").value),
+                    longitude: parseFloat(document.getElementById("longitude").value)
+                };
+        
+                const response = await fetch("/add_location", {
+                    method: "POST",
+                    body: JSON.stringify(formData),
+                    headers: {
+                        "Content-Type": "application/json"
+                    }
+                });
+        
+                const result = await response.json();
+                alert(result.message);
             });
-
-            const result = await response.json();
-            alert(result.message);
-        });
-    </script>
+        </script>
 
 </body>
 </html>
