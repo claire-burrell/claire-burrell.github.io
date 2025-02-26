@@ -1,6 +1,9 @@
 import json
 
-def update_travel_data(data_file=, new_entries=""):
+CONFIG_PATH = "data/config.json"
+LOCATIONS_PATH = "data/locations.json"
+
+def update_travel_data(data_file=LOCATIONS_PATH, new_entries={}):
     """
     Update the travel data JSON file with new entries.
 
