@@ -41,3 +41,15 @@ body {
   cursor: pointer;
 }
 
+#dictionary-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+#dictionary-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+
