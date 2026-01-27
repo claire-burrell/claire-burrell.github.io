@@ -1,3 +1,6 @@
+console.log("script.js is running");
+
+
 let flashcards = [];
 let currentIndex = 0;
 let showingAnswer = false;
