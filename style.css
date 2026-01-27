@@ -52,4 +52,17 @@ body {
   border-bottom: 1px solid #ddd;
 }
 
+.nav {
+  margin-bottom: 1rem;
+}
+
+.nav a {
+  text-decoration: none;
+  font-size: 0.95rem;
+  color: #0077cc;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
 
