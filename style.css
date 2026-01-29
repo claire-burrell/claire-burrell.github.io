@@ -1,68 +1,95 @@
+/* Reset + base styles */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  background: #f2f2f2;
   min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa, #e4ebf5);
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
+/* App container */
 .app {
   background: white;
-  padding: 2rem;
-  border-radius: 12px;
   width: 100%;
-  max-width: 360px;
-  text-align: center;
-  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-}
-
-.card {
-  border: 2px solid #222;
-  border-radius: 12px;
+  max-width: 480px;
   padding: 2rem;
-  margin: 1.5rem 0;
-  min-height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  font-size: 1.2rem;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-.controls button {
-  margin: 0.25rem;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-#dictionary-list {
-  list-style: none;
-  padding: 0;
-  text-align: left;
-}
-
-#dictionary-list li {
-  padding: 0.5rem 0;
-  border-bottom: 1px solid #ddd;
-}
-
-.nav {
+/* Title */
+h1 {
+  font-size: 1.8rem;
   margin-bottom: 1rem;
+}
+
+/* Navigation */
+.nav {
+  margin-bottom: 1.5rem;
 }
 
 .nav a {
   text-decoration: none;
-  font-size: 0.95rem;
-  color: #0077cc;
+  color: #4f46e5;
+  font-weight: 600;
 }
 
 .nav a:hover {
   text-decoration: underline;
+}
+
+/* Flashcard */
+.card {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 2.5rem 1.5rem;
+  margin-bottom: 1.5rem;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+#card-text {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.controls button {
+  flex: 1;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #4f46e5;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.controls button:hover {
+  background: #4338ca;
 }
 
